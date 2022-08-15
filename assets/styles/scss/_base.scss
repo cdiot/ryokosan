@@ -1,0 +1,33 @@
+/*
+Author : Chris ;
+Theme : Pure CSS ;
+Description : Basic elements ;
+Tags : CSS, Symfony ;
+*/
+
+*{
+	font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
