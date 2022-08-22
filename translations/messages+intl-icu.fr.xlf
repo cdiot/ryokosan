@@ -6,13 +6,93 @@
                 <source>title.head</source>
                 <target>Ryokosan.com, le réseau social pour planifier des activités et partager ses vacances</target>
             </trans-unit>
-            <trans-unit id="title.home">
-                <source>title.home</source>
+            <trans-unit id="title.homepage">
+                <source>title.homepage</source>
                 <target>Page d'accueil - </target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
+            </trans-unit>
+            <trans-unit id="headline.jumbotron">
+                <source>headline.jumbotron</source>
+                <target><![CDATA[Connecte-toi avec<br>d'autres voyageurs]]></target>
+            </trans-unit>
+            <trans-unit id="heading.what_is_it">
+                <source>heading.what_is_it</source>
+                <target>Ryokosan: qu'est-ce que c'est ?</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.join_the_community">
+                <source>sub_heading.join_the_community</source>
+                <target>Rejoint la communauté</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.connect_with_travelers">
+                <source>sub_heading.connect_with_travelers</source>
+                <target>Connecte toi avec les voyageurs</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.meet_up_and_travel">
+                <source>sub_heading.meet_up_and_travel</source>
+                <target>Se rencontrer et voyager</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.free_without_advertising">
+                <source>sub_heading.free_without_advertising</source>
+                <target>Gratuit et sans publicité</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.advanced_messaging_system">
+                <source>sub_heading.advanced_messaging_system</source>
+                <target>Système de messagerie avancé</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.verified_profiles_and_guaranteed">
+                <source>sub_heading.verified_profiles_and_guaranteed</source>
+                <target>Profils vérifiés et garantis</target>
+            </trans-unit>
+            <trans-unit id="lead.jumbotron">
+                <source>lead.jumbotron</source>
+                <target>Partage tes vacances, organise des activités et faits des rencontres, trouve un compagnon de voyage autour de toi ou de tes destinations.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_top">
+                <source>lead.what_is_it_top</source>
+                <target>En matière de plateformes pour rencontrer d'autres voyageurs, la plupart du temps ta le choix entre des plateformes Hybrides dont le vrai but est de te vendre quelque chose comme des voyages organisés ou d'autres qui sont disponibles dans une seule langue, accessibles uniquement aux femmes, leur réseau social semble inactifs depuis plusieurs années, certains sont des forums non optimisés pour rencontrer des voyageurs. Tes ici parce que peu importe si tu planifie une activité dans ton pays ou à l'autre bout du monde ; tu veux rencontrer d'autres compagnons de voyage. Et parce que ce n'est pas toujours facile. Nous sommes là pour t'aider à atteindre ton objectif sans détour.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_bpttom">
+                <source>lead.what_is_it_bottom</source>
+                <target>Tu es étudiant tu recherches une expérience enrichissante à ajouter sur ton cv et tu a des compétences même minimes en Javascript, css ou en langues. Contacte-nous via nos réseaux sociaux ou par le formulaire de contact on a une mission pour toi.</target>
+            </trans-unit>
+            <trans-unit id="content.join_the_community">
+                <source>content.join_the_community</source>
+                <target>Ryokosan est très facile à utiliser. Il te suffit de créer un compte. Un modérateur vérifiera ton profil dans les 24 heures. Montre ensuite qui tu ait ajoute une photo de profil qui te ressemble.</target>
+            </trans-unit>
+            <trans-unit id="content.connect_with_travelers">
+                <source>content.connect_with_travelers</source>
+                <target>Nous considérons que chaque profil est important, choisi qui tu souhaite rencontrer en fonction de ton projet et de tes attentes (destination, date, âge, sexe) ou ajoute une activité en quelques minutes et commence à discuter. Alors revient donner ton avis sur nos réseaux. Inscrit toi également à notre newsletter pour être au courant des derniers profils ajoutés.</target>
+            </trans-unit>
+            <trans-unit id="content.meet_up_and_travel">
+                <source>content.meet_up_and_travel</source>
+                <target>Tu souhaite rencontrer d'autres voyageurs et vivre des aventures inoubliables, c'est pourquoi plusieurs fois par an nous organisons des rencontres gratuites dans le monde entier. Vous choisissez la destination via nos réseaux sociaux. Cette année, nous sommes allés en Thaïlande et en Corée du Sud.</target>
+            </trans-unit>
+            <trans-unit id="content.free_without_advertising">
+                <source>content.free_without_advertising</source>
+                <target>Accéde aux profils de nos membres et commence à discuter avec eux gratuitement sans frais cachés et navigue sur notre plateforme sans publicité tiers, car chez ryokosan, nous pensons que cela affecte considérablement votre expérience.</target>
+            </trans-unit>
+            <trans-unit id="content.advanced_messaging_system">
+                <source>content.advanced_messaging_system</source>
+                <target>Que tu veux faire une randonner dans ton pays ou voyager à l'autre bout du monde. Discute avec qui tu veux, envoyez d'abord un message, une photo ou un flash pour commencer à communiquer avec nos membres. (appels vidéo bientôt disponible).</target>
+            </trans-unit>
+            <trans-unit id="content.verified_profiles_and_guaranteed">
+                <source>content.verified_profiles_and_guaranteed</source>
+                <target>Tous nos profils sont validés par email et vérifiés via une modération manuelle par nos modérateurs. Un processus de certification est en place pour les profils suspects. Tu peut nous les signaler via le formulaire de contact.</target>
+            </trans-unit>
+            <trans-unit id="action.discover">
+                <source>action.discover</source>
+                <target>Découvrir gratuitement maintenant!</target>
+            </trans-unit>
+            <trans-unit id="alt.jumbotron">
+                <source>alt.jumbotron</source>
+                <target>Voyageurs à la montagne</target>
+            </trans-unit>
+            <trans-unit id="alt.friends_in_paris">
+                <source>alt.friends_in_paris</source>
+                <target>Amis devant la tour eiffel pendant leurs vacances à Paris, France.</target>
             </trans-unit>
         </body>
     </file>

@@ -6,13 +6,93 @@
                 <source>title.head</source>
                 <target>Ryokosan.com, the social network to plan activity and share your holidays</target>
             </trans-unit>
-            <trans-unit id="title.home">
-                <source>title.home</source>
+            <trans-unit id="title.homepage">
+                <source>title.homepage</source>
                 <target>Home page - </target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
+            </trans-unit>
+            <trans-unit id="headline.jumbotron">
+                <source>headline.jumbotron</source>
+                <target><![CDATA[Connect with<br>other travelers]]></target>
+            </trans-unit>
+            <trans-unit id="heading.what_is_it">
+                <source>heading.what_is_it</source>
+                <target>Ryokosan: what is it ?</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.join_the_community">
+                <source>sub_heading.join_the_community</source>
+                <target>Join the community</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.connect_with_travelers">
+                <source>sub_heading.connect_with_travelers</source>
+                <target>Connect with travelers</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.meet_up_and_travel">
+                <source>sub_heading.meet_up_and_travel</source>
+                <target>Meet up and travel</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.free_without_advertising">
+                <source>sub_heading.free_without_advertising</source>
+                <target>Free and without advertising</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.advanced_messaging_system">
+                <source>sub_heading.advanced_messaging_system</source>
+                <target>Advanced messaging system</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.verified_profiles_and_guaranteed">
+                <source>sub_heading.verified_profiles_and_guaranteed</source>
+                <target>Verified Profiles and Guaranteed</target>
+            </trans-unit>
+            <trans-unit id="lead.jumbotron">
+                <source>lead.jumbotron</source>
+                <target>Share your holidays, organize activities and meet people, find a travel companion around you or your destinations.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_top">
+                <source>lead.what_is_it_top</source>
+                <target>In terms of platforms to meet other travellers, most of the time you have to choice between platforms Hybrid whose real purpose is to sell you something like organized trips or others that are available in a single language, available only to women, their social network seems inactive for several years, some are forums not optimized for meet travellers. You are here because it doesn't matter if you are planning an activity in your country or on the other side of the world; you want to meet other travel buddies. And because it's not always easy. We're here to help you reach your goal without detour.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_bpttom">
+                <source>lead.what_is_it_bottom</source>
+                <target>You are a student, you are looking for a rewarding experience to add to your CV and you have even minimal skills in Javascript, css or languages. Contact us via our social networks or via the contact form we have a mission for you.</target>
+            </trans-unit>
+            <trans-unit id="content.join_the_community">
+                <source>content.join_the_community</source>
+                <target>Ryokosan is very easy to use. You just need to create an account. A moderator will check your profile within 24 hours. Then show who you are add a profile photo that suits you.</target>
+            </trans-unit>
+            <trans-unit id="content.connect_with_travelers">
+                <source>content.connect_with_travelers</source>
+                <target>We consider that each profile is important, choose who you want to meet according to your project and your expectations (destination, date, age, gender) or add an activity in a few minutes and start chatting. Then come back and give your opinion on our networks. Also subscribe to our newsletter to be aware of the latest profile added.</target>
+            </trans-unit>
+            <trans-unit id="content.meet_up_and_travel">
+                <source>content.meet_up_and_travel</source>
+                <target>You want to meet fellow travelers and live unforgettable adventures, that's why several times a year we organize free meetings all over the globe. You choose the destination via our social networks. This year we went to Thailand and South Korea.</target>
+            </trans-unit>
+            <trans-unit id="content.free_without_advertising">
+                <source>content.free_without_advertising</source>
+                <target>Access our members profiles and start chatting with them for free without hidden fees and browse our platform without third-party advertising because in ryokosan we think its significantly affect your experience.</target>
+            </trans-unit>
+            <trans-unit id="content.advanced_messaging_system">
+                <source>content.advanced_messaging_system</source>
+                <target>Whether you want to hike in your country or travel to the other side of the world. Chat with whoever you want, first send a message, a photo or a flash to start communicating with our members. (video calls coming soon).</target>
+            </trans-unit>
+            <trans-unit id="content.verified_profiles_and_guaranteed">
+                <source>content.verified_profiles_and_guaranteed</source>
+                <target>All our profiles are validated by email and verified via manual moderation by our moderators. A certification process is in place for suspicious profiles. You can report them to us via the contact form.</target>
+            </trans-unit>
+            <trans-unit id="action.discover">
+                <source>action.discover</source>
+                <target>Discover For Free Now!</target>
+            </trans-unit>
+            <trans-unit id="alt.jumbotron">
+                <source>alt.jumbotron</source>
+                <target>Travelers in the mountain</target>
+            </trans-unit>
+            <trans-unit id="alt.friends_in_paris">
+                <source>alt.friends_in_paris</source>
+                <target>Friends in front of the eiffel tower during their vacation in Paris, France.</target>
             </trans-unit>
         </body>
     </file>

@@ -1,0 +1,83 @@
+/*
+Author : Chris ;
+Theme : Pure CSS ;
+Description : Module jumbotron ;
+Tags : CSS, Symfony ;
+*/
+
+.jumbotron {
+    position:relative;
+    overflow:hidden;
+}
+
+.jumbotron .container {
+    position:relative;
+    z-index:2;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.jumbotron-background img {
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    z-index:1;
+    width:100%;
+    height:100%;
+    opacity:0.7;
+}
+
+.jumbotron-content {
+    color: var(--white);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.jumbotron-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.jumbotron-content p {  
+    font-size: 1.25rem;
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron-content a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px){
+    .jumbotron-content {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1199px){
+    .jumbotron-content h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px){
+    .jumbotron-content {
+        padding: 1.875rem 0.938rem;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 767px){
+    .jumbotron-content {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .jumbotron-content h1 {
+        font-size: 1.75rem;
+    }
+}

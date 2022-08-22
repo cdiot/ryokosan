@@ -1,0 +1,44 @@
+/*
+Author : Chris ;
+Theme : Pure CSS;
+Description : Module button ;
+Tags : CSS, Symfony ;
+*/
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    min-width: 6.875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3.125rem;
+    color: var(--black);
+    background-color: transparent;
+}
+
+.button-action {
+    color: var(--white) !important;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.button-action:active, .button-action:focus, .button-action:hover {
+    color: var(--white);
+    transform: scale(1.02);
+}
+
+.button-outline-action {
+    color: var(--blue) !important;
+    background: transparent;
+    border: 1px solid var(--blue);
+}
+
+.button-outline-action:active, .button-outline-action:focus, .button-outline-action:hover {
+    color: var(--blue);
+    transform: scale(1.02);
+}
