@@ -12,8 +12,8 @@ Tags : CSS, Symfony ;
 } 
 
 body {
-	font-family: "Montserrat", sans-serif;
-    line-height: 1.3125;
+	font-family: "Montserrat", sans-serif !important;
+    line-height: 1.3125 !important;
 }
 
 ul,
@@ -22,7 +22,7 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 

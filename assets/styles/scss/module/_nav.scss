@@ -1,0 +1,46 @@
+/*
+Author : Chris ;
+Theme : Pure CSS ;
+Description : Module nav ;
+Tags : CSS, Symfony ;
+*/
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+} 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .menu-link {
+  margin: 0 0.625rem;
+}}
+
+.menu-link {
+    display: block;
+    padding: 0.5rem 0;
+    margin: 0.625rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grey);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.menu-link:hover {
+  color: var(--grey);
+  transform: scale(1.02);
+}

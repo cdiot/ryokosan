@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.homepage'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+<!-- Hero banner START -->
+<div class="jumbotron jumbotron-fluid bg-dark" id="hero-banner">
+  <div class="jumbotron-background">
+    <img
+      src="{{ asset('build/images/travel-buddy-mountain.jpg') }}"
+      alt="{{ 'alt.jumbotron'|trans }}"
+    />
+  </div>
+  <div class="container">
+    <div class="col-lg-6">
+      <div class="jumbotron-content">
+        <!-- Title -->
+        <h1>{{ 'headline.jumbotron'|trans|raw }}</h1>
+        <!-- Content -->
+        <p>{{ 'lead.jumbotron'|trans }}</p>
+        <!-- Button -->
+        <a class="button button-action" href="#"
+          >{{ 'action.discover'|trans }}</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero banner END -->
+<!-- Section gap START -->
+<section id="section-gap">
+  <div class="container py-4">
+    <div class="row align-items-start">
+      <!-- Introduction START -->
+      <div class="col-lg-12">
+        <h2 class="heading">{{ 'heading.what_is_it'|trans }}</h2>
+        <p class="lead">{{ 'lead.what_is_it_top'|trans }}</p>
+        <p class="lead">{{ 'lead.what_is_it_bottom'|trans }}</p>
+      </div>
+      <!-- Introduction END -->
+      <!-- Features area START -->
+      <div class="col-lg-6">
+        <!-- Item 1 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.join_the_community'|trans }}</h3>
+          <p class="paragraph">{{ 'content.join_the_community'|trans }}</p>
+        </div>
+        <img
+          class="img-fluid"
+          src="{{ asset('build/images/friend-paris-eiffel-tower.jpg') }}"
+          alt="{{ 'alt.friends_in_paris'|trans }}"
+        />
+      </div>
+      <div class="col-lg-5">
+        <!-- Item 2 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.connect_with_travelers'|trans }}</h3>
+          <p class="paragraph">{{ 'content.connect_with_travelers'|trans }}</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.meet_up_and_travel'|trans }}</h3>
+          <p class="paragraph">{{ 'content.meet_up_and_travel'|trans }}</p>
+        </div>
+        <!-- Item 4 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.free_without_advertising'|trans }}</h3>
+          <p class="paragraph">{{ 'content.free_without_advertising'|trans }}</p>
+        </div>
+        <!-- Item 5 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.advanced_messaging_system'|trans }}</h3>
+          <p class="paragraph">{{ 'content.advanced_messaging_system'|trans }}</p>
+        </div>
+        <!-- Item 6 -->
+        <div class="my-4">
+          <h3 class="subheading">{{ 'sub_heading.verified_profiles_and_guaranteed'|trans }}</h3>
+          <p class="paragraph">{{ 'content.verified_profiles_and_guaranteed'|trans }}</p>
+        </div>
+      </div>
+      <!-- Features area END -->
+    </div>
+  </div>
+</section>
+<!-- Section gap END -->
+{% endblock %}

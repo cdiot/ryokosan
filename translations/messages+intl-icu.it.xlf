@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="it" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="title.head">
+                <source>title.head</source>
+                <target>Ryokosan.com, il social network per pianificare attività e condividere le tue vacanze</target>
+            </trans-unit>
+            <trans-unit id="title.homepage">
+                <source>title.homepage</source>
+                <target>Pagina iniziale - </target>
+            </trans-unit>
+            <trans-unit id="description.head">
+                <source>description.head</source>
+                <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
+            </trans-unit>
+            <trans-unit id="headline.jumbotron">
+                <source>headline.jumbotron</source>
+                <target><![CDATA[Entra in contatto con<br>altri viaggiatori]]></target>
+            </trans-unit>
+            <trans-unit id="heading.what_is_it">
+                <source>heading.what_is_it</source>
+                <target>Ryokosan: che cos'è?</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.join_the_community">
+                <source>sub_heading.join_the_community</source>
+                <target>Unisciti alla comunità</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.connect_with_travelers">
+                <source>sub_heading.connect_with_travelers</source>
+                <target>Entra in contatto con i viaggiatori</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.meet_up_and_travel">
+                <source>sub_heading.meet_up_and_travel</source>
+                <target>Incontrarsi e viaggiare</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.free_without_advertising">
+                <source>sub_heading.free_without_advertising</source>
+                <target>Gratuito e senza pubblicità</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.advanced_messaging_system">
+                <source>sub_heading.advanced_messaging_system</source>
+                <target>Sistema di messaggistica avanzato</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.verified_profiles_and_guaranteed">
+                <source>sub_heading.verified_profiles_and_guaranteed</source>
+                <target>Profili Verificati e Garantiti</target>
+            </trans-unit>
+            <trans-unit id="lead.jumbotron">
+                <source>lead.jumbotron</source>
+                <target>Condividi le tue vacanze, organizza attività e incontra persone, trova un compagno di viaggio intorno a te o alle tue destinazioni.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_top">
+                <source>lead.what_is_it_top</source>
+                <target>In termini di piattaforme per incontrare altri viaggiatori, il più delle volte devi scegliere tra piattaforme Hybrid il cui vero scopo è venderti qualcosa come viaggi organizzati o altri disponibili in un'unica lingua, disponibili solo per le donne, sembra che il loro social network inattivi da diversi anni, alcuni sono forum non ottimizzati per incontrare i viaggiatori. Sei qui perché non importa se stai pianificando un'attività nel tuo paese o dall'altra parte del mondo; vuoi incontrare altri compagni di viaggio. E perché non è sempre facile. Siamo qui per aiutarti a raggiungere il tuo obiettivo senza deviazioni.</target>
+            </trans-unit>
+            <trans-unit id="lead.what_is_it_bpttom">
+                <source>lead.what_is_it_bottom</source>
+                <target>Sei uno studente, cerchi un'esperienza gratificante da aggiungere al tuo CV e hai competenze anche minime in Javascript, css o lingue. Contattaci tramite i nostri social network o tramite il modulo di contatto abbiamo una missione per te.</target>
+            </trans-unit>
+            <trans-unit id="content.join_the_community">
+                <source>content.join_the_community</source>
+                <target>Ryokosan è molto facile da usare. Devi solo creare un account. Un moderatore controllerà il tuo profilo entro 24 ore. Quindi mostra chi sei e aggiungi una foto del profilo che fa per te.</target>
+            </trans-unit>
+            <trans-unit id="content.connect_with_travelers">
+                <source>content.connect_with_travelers</source>
+                <target>Consideriamo importante ogni profilo, scegli chi vuoi incontrare in base al tuo progetto e alle tue aspettative (destinazione, data, età, sesso) oppure aggiungi un'attività in pochi minuti e inizia a chattare. Quindi torna e dai la tua opinione sulle nostre reti. Iscriviti anche alla nostra newsletter per essere informato sull'ultimo profilo aggiunto.</target>
+            </trans-unit>
+            <trans-unit id="content.meet_up_and_travel">
+                <source>content.meet_up_and_travel</source>
+                <target>Vuoi incontrare compagni di viaggio e vivere avventure indimenticabili, ecco perché più volte all'anno organizziamo incontri gratuiti in tutto il mondo. Scegli tu la destinazione tramite i nostri social network. Quest'anno siamo stati in Thailandia e Corea del Sud.</target>
+            </trans-unit>
+            <trans-unit id="content.free_without_advertising">
+                <source>content.free_without_advertising</source>
+                <target>Accedi ai profili dei nostri membri e inizia a chattare con loro gratuitamente senza costi nascosti e naviga nella nostra piattaforma senza pubblicità di terze parti perché in ryokosan pensiamo che influisca in modo significativo sulla tua esperienza.</target>
+            </trans-unit>
+            <trans-unit id="content.advanced_messaging_system">
+                <source>content.advanced_messaging_system</source>
+                <target>Sia che tu voglia fare escursioni nel tuo paese o viaggiare dall'altra parte del mondo. Chatta con chi vuoi, invia prima un messaggio, una foto o un flash per iniziare a comunicare con i nostri membri. (videochiamate in arrivo).</target>
+            </trans-unit>
+            <trans-unit id="content.verified_profiles_and_guaranteed">
+                <source>content.verified_profiles_and_guaranteed</source>
+                <target>Tutti i nostri profili sono convalidati via e-mail e verificati tramite moderazione manuale dai nostri moderatori. È in atto un processo di certificazione per i profili sospetti. puoi segnalarcelo tramite il modulo di contatto.</target>
+            </trans-unit>
+            <trans-unit id="action.discover">
+                <source>action.discover</source>
+                <target>Scopri ora gratuitamente!</target>
+            </trans-unit>
+            <trans-unit id="alt.jumbotron">
+                <source>alt.jumbotron</source>
+                <target>Viaggiatori in montagna</target>
+            </trans-unit>
+            <trans-unit id="alt.friends_in_paris">
+                <source>alt.friends_in_paris</source>
+                <target>Amici davanti alla torre eiffel durante le loro vacanze a Parigi, Francia.</target>
+            </trans-unit>
+            <trans-unit id="alt.brand">
+                <source>alt.brand</source>
+                <target>ryokosan.com logo</target>
+            </trans-unit>
+            <trans-unit id="menu.browse">
+                <source>menu.browse</source>
+                <target>Navigare</target>
+            </trans-unit>
+            <trans-unit id="menu.find_partners">
+                <source>menu.find_partners</source>
+                <target>Trova partner</target>
+            </trans-unit>
+            <trans-unit id="menu.add_activity">
+                <source>menu.add_activity</source>
+                <target>Crea un'attività</target>
+            </trans-unit>
+            <trans-unit id="menu.login">
+                <source>menu.login</source>
+                <target>Accesso</target>
+            </trans-unit>
+            <trans-unit id="menu.register">
+                <source>menu.register</source>
+                <target>Registrati</target>
+            </trans-unit>
+            <trans-unit id="menu.about">
+                <source>menu.about</source>
+                <target>Di</target>
+            </trans-unit>
+            <trans-unit id="menu.newsletter">
+                <source>menu.newsletter</source>
+                <target>Newsletter</target>
+            </trans-unit>
+            <trans-unit id="menu.contact">
+                <source>menu.contact</source>
+                <target>Contatto</target>
+            </trans-unit>
+            <trans-unit id="menu.privacy">
+                <source>menu.privacy</source>
+                <target>Politica sulla riservatezza</target>
+            </trans-unit>
+            <trans-unit id="menu.terms">
+                <source>menu.terms</source>
+                <target>Termini</target>
+            </trans-unit>
+            <trans-unit id="copyright">
+                <source>copyright</source>
+                <target>© 2022 Ryokosan, Inc</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
