@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="it" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="title.head">
+                <source>title.head</source>
+                <target>Ryokosan.com, il social network per pianificare attività e condividere le tue vacanze</target>
+            </trans-unit>
+            <trans-unit id="title.home">
+                <source>title.home</source>
+                <target>Pagina iniziale - </target>
+            </trans-unit>
+            <trans-unit id="description.head">
+                <source>description.head</source>
+                <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
