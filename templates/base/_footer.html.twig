@@ -16,6 +16,24 @@
             <li class="nav-item">
                 <a href="#" class="nav-link px-2 text-muted">{{ 'menu.terms'|trans }}</a>
             </li>
+			<!-- Language selector START -->
+            <li class="dropdown nav-item">
+                <a
+                    class="dropdown-toggle nav-link text-muted"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >{{ app.request.locale|locale_name(app.request.locale)|u.title }}
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{ path(app.request.get('_route'), app.request.get('_route_params', [])|merge({_locale: 'de'})) }}">Deutsch</a></li>
+                    <li><a class="dropdown-item" href="{{ path(app.request.get('_route'), app.request.get('_route_params', [])|merge({_locale: 'en'})) }}">English</a></li>
+                    <li><a class="dropdown-item" href="{{ path(app.request.get('_route'), app.request.get('_route_params', [])|merge({_locale: 'es'})) }}">Español</a></li>
+                    <li><a class="dropdown-item" href="{{ path(app.request.get('_route'), app.request.get('_route_params', [])|merge({_locale: 'fr'})) }}">Francais</a></li>
+                    <li><a class="dropdown-item" href="{{ path(app.request.get('_route'), app.request.get('_route_params', [])|merge({_locale: 'it'})) }}">Italiano</a></li>
+                </ul>
+            </li>
+			<!-- Language selector END -->
         </ul>
         <div
             class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top"
