@@ -118,6 +118,30 @@
                 <source>menu.register</source>
                 <target>Registrieren</target>
             </trans-unit>
+            <trans-unit id="menu.about">
+                <source>menu.about</source>
+                <target>Um</target>
+            </trans-unit>
+            <trans-unit id="menu.newsletter">
+                <source>menu.newsletter</source>
+                <target>Newsletter</target>
+            </trans-unit>
+            <trans-unit id="menu.contact">
+                <source>menu.contact</source>
+                <target>Kontakt</target>
+            </trans-unit>
+            <trans-unit id="menu.privacy">
+                <source>menu.privacy</source>
+                <target>Datenschutz-Bestimmungen</target>
+            </trans-unit>
+            <trans-unit id="menu.terms">
+                <source>menu.terms</source>
+                <target>Bedingungen</target>
+            </trans-unit>
+            <trans-unit id="copyright">
+                <source>copyright</source>
+                <target>© 2022 Ryokosan, Inc</target>
+            </trans-unit>
         </body>
     </file>
 </xliff> 
