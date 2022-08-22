@@ -1,3 +1,13 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+    prefix:
+        en: "/" # don't prefix URLs for English, the default locale
+        de: "/de"
+        es: "/es"
+        fr: "/fr"
+        it: "/it"
+    requirements:
+        _locale: "%app.supported_locales%"
+    defaults:
+        _locale: "%app.default_locale%"
