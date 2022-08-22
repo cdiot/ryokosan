@@ -94,6 +94,30 @@
                 <source>alt.friends_in_paris</source>
                 <target>Amici davanti alla torre eiffel durante le loro vacanze a Parigi, Francia.</target>
             </trans-unit>
+            <trans-unit id="alt.brand">
+                <source>alt.brand</source>
+                <target>ryokosan.com logo</target>
+            </trans-unit>
+            <trans-unit id="menu.browse">
+                <source>menu.browse</source>
+                <target>Navigare</target>
+            </trans-unit>
+            <trans-unit id="menu.find_partners">
+                <source>menu.find_partners</source>
+                <target>Trova partner</target>
+            </trans-unit>
+            <trans-unit id="menu.add_activity">
+                <source>menu.add_activity</source>
+                <target>Crea un'attività</target>
+            </trans-unit>
+            <trans-unit id="menu.login">
+                <source>menu.login</source>
+                <target>Accesso</target>
+            </trans-unit>
+            <trans-unit id="menu.register">
+                <source>menu.register</source>
+                <target>Registrati</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

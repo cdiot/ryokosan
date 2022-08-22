@@ -94,6 +94,30 @@
                 <source>alt.friends_in_paris</source>
                 <target>Freunde vor dem Eiffelturm während ihres Urlaubs in Paris, Frankreich.</target>
             </trans-unit>
+            <trans-unit id="alt.brand">
+                <source>alt.brand</source>
+                <target>ryokosan.com logo</target>
+            </trans-unit>
+            <trans-unit id="menu.browse">
+                <source>menu.browse</source>
+                <target>Durchsuche</target>
+            </trans-unit>
+            <trans-unit id="menu.find_partners">
+                <source>menu.find_partners</source>
+                <target>Partner finden</target>
+            </trans-unit>
+            <trans-unit id="menu.add_activity">
+                <source>menu.add_activity</source>
+                <target>Erstellen Sie eine Aktivität</target>
+            </trans-unit>
+            <trans-unit id="menu.login">
+                <source>menu.login</source>
+                <target>Einloggen</target>
+            </trans-unit>
+            <trans-unit id="menu.register">
+                <source>menu.register</source>
+                <target>Registrieren</target>
+            </trans-unit>
         </body>
     </file>
 </xliff> 
