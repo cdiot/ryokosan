@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{{ path('app_home') }}">
             <img
                 src="{{ asset('build/images/logo.png') }}"
                 alt="{{ 'alt.brand'|trans }}"
@@ -54,14 +54,25 @@
                     <!-- Menu left END -->
                     <!-- Menu right START -->
                     <ul class="nav navbar-nav ms-auto">
-                        <li class="dropdown">
-                            <a class="button button-outline-action menu-link me-2" href="#"
-                            >{{ 'menu.login'|trans }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button button-action menu-link me-2" href="#"
-                            >{{ 'menu.register'|trans }}</a>
-                        </li>
+                        {% if app.user %}
+                            <li class="dropdown">
+                                <a class="button button-outline-action menu-link me-2" 
+                                href="{{ path('app_logout') }}">{{ 'menu.logout'|trans }}</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="button button-outline-action menu-link me-2" 
+                                href="#">{{ 'menu.profile'|trans }}</a>
+                            </li>
+                        {% else %}
+                            <li class="dropdown">
+                                <a class="button button-outline-action menu-link me-2" 
+                                href="{{ path('app_login') }}">{{ 'menu.login'|trans }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="button button-action menu-link me-2" href="#"
+                                >{{ 'menu.register'|trans }}</a>
+                            </li>
+                        {% endif %}
                     </ul>
                     <!-- Menu right END -->
                 </div>

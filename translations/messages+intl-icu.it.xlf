@@ -10,6 +10,10 @@
                 <source>title.homepage</source>
                 <target>Pagina iniziale - </target>
             </trans-unit>
+            <trans-unit id="title.login">
+                <source>title.login</source>
+                <target>Accesso - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -17,6 +21,10 @@
             <trans-unit id="headline.jumbotron">
                 <source>headline.jumbotron</source>
                 <target><![CDATA[Entra in contatto con<br>altri viaggiatori]]></target>
+            </trans-unit>
+            <trans-unit id="headline.log_in">
+                <source>headline.log_in</source>
+                <target>Collegati a Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -86,6 +94,30 @@
                 <source>action.discover</source>
                 <target>Scopri ora gratuitamente!</target>
             </trans-unit>
+            <trans-unit id="action.login_with_google">
+                <source>action.login_with_google</source>
+                <target>Accedi con Google</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Accesso</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_forgot_password">
+                <source>action.go_to_forgot_password</source>
+                <target>Hai dimenticato la password ?</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_register">
+                <source>action.go_to_register</source>
+                <target><![CDATA[Non hai un account? <a href="{link}" class="text-primary">Iscrizione !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Parola d'ordine</target>
+            </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
                 <target>Viaggiatori in montagna</target>
@@ -118,6 +150,14 @@
                 <source>menu.register</source>
                 <target>Registrati</target>
             </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Disconnettersi</target>
+            </trans-unit>
+            <trans-unit id="menu.profile">
+                <source>menu.profile</source>
+                <target>Profilo</target>
+            </trans-unit>
             <trans-unit id="menu.about">
                 <source>menu.about</source>
                 <target>Di</target>
@@ -137,6 +177,10 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Termini</target>
+            </trans-unit>
+            <trans-unit id="or">
+                <source>or</source>
+                <target>O</target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>

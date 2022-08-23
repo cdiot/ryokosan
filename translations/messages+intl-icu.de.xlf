@@ -10,6 +10,10 @@
                 <source>title.homepage</source>
                 <target>Startseite - </target>
             </trans-unit>
+            <trans-unit id="title.login">
+                <source>title.login</source>
+                <target>Einloggen - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -17,6 +21,10 @@
             <trans-unit id="headline.jumbotron">
                 <source>headline.jumbotron</source>
                 <target><![CDATA[Verbinden Sie sich mit<br>anderen Reisenden]]></target>
+            </trans-unit>
+            <trans-unit id="headline.log_in">
+                <source>headline.log_in</source>
+                <target>Stellen Sie eine Verbindung zu Ryokosan her</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -86,6 +94,30 @@
                 <source>action.discover</source>
                 <target>Jetzt kostenlos entdecken!</target>
             </trans-unit>
+            <trans-unit id="action.login_with_google">
+                <source>action.login_with_google</source>
+                <target>Melden Sie sich mit Google an</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Einloggen</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_forgot_password">
+                <source>action.go_to_forgot_password</source>
+                <target>Haben Sie Ihr Passwort vergessen ?</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_register">
+                <source>action.go_to_register</source>
+                <target><![CDATA[Sie haben kein Konto ? <a href="{link}" class="text-primary">Anmelden !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Passwort</target>
+            </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
                 <target>Reisende im Berg</target>
@@ -118,6 +150,14 @@
                 <source>menu.register</source>
                 <target>Registrieren</target>
             </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Ausloggen</target>
+            </trans-unit>
+            <trans-unit id="menu.profile">
+                <source>menu.profile</source>
+                <target>Profil</target>
+            </trans-unit>
             <trans-unit id="menu.about">
                 <source>menu.about</source>
                 <target>Um</target>
@@ -137,6 +177,10 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Bedingungen</target>
+            </trans-unit>
+            <trans-unit id="or">
+                <source>or</source>
+                <target>ODER</target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>
