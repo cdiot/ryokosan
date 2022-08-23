@@ -10,8 +10,8 @@
                 <source>title.homepage</source>
                 <target>Page d'accueil - </target>
             </trans-unit>
-            <trans-unit id="title.login">
-                <source>title.login</source>
+            <trans-unit id="title.connection">
+                <source>title.connection</source>
                 <target>Connexion - </target>
             </trans-unit>
             <trans-unit id="description.head">
