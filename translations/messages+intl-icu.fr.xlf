@@ -10,6 +10,10 @@
                 <source>title.homepage</source>
                 <target>Page d'accueil - </target>
             </trans-unit>
+            <trans-unit id="title.connection">
+                <source>title.connection</source>
+                <target>Connexion - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -17,6 +21,10 @@
             <trans-unit id="headline.jumbotron">
                 <source>headline.jumbotron</source>
                 <target><![CDATA[Connecte-toi avec<br>d'autres voyageurs]]></target>
+            </trans-unit>
+            <trans-unit id="headline.log_in">
+                <source>headline.log_in</source>
+                <target>Connecte-toi à Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -86,6 +94,30 @@
                 <source>action.discover</source>
                 <target>Découvrir gratuitement maintenant!</target>
             </trans-unit>
+            <trans-unit id="action.login_with_google">
+                <source>action.login_with_google</source>
+                <target>Connecte-toi avec Google</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Connexion</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_forgot_password">
+                <source>action.go_to_forgot_password</source>
+                <target>Mot de passe oublié ?</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_register">
+                <source>action.go_to_register</source>
+                <target><![CDATA[Vous n'avez pas de compte ? <a href="{link}" class="text-primary">S'inscrire !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Mot de passe</target>
+            </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
                 <target>Voyageurs à la montagne</target>
@@ -118,6 +150,14 @@
                 <source>menu.register</source>
                 <target>S'inscrire</target>
             </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Se déconnecter</target>
+            </trans-unit>
+            <trans-unit id="menu.profile">
+                <source>menu.profile</source>
+                <target>Profil</target>
+            </trans-unit>
             <trans-unit id="menu.about">
                 <source>menu.about</source>
                 <target>À propos</target>
@@ -137,6 +177,10 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Conditions</target>
+            </trans-unit>
+            <trans-unit id="or">
+                <source>or</source>
+                <target>OU</target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>

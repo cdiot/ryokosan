@@ -10,6 +10,10 @@
                 <source>title.homepage</source>
                 <target>Página de inicio - </target>
             </trans-unit>
+            <trans-unit id="title.connection">
+                <source>title.connection</source>
+                <target>Iniciar sesión - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan es una red social para encontrar compañeros de viaje cerca de ti o de tus destinos. Comparte tus vacaciones, conoce gente y vive aventuras enriquecedoras.</target>
@@ -17,6 +21,10 @@
             <trans-unit id="headline.jumbotron">
                 <source>headline.jumbotron</source>
                 <target><![CDATA[Conectar con<br>otros viajeros]]></target>
+            </trans-unit>
+            <trans-unit id="headline.log_in">
+                <source>headline.log_in</source>
+                <target>Conéctate a Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -86,6 +94,30 @@
                 <source>action.discover</source>
                 <target>¡Descubre gratis ahora!</target>
             </trans-unit>
+            <trans-unit id="action.login_with_google">
+                <source>action.login_with_google</source>
+                <target>Iniciar sesión con Google</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Iniciar sesión</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_forgot_password">
+                <source>action.go_to_forgot_password</source>
+                <target>Olvidaste tu contraseña ?</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_register">
+                <source>action.go_to_register</source>
+                <target><![CDATA[¿No tienes una cuenta ? <a href="{link}" class="text-primary">Inscribirse !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>Correo electrónico</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Contraseña</target>
+            </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
                 <target>Viajeros en la montaña</target>
@@ -118,6 +150,14 @@
                 <source>menu.register</source>
                 <target>Registro</target>
             </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Cerrar sesión</target>
+            </trans-unit>
+            <trans-unit id="menu.profile">
+                <source>menu.profile</source>
+                <target>Perfil</target>
+            </trans-unit>
             <trans-unit id="menu.about">
                 <source>menu.about</source>
                 <target>Sobre</target>
@@ -137,6 +177,10 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Términos</target>
+            </trans-unit>
+            <trans-unit id="or">
+                <source>or</source>
+                <target>O</target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>

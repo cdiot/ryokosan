@@ -10,6 +10,10 @@
                 <source>title.homepage</source>
                 <target>Home page - </target>
             </trans-unit>
+            <trans-unit id="title.connection">
+                <source>title.connection</source>
+                <target>Login - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -17,6 +21,10 @@
             <trans-unit id="headline.jumbotron">
                 <source>headline.jumbotron</source>
                 <target><![CDATA[Connect with<br>other travelers]]></target>
+            </trans-unit>
+            <trans-unit id="headline.log_in">
+                <source>headline.log_in</source>
+                <target>Connect to Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -86,6 +94,30 @@
                 <source>action.discover</source>
                 <target>Discover For Free Now!</target>
             </trans-unit>
+            <trans-unit id="action.login_with_google">
+                <source>action.login_with_google</source>
+                <target>Login with Google</target>
+            </trans-unit>
+            <trans-unit id="action.login">
+                <source>action.login</source>
+                <target>Log In</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_forgot_password">
+                <source>action.go_to_forgot_password</source>
+                <target>Forgot your password ?</target>
+            </trans-unit>
+            <trans-unit id="action.go_to_register">
+                <source>action.go_to_register</source>
+                <target><![CDATA[You do not have an account ? <a href="{link}" class="text-primary">Sign up !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Password</target>
+            </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
                 <target>Travelers in the mountain</target>
@@ -118,6 +150,14 @@
                 <source>menu.register</source>
                 <target>Register</target>
             </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Logout</target>
+            </trans-unit>
+            <trans-unit id="menu.profile">
+                <source>menu.profile</source>
+                <target>Profile</target>
+            </trans-unit>
             <trans-unit id="menu.about">
                 <source>menu.about</source>
                 <target>About</target>
@@ -137,6 +177,10 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Terms</target>
+            </trans-unit>
+            <trans-unit id="or">
+                <source>or</source>
+                <target>OR</target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>
