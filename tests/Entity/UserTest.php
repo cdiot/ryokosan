@@ -19,7 +19,8 @@ class UserTest extends TestCase
             ->setFirstname('something')
             ->setBirthday($birthday)
             ->setGeolocalisation('FR')
-            ->setSponsorship('something');
+            ->setSponsorship('something')
+            ->setIsVerified(true);
 
 
 
@@ -31,6 +32,7 @@ class UserTest extends TestCase
         $this->assertTrue($user->getBirthday() === $birthday);
         $this->assertTrue($user->getGeolocalisation() === 'FR');
         $this->assertTrue($user->getSponsorship() === 'something');
+        $this->assertTrue($user->isVerified() === true);
     }
 
     public function testIsFalse()
@@ -45,7 +47,8 @@ class UserTest extends TestCase
             ->setFirstname('something new')
             ->setBirthday($birthday2)
             ->setGeolocalisation('EN')
-            ->setSponsorship('something new');
+            ->setSponsorship('something new')
+            ->setIsVerified(false);
 
         $this->assertFalse($user->getEmail() === 'foo@test.com');
         $this->assertFalse($user->getPassword() === '123456');
@@ -55,6 +58,7 @@ class UserTest extends TestCase
         $this->assertFalse($user->getBirthday() === $birthday1);
         $this->assertFalse($user->getGeolocalisation() === 'FR');
         $this->assertFalse($user->getSponsorship() === 'something');
+        $this->assertFalse($user->isVerified() === true);
     }
 
     public function testIsEmpty()
@@ -65,7 +69,8 @@ class UserTest extends TestCase
             ->setGender('')
             ->setFirstname('')
             ->setGeolocalisation('')
-            ->setSponsorship('');
+            ->setSponsorship('')
+            ->setIsVerified('');
 
         $this->assertEmpty($user->getEmail());
         $this->assertEmpty($user->getPassword());
@@ -73,5 +78,6 @@ class UserTest extends TestCase
         $this->assertEmpty($user->getFirstname());
         $this->assertEmpty($user->getGeolocalisation());
         $this->assertEmpty($user->getSponsorship());
+        $this->assertEmpty($user->isVerified());
     }
 }

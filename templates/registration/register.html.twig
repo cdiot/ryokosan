@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.register'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 mb-3">
+            {% for flash_error in app.flashes('verify_email_error') %}
+                <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+            {% endfor %}
+            {% for message in app.flashes('success') %}
+				<p class="alert alert-success">{{ message }}</p>
+			{% endfor %}
+            <h1 class="heading mt-3 mb-4 text-center">
+                {{ 'headline.create_account'|trans }}
+            </h1>
+            <a href="#" class="button button-outline-action w-100 mb-3"
+                >{{ 'action.login_with_google'|trans }}</a>
+            <p class="text-center">{{ 'or'|trans }}</p>
+            <!-- Register form START -->
+            {{ form_start(registrationForm) }}
+            {{ form_row(registrationForm.gender, {
+                label: 'label.gender'|trans
+			}) }}
+            {{ form_row(registrationForm.firstname, {
+                label: 'label.firstname'|trans
+			}) }}
+            {{ form_row(registrationForm.email, {
+                label: 'label.email'|trans
+			}) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'label.password'|trans 
+			}) }}
+            {{ form_row(registrationForm.birthday, {
+                label: 'label.birthday'|trans
+			}) }}
+            {{ form_row(registrationForm.geolocalisation, {
+                label: 'label.geolocalisation'|trans
+			}) }}
+            {{ form_row(registrationForm.sponsorship, {
+                label: 'label.sponsorship'|trans,required: false
+			}) }} 
+            {{ form_row(registrationForm.agreeTerms, {
+                label: 'label.agree_terms'|trans 
+			}) }}
+
+            <button class="button button-action w-100 mb-3" type="submit">{{ 'action.save'|trans }}</button>
+            {{ form_end(registrationForm) }}
+            <!-- Register form End -->
+            <div class="text-center">
+                <p>
+                    <a href="#" class="text-primary"
+                        >{{ 'action.go_to_forgot_password'|trans }}</a>
+                </p>
+                <p>{{ 'action.go_to_login'|trans({'link': path('app_login') })|raw }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

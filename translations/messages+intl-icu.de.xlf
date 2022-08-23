@@ -14,6 +14,10 @@
                 <source>title.connection</source>
                 <target>Einloggen - </target>
             </trans-unit>
+            <trans-unit id="title.register">
+                <source>title.register</source>
+                <target>Registrieren - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -25,6 +29,14 @@
             <trans-unit id="headline.log_in">
                 <source>headline.log_in</source>
                 <target>Stellen Sie eine Verbindung zu Ryokosan her</target>
+            </trans-unit>
+            <trans-unit id="headline.create_account">
+                <source>headline.create_account</source>
+                <target>Erstellen Sie Ihr Konto auf Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.confirm_email">
+                <source>headline.confirm_email</source>
+                <target>Hallo! Bitte bestätige deine Email!</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -90,6 +102,13 @@
                 <source>content.verified_profiles_and_guaranteed</source>
                 <target>Alle unsere Profile werden per E-Mail validiert und durch manuelle Moderation durch unsere Moderatoren verifiziert. Für verdächtige Profile gibt es ein Zertifizierungsverfahren. Sie können uns diese über das Kontaktformular melden.</target>
             </trans-unit>
+            <trans-unit id="content.template_registration">
+                <source>content.template_registration</source>
+                <target><![CDATA[Das Ryokosan-Team bedankt sich für das entgegengebrachte Vertrauen.
+                Ihr neues Konto wurde erfolgreich initialisiert. Um Ihr Konto zu aktivieren und Ihre Registrierung endgültig zu validieren,
+                Bitte bestätigen Sie Ihre E-Mail-Adresse, indem Sie auf den folgenden Link klicken:
+                <br><br><a href="{link}">Bestätige meine E-Mail</a>. Dieser Link läuft ab in]]></target>
+            </trans-unit>
             <trans-unit id="action.discover">
                 <source>action.discover</source>
                 <target>Jetzt kostenlos entdecken!</target>
@@ -110,6 +129,14 @@
                 <source>action.go_to_register</source>
                 <target><![CDATA[Sie haben kein Konto ? <a href="{link}" class="text-primary">Anmelden !</a>]]></target>
             </trans-unit>
+            <trans-unit id="action.go_to_login">
+                <source>action.go_to_login</source>
+                <target><![CDATA[Sie haben bereits ein Konto ? <a href="{link}" class="text-primary">Anmeldung !</a>]]></target>
+            </trans-unit>
+            <trans-unit id="action.save">
+                <source>action.save</source>
+                <target>Zur Anmeldung</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Email</target>
@@ -117,6 +144,34 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Passwort</target>
+            </trans-unit>
+            <trans-unit id="label.gender">
+                <source>label.gender</source>
+                <target>Geschlecht</target>
+            </trans-unit>
+            <trans-unit id="label.firstname">
+                <source>label.firstname</source>
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="label.birthday">
+                <source>label.birthday</source>
+                <target>Geburtstag</target>
+            </trans-unit>
+            <trans-unit id="label.geolocalisation">
+                <source>label.geolocalisation</source>
+                <target>Geolokalisierung</target>
+            </trans-unit>
+            <trans-unit id="label.sponsorship">
+                <source>label.sponsorship</source>
+                <target>Sponsoring</target>
+            </trans-unit>
+            <trans-unit id="label.agree_terms">
+                <source>label.agree_terms</source>
+                <target>Akzeptieren Sie die Bedingungen</target>
+            </trans-unit>
+            <trans-unit id="placeholder.select">
+                <source>placeholder.select</source>
+                <target>Auswählen</target>
             </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
@@ -177,6 +232,38 @@
             <trans-unit id="menu.terms">
                 <source>menu.terms</source>
                 <target>Bedingungen</target>
+            </trans-unit>
+            <trans-unit id="notification.email_send">
+                <source>notification.email_send</source>
+                <target>Eine Bestätigungs-E-Mail wurde an Sie gesendet.</target>
+            </trans-unit>
+            <trans-unit id="notification.email_verified">
+                <source>notification.email_verified</source>
+                <target>Deine E-Mail-Adresse wurde verifiziert.</target>
+            </trans-unit>
+            <trans-unit id="email.subject.registration">
+                <source>email.subject.registration</source>
+                <target>Bitte bestätige deine Email</target>
+            </trans-unit>
+            <trans-unit id="email.from.registration">
+                <source>email.from.registration</source>
+                <target>Ryokosan-Konten</target>
+            </trans-unit>
+            <trans-unit id="gender.empty">
+                <source>gender.empty</source>
+                <target>Empty</target>
+            </trans-unit>
+            <trans-unit id="gender.male">
+                <source>gender.male</source>
+                <target>Mann</target>
+            </trans-unit>
+            <trans-unit id="gender.female">
+                <source>gender.female</source>
+                <target>Frauen</target>
+            </trans-unit>
+            <trans-unit id="gender.other">
+                <source>gender.other</source>
+                <target>Sonstiges</target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>
