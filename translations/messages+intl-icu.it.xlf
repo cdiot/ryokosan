@@ -18,6 +18,14 @@
                 <source>title.register</source>
                 <target>Registrati - </target>
             </trans-unit>
+            <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Reimposta la tua password - </target>
+            </trans-unit>
+            <trans-unit id="title.reset_email_send">
+                <source>title.reset_email_send</source>
+                <target>Email inviata</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -37,6 +45,14 @@
             <trans-unit id="headline.confirm_email">
                 <source>headline.confirm_email</source>
                 <target>Ciao! Per favore, conferma la tua email!</target>
+            </trans-unit>
+            <trans-unit id="headline.reset_password">
+                <source>headline.reset_password</source>
+                <target>Reimposta la password su Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.email_send">
+                <source>headline.email_send</source>
+                <target>Email inviata</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -109,6 +125,14 @@
                 Bitte bestätigen Sie Ihre E-Mail-Adresse, indem Sie auf den folgenden Link klicken:
                 <br><br><a href="{link}">Bestätige meine E-Mail</a>. Dieser Link läuft ab in]]></target>
             </trans-unit>
+            <trans-unit id="content.template_reset_password">
+                <source>content.template_reset_password</source>
+                <target><![CDATA[<h1>Ciao!</h1><p>Per reimpostare la tua password, visita il seguente link</p>]]></target>
+            </trans-unit>
+            <trans-unit id="content.expire_link">
+                <source>content.expire_link</source>
+                <target>Questo collegamento scadrà tra</target>
+            </trans-unit>
             <trans-unit id="action.discover">
                 <source>action.discover</source>
                 <target>Scopri ora gratuitamente!</target>
@@ -137,6 +161,19 @@
                 <source>action.save</source>
                 <target>Registrati</target>
             </trans-unit>
+            <trans-unit id="action.send_reset_password">
+                <source>action.send_reset_password</source>
+                <target>Invia link di ripristino</target>
+            </trans-unit>
+            <trans-unit id="action.reset_password">
+                <source>action.reset_password</source>
+                <target>Resetta la password</target>
+            </trans-unit>
+            <trans-unit id="action.retry_reset_password">
+                <source>action.retry_reset_password</source>
+                <target><![CDATA[Se non ricevi un'e-mail, controlla la tua cartella spam o
+                <a href="{link}">Riprova</a>.]]></target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -144,6 +181,14 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Parola d'ordine</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Nuova password</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Conferma nuova password</target>
             </trans-unit>
             <trans-unit id="label.gender">
                 <source>label.gender</source>
@@ -233,6 +278,10 @@
                 <source>menu.terms</source>
                 <target>Termini</target>
             </trans-unit>
+            <trans-unit id="help.enter_reset_password">
+                <source>help.enter_reset_password</source>
+                <target>Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la tua password.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Una email di conferma è stata inviata a voi.</target>
@@ -241,13 +290,26 @@
                 <source>notification.email_verified</source>
                 <target>Il tuo indirizzo email è stato verificato.</target>
             </trans-unit>
+            <trans-unit id="exception.no_reset_token">
+                <source>exception.no_reset_token</source>
+                <target>Nessun token di reimpostazione della password trovato nell'URL o nella sessione.</target>
+            </trans-unit>
             <trans-unit id="email.subject.registration">
                 <source>email.subject.registration</source>
                 <target>Per favore, conferma la tua email</target>
             </trans-unit>
+            <trans-unit id="email.subject.reset_password">
+                <source>email.subject.reset_password</source>
+                <target>La tua richiesta di reimpostazione della password</target>
+            </trans-unit>
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Conti Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="reset_token.content">
+                <source>reset_token.content</source>
+                <target><![CDATA[Se esiste un account corrispondente alla tua e-mail, allora è stata appena inviata un'e-mail
+                contiene un collegamento che puoi utilizzare per reimpostare la password. <br> Questo link scadrà tra]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>

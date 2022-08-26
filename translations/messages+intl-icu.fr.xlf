@@ -18,6 +18,14 @@
                 <source>title.register</source>
                 <target>S'inscrire - </target>
             </trans-unit>
+            <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Réinitialisez votre mot de passe - </target>
+            </trans-unit>
+            <trans-unit id="title.reset_email_send">
+                <source>title.reset_email_send</source>
+                <target>E-mail envoyé</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -37,6 +45,14 @@
             <trans-unit id="headline.confirm_email">
                 <source>headline.confirm_email</source>
                 <target>Bonjour! Veuillez confirmer votre email!</target>
+            </trans-unit>
+            <trans-unit id="headline.reset_password">
+                <source>headline.reset_password</source>
+                <target>Réinitialise ton mot de passe sur Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.email_send">
+                <source>headline.email_send</source>
+                <target>E-mail envoyé</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -109,7 +125,15 @@
                 merci de confirmer votre adresse mail en cliquant sur le lien suivant :
                 <br><br><a href="{link}">Confirmer mon e-mail</a>. Ce lien expirera dans]]></target>
             </trans-unit>
-            <trans-unit id="action.discover">
+            <trans-unit id="content.template_reset_password">
+                <source>content.template_reset_password</source>
+                <target><![CDATA[<h1>Bonjour!</h1><p>Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant</p>]]></target>
+            </trans-unit>
+            <trans-unit id="content.expire_link">
+                <source>content.expire_link</source>
+                <target>Ce lien expirera dans</target>
+            </trans-unit>
+            <trans-unit id="vdiscover">
                 <source>action.discover</source>
                 <target>Découvrir gratuitement maintenant!</target>
             </trans-unit>
@@ -137,6 +161,19 @@
                 <source>action.save</source>
                 <target>Enregister</target>
             </trans-unit>
+            <trans-unit id="action.send_reset_password">
+                <source>action.send_reset_password</source>
+                <target>Envoyer un lien de réinitialisation</target>
+            </trans-unit>
+            <trans-unit id="action.reset_password">
+                <source>action.reset_password</source>
+                <target>Réinitialiser le mot de passe</target>
+            </trans-unit>
+            <trans-unit id="action.retry_reset_password">
+                <source>action.retry_reset_password</source>
+                <target><![CDATA[Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou
+					<a href="{link}">réessayer</a>.]]></target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -144,6 +181,14 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Nouveau mot de passe</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Confirmer le nouveau mot de passe</target>
             </trans-unit>
             <trans-unit id="label.gender">
                 <source>label.gender</source>
@@ -233,6 +278,10 @@
                 <source>menu.terms</source>
                 <target>Conditions</target>
             </trans-unit>
+            <trans-unit id="help.enter_reset_password">
+                <source>help.enter_reset_password</source>
+                <target>Entre ton adresse e-mail et nous t'enverrons un lien pour réinitialiser ton mot de passe.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Un email de confirmation ta été envoyé.</target>
@@ -241,13 +290,26 @@
                 <source>notification.email_verified</source>
                 <target>Ton adresse e-mail a été vérifiée.</target>
             </trans-unit>
+            <trans-unit id="exception.no_reset_token">
+                <source>exception.no_reset_token</source>
+                <target>Aucun jeton de réinitialisation de mot de passe trouvé dans l'URL ou la session.</target>
+            </trans-unit>
             <trans-unit id="email.subject.registration">
                 <source>email.subject.registration</source>
                 <target>Confirme ton adresse e-email</target>
             </trans-unit>
+            <trans-unit id="email.subject.reset_password">
+                <source>email.subject.reset_password</source>
+                <target>Votre demande de réinitialisation de mot de passe</target>
+            </trans-unit>
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Comptes Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="reset_token.content">
+                <source>reset_token.content</source>
+                <target><![CDATA[S'il existe un compte correspondant à ton email, un email vient d'être envoyé 
+                contenant un lien te permettant de réinitialiser ton mot de passe. <br> Ce lien expirera dans]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>

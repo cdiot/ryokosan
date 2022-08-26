@@ -18,6 +18,14 @@
                 <source>title.register</source>
                 <target>Registrieren - </target>
             </trans-unit>
+            <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Setze dein Passwort zurück - </target>
+            </trans-unit>
+            <trans-unit id="title.reset_email_send">
+                <source>title.reset_email_send</source>
+                <target>E-Mail gesendet - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -37,6 +45,14 @@
             <trans-unit id="headline.confirm_email">
                 <source>headline.confirm_email</source>
                 <target>Hallo! Bitte bestätige deine Email!</target>
+            </trans-unit>
+            <trans-unit id="headline.reset_password">
+                <source>headline.reset_password</source>
+                <target>Setzen Sie Ihr Passwort auf Ryokosan zurück</target>
+            </trans-unit>
+            <trans-unit id="headline.email_send">
+                <source>headline.email_send</source>
+                <target>E-Mail gesendet</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -109,6 +125,14 @@
                 Bitte bestätigen Sie Ihre E-Mail-Adresse, indem Sie auf den folgenden Link klicken:
                 <br><br><a href="{link}">Bestätige meine E-Mail</a>. Dieser Link läuft ab in]]></target>
             </trans-unit>
+            <trans-unit id="content.template_reset_password">
+                <source>content.template_reset_password</source>
+                <target><![CDATA[<h1>Hallo!</h1><p>Um Ihr Passwort zurückzusetzen, besuchen Sie bitte den folgenden Link</p>]]></target>
+            </trans-unit>
+            <trans-unit id="content.expire_link">
+                <source>content.expire_link</source>
+                <target>Dieser Link läuft ab in</target>
+            </trans-unit>
             <trans-unit id="action.discover">
                 <source>action.discover</source>
                 <target>Jetzt kostenlos entdecken!</target>
@@ -137,6 +161,19 @@
                 <source>action.save</source>
                 <target>Zur Anmeldung</target>
             </trans-unit>
+            <trans-unit id="action.send_reset_password">
+                <source>action.send_reset_password</source>
+                <target>Zurücksetzen-Link senden</target>
+            </trans-unit>
+            <trans-unit id="action.reset_password">
+                <source>action.reset_password</source>
+                <target>Passwort zurücksetzen</target>
+            </trans-unit>
+            <trans-unit id="action.retry_reset_password">
+                <source>action.retry_reset_password</source>
+                <target><![CDATA[Sollten Sie keine E-Mail erhalten, prüfen Sie bitte Ihren Spam-Ordner bzw
+                <a href="{link}">versuchen Sie es erneut</a>.]]></target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Email</target>
@@ -144,6 +181,14 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Passwort</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Neues Passwort</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Bestätigen Sie das neue Passwort</target>
             </trans-unit>
             <trans-unit id="label.gender">
                 <source>label.gender</source>
@@ -233,6 +278,10 @@
                 <source>menu.terms</source>
                 <target>Bedingungen</target>
             </trans-unit>
+            <trans-unit id="help.enter_reset_password">
+                <source>help.enter_reset_password</source>
+                <target>Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Eine Bestätigungs-E-Mail wurde an Sie gesendet.</target>
@@ -241,13 +290,26 @@
                 <source>notification.email_verified</source>
                 <target>Deine E-Mail-Adresse wurde verifiziert.</target>
             </trans-unit>
+            <trans-unit id="exception.no_reset_token">
+                <source>exception.no_reset_token</source>
+                <target>Kein Token zum Zurücksetzen des Passworts in URL oder Sitzung gefunden.</target>
+            </trans-unit>
             <trans-unit id="email.subject.registration">
                 <source>email.subject.registration</source>
                 <target>Bitte bestätige deine Email</target>
             </trans-unit>
+            <trans-unit id="email.subject.reset_password">
+                <source>email.subject.reset_password</source>
+                <target>Ihre Anfrage zum Zurücksetzen des Passworts</target>
+            </trans-unit>
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Ryokosan-Konten</target>
+            </trans-unit>
+            <trans-unit id="reset_token.content">
+                <source>reset_token.content</source>
+                <target><![CDATA[Wenn es ein Konto gibt, das Ihrer E-Mail-Adresse entspricht, wurde gerade eine E-Mail gesendet
+                enthält einen Link, mit dem Sie Ihr Passwort zurücksetzen können. <br> Dieser Link läuft ab in]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>

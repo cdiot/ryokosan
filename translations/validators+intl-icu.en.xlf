@@ -42,6 +42,10 @@
                 <source>constraints.length_password</source>
                 <target><![CDATA[Your password must be at least {limit} characters.]]></target>
             </trans-unit>
+            <trans-unit id="constraints.match_password">
+                <source>constraints.match_password</source>
+                <target>The password fields must match.</target>
+            </trans-unit>
             <trans-unit id="constraints.true_agree_terms">
                 <source>constraints.true_agree_terms</source>
                 <target>You must agree to our terms.</target>

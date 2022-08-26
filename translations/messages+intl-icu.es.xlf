@@ -18,6 +18,14 @@
                 <source>title.register</source>
                 <target>Inscribirse - </target>
             </trans-unit>
+            <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Restablecer su contraseña - </target>
+            </trans-unit>
+            <trans-unit id="title.reset_email_send">
+                <source>title.reset_email_send</source>
+                <target>Correo electrónico enviado</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan es una red social para encontrar compañeros de viaje cerca de ti o de tus destinos. Comparte tus vacaciones, conoce gente y vive aventuras enriquecedoras.</target>
@@ -37,6 +45,14 @@
             <trans-unit id="headline.confirm_email">
                 <source>headline.confirm_email</source>
                 <target>¡Hola! ¡Por favor, confirma tu email!</target>
+            </trans-unit>
+            <trans-unit id="headline.reset_password">
+                <source>headline.reset_password</source>
+                <target>Restablece tu contraseña en Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.email_send">
+                <source>headline.email_send</source>
+                <target>Email enviado</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -109,6 +125,14 @@
                 Por favor, confirme su dirección de correo electrónico haciendo clic en el siguiente enlace:
                 <br><br><a href="{link}">Confirmar mi correo electrónico</a>. Este enlace caducará en]]></target>
             </trans-unit>
+            <trans-unit id="content.template_reset_password">
+                <source>content.template_reset_password</source>
+                <target><![CDATA[<h1>¡Hola!</h1><p>Para restablecer su contraseña, visite el siguiente enlace</p>]]></target>
+            </trans-unit>
+            <trans-unit id="content.expire_link">
+                <source>content.expire_link</source>
+                <target>Este enlace caducará en</target>
+            </trans-unit>
             <trans-unit id="action.discover">
                 <source>action.discover</source>
                 <target>¡Descubre gratis ahora!</target>
@@ -137,6 +161,19 @@
                 <source>action.save</source>
                 <target>Para registrarse</target>
             </trans-unit>
+            <trans-unit id="action.send_reset_password">
+                <source>action.send_reset_password</source>
+                <target>Enviar enlace de reinicio</target>
+            </trans-unit>
+            <trans-unit id="action.reset_password">
+                <source>action.reset_password</source>
+                <target>Restablecer la contraseña</target>
+            </trans-unit>
+            <trans-unit id="action.retry_reset_password">
+                <source>action.retry_reset_password</source>
+                <target><![CDATA[Si no recibe un correo electrónico, verifique su carpeta de correo no deseado o
+                <a href="{link}">inténtalo de nuevo</a>.]]></target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Correo electrónico</target>
@@ -144,6 +181,14 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Contraseña</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>Nueva contraseña</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Confirmar la nueva contraseña</target>
             </trans-unit>
             <trans-unit id="label.gender">
                 <source>label.gender</source>
@@ -233,6 +278,10 @@
                 <source>menu.terms</source>
                 <target>Términos</target>
             </trans-unit>
+            <trans-unit id="help.enter_reset_password">
+                <source>help.enter_reset_password</source>
+                <target>Ingrese su dirección de correo electrónico y le enviaremos un enlace para restablecer su contraseña.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Se le ha enviado un correo electrónico de confirmación.</target>
@@ -241,13 +290,26 @@
                 <source>notification.email_verified</source>
                 <target>Tu dirección de email ha sido verificada.</target>
             </trans-unit>
+            <trans-unit id="exception.no_reset_token">
+                <source>exception.no_reset_token</source>
+                <target>No se encontró ningún token de restablecimiento de contraseña en la URL o la sesión.</target>
+            </trans-unit>
             <trans-unit id="email.subject.registration">
                 <source>email.subject.registration</source>
                 <target>Por favor, confirma tu email</target>
             </trans-unit>
+            <trans-unit id="email.subject.reset_password">
+                <source>email.subject.reset_password</source>
+                <target>Su solicitud de restablecimiento de contraseña</target>
+            </trans-unit>
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Cuentas Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="reset_token.content">
+                <source>reset_token.content</source>
+                <target><![CDATA[Si hay una cuenta correspondiente a su correo electrónico, se acaba de enviar un correo electrónico
+                que contiene un enlace que le permite restablecer su contraseña. <br> Este enlace caducará en]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>
