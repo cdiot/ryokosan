@@ -8,23 +8,31 @@
             </trans-unit>
             <trans-unit id="title.homepage">
                 <source>title.homepage</source>
-                <target>Page d'accueil - </target>
+                <target>Page d'accueil</target>
             </trans-unit>
             <trans-unit id="title.connection">
                 <source>title.connection</source>
-                <target>Connexion - </target>
+                <target>Connexion</target>
             </trans-unit>
             <trans-unit id="title.register">
                 <source>title.register</source>
-                <target>S'inscrire - </target>
+                <target>S'inscrire</target>
             </trans-unit>
             <trans-unit id="title.reset_password">
                 <source>title.reset_password</source>
-                <target>Réinitialisez votre mot de passe - </target>
+                <target>Réinitialise ton mot de passe</target>
             </trans-unit>
             <trans-unit id="title.reset_email_send">
                 <source>title.reset_email_send</source>
                 <target>E-mail envoyé</target>
+            </trans-unit>
+            <trans-unit id="title.contact_us">
+                <source>title.contact_us</source>
+                <target>Contacte nous</target>
+            </trans-unit>
+            <trans-unit id="title.template_contact">
+                <source>title.template_contact</source>
+                <target>Nouveau message</target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
@@ -53,6 +61,10 @@
             <trans-unit id="headline.email_send">
                 <source>headline.email_send</source>
                 <target>E-mail envoyé</target>
+            </trans-unit>
+            <trans-unit id="headline.contact_us">
+                <source>headline.contact_us</source>
+                <target>Contacte nous sur Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -174,6 +186,10 @@
                 <target><![CDATA[Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou
 					<a href="{link}">réessayer</a>.]]></target>
             </trans-unit>
+            <trans-unit id="action.send">
+                <source>action.send</source>
+                <target>Envoyer</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -213,6 +229,14 @@
             <trans-unit id="label.agree_terms">
                 <source>label.agree_terms</source>
                 <target>Accepter les conditions</target>
+            </trans-unit>
+            <trans-unit id="label.subject">
+                <source>label.subject</source>
+                <target>Sujet</target>
+            </trans-unit>
+            <trans-unit id="label.message">
+                <source>label.message</source>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -289,6 +313,10 @@
             <trans-unit id="notification.email_verified">
                 <source>notification.email_verified</source>
                 <target>Ton adresse e-mail a été vérifiée.</target>
+            </trans-unit>
+            <trans-unit id="notification.team_respond">
+                <source>notification.team_respond</source>
+                <target>Notre équipe vous répondra dans les plus brefs délais.</target>
             </trans-unit>
             <trans-unit id="exception.no_reset_token">
                 <source>exception.no_reset_token</source>

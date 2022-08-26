@@ -24,7 +24,15 @@
             </trans-unit>
             <trans-unit id="title.reset_email_send">
                 <source>title.reset_email_send</source>
-                <target>Email inviata</target>
+                <target>Email inviata - </target>
+            </trans-unit>
+            <trans-unit id="title.contact_us">
+                <source>title.contact_us</source>
+                <target>Contattaci - </target>
+            </trans-unit>
+            <trans-unit id="title.template_contact">
+                <source>title.template_contact</source>
+                <target>Nuovo messaggio</target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
@@ -53,6 +61,10 @@
             <trans-unit id="headline.email_send">
                 <source>headline.email_send</source>
                 <target>Email inviata</target>
+            </trans-unit>
+            <trans-unit id="headline.contact_us">
+                <source>headline.contact_us</source>
+                <target>Contattaci su Ryokosan</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -174,6 +186,10 @@
                 <target><![CDATA[Se non ricevi un'e-mail, controlla la tua cartella spam o
                 <a href="{link}">Riprova</a>.]]></target>
             </trans-unit>
+            <trans-unit id="action.send">
+                <source>action.send</source>
+                <target>Inviare</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -213,6 +229,14 @@
             <trans-unit id="label.agree_terms">
                 <source>label.agree_terms</source>
                 <target>Accettatore le condizioni</target>
+            </trans-unit>
+            <trans-unit id="label.subject">
+                <source>label.subject</source>
+                <target>Materia</target>
+            </trans-unit>
+            <trans-unit id="label.message">
+                <source>label.message</source>
+                <target>Messaggio</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -289,6 +313,10 @@
             <trans-unit id="notification.email_verified">
                 <source>notification.email_verified</source>
                 <target>Il tuo indirizzo email è stato verificato.</target>
+            </trans-unit>
+            <trans-unit id="notification.team_respond">
+                <source>notification.team_respond</source>
+                <target>Il nostro team ti risponderà il prima possibile.</target>
             </trans-unit>
             <trans-unit id="exception.no_reset_token">
                 <source>exception.no_reset_token</source>
