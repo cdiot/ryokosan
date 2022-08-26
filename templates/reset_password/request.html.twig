@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.reset_password'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 mb-3">
+				<!-- forms alerts -->
+				{% for flash_error in app.flashes('reset_password_error') %}
+					<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+				{% endfor %}
+				<h1 class="heading mt-3 mb-4 text-center">{{ 'headline.reset_password'|trans }}</h1>
+				<div>
+					<small> {{ 'help.enter_reset_password'|trans }}
+					</small>
+				</div>
+						
+				<!-- Reset Password Request form START --> 
+				{{ form_start(requestForm.email) }} 
+				{{ form_row(requestForm.email, {
+                label: 'label.email'|trans
+					}) }}
+
+				<button class="button button-action w-100 mb-3" type="submit">{{ 'action.send_reset_password'|trans }}</button>
+				{{ form_end(requestForm) }}
+                <!-- Reset Password Request form End -->
+				<div class="text-center">
+                <p>{{ 'action.go_to_register'|trans({'link': path('app_register') })|raw }}</p>
+                </div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -18,6 +18,14 @@
                 <source>title.register</source>
                 <target>Register - </target>
             </trans-unit>
+            <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Reset your password - </target>
+            </trans-unit>
+            <trans-unit id="title.reset_email_send">
+                <source>title.reset_email_send</source>
+                <target>Email sent - </target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -37,6 +45,14 @@
             <trans-unit id="headline.confirm_email">
                 <source>headline.confirm_email</source>
                 <target>Hello! Please confirm your email!</target>
+            </trans-unit>
+            <trans-unit id="headline.reset_password">
+                <source>headline.reset_password</source>
+                <target>Reset your password on Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.email_send">
+                <source>headline.email_send</source>
+                <target>Email sent</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -109,6 +125,14 @@
                 per favore conferma il tuo indirizzo email cliccando sul seguente link:
                 <br><br><a href="{link}">Conferma la mia email</a>. Questo collegamento scadrà tra]]></target>
             </trans-unit>
+            <trans-unit id="content.template_reset_password">
+                <source>content.template_reset_password</source>
+                <target><![CDATA[<h1>Hello!</h1><p>To reset your password, please visit the following link</p>]]></target>
+            </trans-unit>
+            <trans-unit id="content.expire_link">
+                <source>content.expire_link</source>
+                <target>This link will expire in</target>
+            </trans-unit>
             <trans-unit id="action.discover">
                 <source>action.discover</source>
                 <target>Discover For Free Now!</target>
@@ -137,6 +161,19 @@
                 <source>action.save</source>
                 <target>Register</target>
             </trans-unit>
+            <trans-unit id="action.send_reset_password">
+                <source>action.send_reset_password</source>
+                <target>Send reset link</target>
+            </trans-unit>
+            <trans-unit id="action.reset_password">
+                <source>action.reset_password</source>
+                <target>Reset password</target>
+            </trans-unit>
+            <trans-unit id="action.retry_reset_password">
+                <source>action.retry_reset_password</source>
+                <target><![CDATA[If you don't receive an email please check your spam folder or
+					<a href="{link}">try again</a>.]]></target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -144,6 +181,14 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Password</target>
+            </trans-unit>
+            <trans-unit id="label.new_password">
+                <source>label.new_password</source>
+                <target>New Password</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Confirm new password</target>
             </trans-unit>
             <trans-unit id="label.gender">
                 <source>label.gender</source>
@@ -233,6 +278,10 @@
                 <source>menu.terms</source>
                 <target>Terms</target>
             </trans-unit>
+            <trans-unit id="help.enter_reset_password">
+                <source>help.enter_reset_password</source>
+                <target>Enter your email address and we'll send you a link to reset your password.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>A confirmation email has been sent to you.</target>
@@ -241,13 +290,26 @@
                 <source>notification.email_verified</source>
                 <target>Your email address has been verified.</target>
             </trans-unit>
+            <trans-unit id="exception.no_reset_token">
+                <source>exception.no_reset_token</source>
+                <target>No password reset token found in URL or session.</target>
+            </trans-unit>
             <trans-unit id="email.subject.registration">
                 <source>email.subject.registration</source>
                 <target>Please Confirm your Email</target>
             </trans-unit>
+            <trans-unit id="email.subject.reset_password">
+                <source>email.subject.reset_password</source>
+                <target>Your password reset request</target>
+            </trans-unit>
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Ryokosan Accounts</target>
+            </trans-unit>
+            <trans-unit id="reset_token.content">
+                <source>reset_token.content</source>
+                <target><![CDATA[If an account matching your email exists, then an email was just sent that 
+                contains a link that you can use to reset your password. <br> This link will expire in]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>

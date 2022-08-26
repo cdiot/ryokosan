@@ -32,6 +32,8 @@ class RegistrationControllerTest extends WebTestCase
             'registration_form[sponsorship]' => 'something',
             'registration_form[agreeTerms]' => true,
         ]);
+        $this->assertResponseRedirects();
+        $client->followRedirect();
         $this->assertResponseIsSuccessful();
     }
 }

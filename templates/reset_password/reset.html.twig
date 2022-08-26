@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.reset_password'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 mb-3">
+				<h1 class="heading mt-3 mb-4 text-center">{{ 'headline.reset_password'|trans }}</h1> 
+				<!-- Change Password form Start -->
+				{{ form_start(resetForm) }} 
+				{{ form_row(resetForm.plainPassword, {
+            label: 'label.password'|trans 
+						}) }}
+                <button class="button button-action w-100 mb-3" type="submit">{{ 'action.reset_password'|trans }}</button>
+                {{ form_end(resetForm) }}
+				<!-- Change Password form End -->
+			</div>
+		</div>
+    </section>
+{% endblock %}
