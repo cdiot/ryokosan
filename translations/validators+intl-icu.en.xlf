@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="constraints.type_email">
+                <source>constraints.type_email</source>
+                <target>Enter a valid email.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_email">
+                <source>constraints.blank_email</source>
+                <target>Enter your email.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_password">
+                <source>constraints.blank_password</source>
+                <target>Enter your password.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_gender">
+                <source>constraints.blank_gender</source>
+                <target>Enter your gender.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_firstname">
+                <source>constraints.blank_firstname</source>
+                <target>Enter your firstname.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_birthday">
+                <source>constraints.blank_birthday</source>
+                <target>Enter your birthday.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_geolocalisation">
+                <source>constraints.blank_geolocalisation</source>
+                <target>Enter your geolocalisation.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_sponsorship">
+                <source>constraints.blank_sponsorship</source>
+                <target>Enter your sponsorship.</target>
+            </trans-unit>
+            <trans-unit id="constraints.lessthanorequal_birthday">
+                <source>constraints.lessthanorequal_birthday</source>
+                <target>The minimum age required to register is 15 years old.</target>
+            </trans-unit>
+            <trans-unit id="constraints.length_password">
+                <source>constraints.length_password</source>
+                <target><![CDATA[Your password must be at least {limit} characters.]]></target>
+            </trans-unit>
+            <trans-unit id="constraints.true_agree_terms">
+                <source>constraints.true_agree_terms</source>
+                <target>You must agree to our terms.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,6 @@
+<h1>{{ 'headline.confirm_email'|trans }}</h1>
+
+<p> 
+    {{ 'content.template_registration'|trans({'link': signedUrl })|raw }} 
+    {{ expiresAtMessageKey|trans(expiresAtMessageData, 'VerifyEmailBundle') }}.
+</p>

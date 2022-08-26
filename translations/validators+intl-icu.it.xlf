@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="constraints.type_email">
+                <source>constraints.type_email</source>
+                <target>Inserisci una email valida.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_email">
+                <source>constraints.blank_email</source>
+                <target>Per favore inserisci la tua email.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_password">
+                <source>constraints.blank_password</source>
+                <target>per favore inserisci LA TUA password</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_gender">
+                <source>constraints.blank_gender</source>
+                <target>Per favore inserisci il tuo sesso.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_firstname">
+                <source>constraints.blank_firstname</source>
+                <target>Per favore immettere il proprio Nome.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_lastname">
+                <source>constraints.blank_lastname</source>
+                <target>Per favore inserisci il tuo cognome.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_birthday">
+                <source>constraints.blank_birthday</source>
+                <target>Per favore inserisci LA TUA data di nascita.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_nationality">
+                <source>constraints.blank_nationality</source>
+                <target>Per favore inserisci la tua nazionalità.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_subject">
+                <source>constraints.blank_subject</source>
+                <target>Per favore inserisci il tuo oggetto.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_message">
+                <source>constraints.blank_message</source>
+                <target>Inserisci il tuo messaggio.</target>
+            </trans-unit>
+            <trans-unit id="constraints.lessthanorequal_birthday">
+                <source>constraints.lessthanorequal_birthday</source>
+                <target>L'età minima richiesta per l'iscrizione è di 15 anni.</target>
+            </trans-unit>
+            <trans-unit id="constraints.length_password">
+                <source>constraints.length_password</source>
+                <target><![CDATA[La tua password deve contenere almeno {limit} caratteri.]]></target>
+            </trans-unit>
+            <trans-unit id="constraints.match_password">
+                <source>constraints.match_password</source>
+                <target>I campi della password devono corrispondere.</target>
+            </trans-unit>
+            <trans-unit id="constraints.true_agree_terms">
+                <source>constraints.true_agree_terms</source>
+                <target>Devi accettare i nostri termini.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
