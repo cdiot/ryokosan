@@ -34,6 +34,10 @@
                 <source>title.template_contact</source>
                 <target>New message</target>
             </trans-unit>
+            <trans-unit id="title.account_edit">
+                <source>title.account_edit</source>
+                <target>Edit your profile</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -65,6 +69,10 @@
             <trans-unit id="headline.contact_us">
                 <source>headline.contact_us</source>
                 <target>Contact us on Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.account_edit">
+                <source>headline.account_edit</source>
+                <target>Edit your profile</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -302,9 +310,25 @@
                 <source>menu.terms</source>
                 <target>Terms</target>
             </trans-unit>
+            <trans-unit id="menu.profil_edit">
+                <source>menu.profil_edit</source>
+                <target>Modify the profile</target>
+            </trans-unit>
+            <trans-unit id="menu.change_password">
+                <source>menu.change_password</source>
+                <target>Change password</target>
+            </trans-unit>
+            <trans-unit id="menu.user_log">
+                <source>menu.user_log</source>
+                <target>Login activity</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Enter your email address and we'll send you a link to reset your password.</target>
+            </trans-unit>
+            <trans-unit id="help.complet_personal_data">
+                <source>help.complet_personal_data</source>
+                <target>Complete your personal information.</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
@@ -317,6 +341,10 @@
             <trans-unit id="notification.team_respond">
                 <source>notification.team_respond</source>
                 <target>Our team will respond to you as soon as possible.</target>
+            </trans-unit>
+            <trans-unit id="notification.account_updated">
+                <source>notification.account_updated</source>
+                <target>Your account has been successfully updated.</target>
             </trans-unit>
             <trans-unit id="exception.no_reset_token">
                 <source>exception.no_reset_token</source>

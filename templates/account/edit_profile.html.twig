@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.account_edit'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			{% include "account/_nav.html.twig" %}
+			<div class="col-12 col-lg-8">
+				<div class="border p-3 mb-3">
+					{% for message in app.flashes('success') %}
+						<p class="alert alert-success">{{ message }}</p>
+					{% endfor %} 
+					<h1 class="heading">{{ 'headline.account_edit'|trans }}</h1>
+					<p class="paragraph">{{ 'help.complet_personal_data'|trans }}</p>
+					{{ form_start(form) }}
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.firstname) }}</div>
+							<div class="col-sm-9">{{ form_row(form.firstname, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.email) }}</div>
+							<div class="col-sm-9">{{ form_row(form.email, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.gender) }}</div>
+							<div class="col-sm-9">{{ form_row(form.gender, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.birthday) }}</div>
+							<div class="col-sm-9">{{ form_row(form.birthday, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.geolocalisation) }}</div>
+							<div class="col-sm-9">{{ form_row(form.geolocalisation, {'label': false}) }}</div>
+						</div>
+						<button class="button button-action mb-3" type="submit">{{ 'action.save'|trans }}</button> 
+                    {{ form_end(form) }}
+				</div>
+			</section>
+		{% endblock %}
