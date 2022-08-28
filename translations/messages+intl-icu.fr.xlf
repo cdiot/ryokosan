@@ -38,6 +38,10 @@
                 <source>title.account_edit</source>
                 <target>Modifie ton profil</target>
             </trans-unit>
+            <trans-unit id="title.change_password">
+                <source>title.change_password</source>
+                <target>Change ton mot de passe</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -73,6 +77,10 @@
             <trans-unit id="headline.account_edit">
                 <source>headline.account_edit</source>
                 <target>Modifie ton profil</target>
+            </trans-unit>
+            <trans-unit id="headline.change_password">
+                <source>headline.change_password</source>
+                <target>Changer ton mot de passe</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -181,6 +189,10 @@
                 <source>action.save</source>
                 <target>Enregister</target>
             </trans-unit>
+            <trans-unit id="action.update">
+                <source>action.update</source>
+                <target>Modifier le mot de passe</target>
+            </trans-unit>
             <trans-unit id="action.send_reset_password">
                 <source>action.send_reset_password</source>
                 <target>Envoyer un lien de réinitialisation</target>
@@ -205,6 +217,10 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="label.current_password">
+                <source>label.current_password</source>
+                <target>Mot de passe actuel</target>
             </trans-unit>
             <trans-unit id="label.new_password">
                 <source>label.new_password</source>
@@ -330,6 +346,10 @@
                 <source>help.complet_personal_data</source>
                 <target>Compléte tes informations personnelles.</target>
             </trans-unit>
+            <trans-unit id="help.change_password">
+                <source>help.change_password</source>
+                <target>Créer un nouveau mot de passe fort et simple à retenir.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Un email de confirmation ta été envoyé.</target>
@@ -345,6 +365,18 @@
             <trans-unit id="notification.account_updated">
                 <source>notification.account_updated</source>
                 <target>Ton compte a été modifié avec succès.</target>
+            </trans-unit>
+            <trans-unit id="notification.password_updated">
+                <source>notification.password_updated</source>
+                <target>Ton mot de passe a été modifié avec succès.</target>
+            </trans-unit>
+            <trans-unit id="notification.password_incorrect">
+                <source>notification.password_incorrect</source>
+                <target>Ton mot de passe actuel est incorrect.</target>
+            </trans-unit>
+            <trans-unit id="invalid_message.repeat_password">
+                <source>invalid_message.repeat_password</source>
+                <target>Le mot de passe et la confirmation doivent être identiques.</target>
             </trans-unit>
             <trans-unit id="exception.no_reset_token">
                 <source>exception.no_reset_token</source>
