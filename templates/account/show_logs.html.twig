@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.account_logs'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			{% include "account/_nav.html.twig" %}
+			<div class="col-12 col-lg-8">
+				<div class="border p-3 mb-3">
+					<h1 class="heading">{{ 'headline.account_logs'|trans }}</h1>
+					<p class="paragraph">{{ 'help.account_logs'|trans }}</p>
+					{% for log in logs %}
+                        <p class="paragraph border-bottom py-2">{{ 'date.account_logs'|trans({'login_date': log.date })|raw }}</p>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

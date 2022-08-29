@@ -42,6 +42,10 @@
                 <source>title.change_password</source>
                 <target>Change your password</target>
             </trans-unit>
+            <trans-unit id="title.account_logs">
+                <source>title.account_logs</source>
+                <target>Login activity</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -81,6 +85,10 @@
             <trans-unit id="headline.change_password">
                 <source>headline.change_password</source>
                 <target>Change your password</target>
+            </trans-unit>
+            <trans-unit id="headline.account_logs">
+                <source>headline.account_logs</source>
+                <target>Login activity</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -350,6 +358,10 @@
                 <source>help.change_password</source>
                 <target>Create a new password that is strong and easy to remember.</target>
             </trans-unit>
+            <trans-unit id="help.account_logs">
+                <source>help.account_logs</source>
+                <target>Review and manage your login activity.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>A confirmation email has been sent to you.</target>
@@ -414,6 +426,10 @@
             <trans-unit id="gender.other">
                 <source>gender.other</source>
                 <target>Other</target>
+            </trans-unit>
+            <trans-unit id="date.account_logs">
+                <source>date.account_logs</source>
+                <target><![CDATA[Was it you? Connection on {login_date, date} at {login_date, time, short} GMT.]]></target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>

@@ -42,6 +42,10 @@
                 <source>title.change_password</source>
                 <target>Change ton mot de passe</target>
             </trans-unit>
+            <trans-unit id="title.account_logs">
+                <source>title.account_logs</source>
+                <target>Activité de connexion</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -81,6 +85,10 @@
             <trans-unit id="headline.change_password">
                 <source>headline.change_password</source>
                 <target>Changer ton mot de passe</target>
+            </trans-unit>
+            <trans-unit id="headline.account_logs">
+                <source>headline.account_logs</source>
+                <target>Activité de connexion</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -350,6 +358,10 @@
                 <source>help.change_password</source>
                 <target>Créer un nouveau mot de passe fort et simple à retenir.</target>
             </trans-unit>
+            <trans-unit id="help.account_logs">
+                <source>help.account_logs</source>
+                <target>Examine et gére ton activité de connexion.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Un email de confirmation ta été envoyé.</target>
@@ -414,6 +426,10 @@
             <trans-unit id="gender.other">
                 <source>gender.other</source>
                 <target>Autre</target>
+            </trans-unit>
+            <trans-unit id="date.account_logs">
+                <source>date.account_logs</source>
+                <target><![CDATA[Était-ce toi ? Connexion le {login_date, date} à {login_date, time, short} GMT.]]></target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>

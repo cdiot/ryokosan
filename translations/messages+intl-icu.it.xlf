@@ -42,6 +42,10 @@
                 <source>title.change_password</source>
                 <target>Cambia la tua password</target>
             </trans-unit>
+            <trans-unit id="title.account_logs">
+                <source>title.account_logs</source>
+                <target>Attività di accesso</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -78,13 +82,13 @@
                 <source>headline.account_edit</source>
                 <target>Modifica il tuo profilo</target>
             </trans-unit>
-            <trans-unit id="headline.account_edit">
-                <source>headline.account_edit</source>
-                <target>Modifica il tuo profilo</target>
-            </trans-unit>
             <trans-unit id="headline.change_password">
                 <source>headline.change_password</source>
                 <target>Cambia la tua password</target>
+            </trans-unit>
+            <trans-unit id="headline.account_logs">
+                <source>headline.account_logs</source>
+                <target>Attività di accesso</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -354,6 +358,10 @@
                 <source>help.change_password</source>
                 <target>Crea una nuova password forte e facile da ricordare.</target>
             </trans-unit>
+            <trans-unit id="help.account_logs">
+                <source>help.account_logs</source>
+                <target>Rivedi e gestisci la tua attività di accesso.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Una email di conferma è stata inviata a voi.</target>
@@ -418,6 +426,10 @@
             <trans-unit id="gender.no_binary">
                 <source>gender.no_binary</source>
                 <target>Altro</target>
+            </trans-unit>
+            <trans-unit id="date.account_logs">
+                <source>date.account_logs</source>
+                <target><![CDATA[Eri tu ? Collegamento il {login_date, date} alle {login_date, time, short} GMT.]]></target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>

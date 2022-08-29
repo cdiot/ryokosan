@@ -42,6 +42,10 @@
                 <source>title.change_password</source>
                 <target>Ändern Sie Ihr Passwort</target>
             </trans-unit>
+            <trans-unit id="title.account_logs">
+                <source>title.account_logs</source>
+                <target>Login Aktivität</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -81,6 +85,10 @@
             <trans-unit id="headline.change_password">
                 <source>headline.change_password</source>
                 <target>Ändern Sie Ihr Passwort</target>
+            </trans-unit>
+            <trans-unit id="headline.account_logs">
+                <source>headline.account_logs</source>
+                <target>Login-Aktivität</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -350,6 +358,10 @@
                 <source>help.change_password</source>
                 <target>Erstellen Sie ein neues Passwort, das stark und leicht zu merken ist.</target>
             </trans-unit>
+            <trans-unit id="help.account_logs">
+                <source>help.account_logs</source>
+                <target>Überprüfen und verwalten Sie Ihre Anmeldeaktivitäten.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Eine Bestätigungs-E-Mail wurde an Sie gesendet.</target>
@@ -414,6 +426,10 @@
             <trans-unit id="gender.other">
                 <source>gender.other</source>
                 <target>Sonstiges</target>
+            </trans-unit>
+            <trans-unit id="date.account_logs">
+                <source>date.account_logs</source>
+                <target><![CDATA[Warst du es ? Anschluss am {login_date, date} um {login_date, time, short} Uhr GMT.]]></target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>
