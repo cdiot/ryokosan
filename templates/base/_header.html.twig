@@ -60,8 +60,8 @@
                                 href="{{ path('app_logout') }}">{{ 'menu.logout'|trans }}</a>
                             </li>
                             <li class="dropdown">
-                                <a class="button button-outline-action menu-link me-2" 
-                                href="#">{{ 'menu.profile'|trans }}</a>
+                                <a class="button button-action menu-link me-2" 
+                                href="{{ path('app_account_edit') }}">{{ 'menu.profile'|trans }}</a>
                             </li>
                         {% else %}
                             <li class="dropdown">

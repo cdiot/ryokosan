@@ -34,6 +34,18 @@
                 <source>title.template_contact</source>
                 <target>Nouveau message</target>
             </trans-unit>
+            <trans-unit id="title.account_edit">
+                <source>title.account_edit</source>
+                <target>Modifie ton profil</target>
+            </trans-unit>
+            <trans-unit id="title.change_password">
+                <source>title.change_password</source>
+                <target>Change ton mot de passe</target>
+            </trans-unit>
+            <trans-unit id="title.account_logs">
+                <source>title.account_logs</source>
+                <target>Activité de connexion</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -65,6 +77,18 @@
             <trans-unit id="headline.contact_us">
                 <source>headline.contact_us</source>
                 <target>Contacte nous sur Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="headline.account_edit">
+                <source>headline.account_edit</source>
+                <target>Modifie ton profil</target>
+            </trans-unit>
+            <trans-unit id="headline.change_password">
+                <source>headline.change_password</source>
+                <target>Changer ton mot de passe</target>
+            </trans-unit>
+            <trans-unit id="headline.account_logs">
+                <source>headline.account_logs</source>
+                <target>Activité de connexion</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -173,6 +197,10 @@
                 <source>action.save</source>
                 <target>Enregister</target>
             </trans-unit>
+            <trans-unit id="action.update">
+                <source>action.update</source>
+                <target>Modifier le mot de passe</target>
+            </trans-unit>
             <trans-unit id="action.send_reset_password">
                 <source>action.send_reset_password</source>
                 <target>Envoyer un lien de réinitialisation</target>
@@ -197,6 +225,10 @@
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="label.current_password">
+                <source>label.current_password</source>
+                <target>Mot de passe actuel</target>
             </trans-unit>
             <trans-unit id="label.new_password">
                 <source>label.new_password</source>
@@ -302,9 +334,33 @@
                 <source>menu.terms</source>
                 <target>Conditions</target>
             </trans-unit>
+            <trans-unit id="menu.profil_edit">
+                <source>menu.profil_edit</source>
+                <target>Modifier le profil</target>
+            </trans-unit>
+            <trans-unit id="menu.change_password">
+                <source>menu.change_password</source>
+                <target>Changer de mot de passe</target>
+            </trans-unit>
+            <trans-unit id="menu.user_log">
+                <source>menu.user_log</source>
+                <target>Activité de connexion</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Entre ton adresse e-mail et nous t'enverrons un lien pour réinitialiser ton mot de passe.</target>
+            </trans-unit>
+            <trans-unit id="help.complet_personal_data">
+                <source>help.complet_personal_data</source>
+                <target>Compléte tes informations personnelles.</target>
+            </trans-unit>
+            <trans-unit id="help.change_password">
+                <source>help.change_password</source>
+                <target>Créer un nouveau mot de passe fort et simple à retenir.</target>
+            </trans-unit>
+            <trans-unit id="help.account_logs">
+                <source>help.account_logs</source>
+                <target>Examine et gére ton activité de connexion.</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
@@ -317,6 +373,22 @@
             <trans-unit id="notification.team_respond">
                 <source>notification.team_respond</source>
                 <target>Notre équipe vous répondra dans les plus brefs délais.</target>
+            </trans-unit>
+            <trans-unit id="notification.account_updated">
+                <source>notification.account_updated</source>
+                <target>Ton compte a été modifié avec succès.</target>
+            </trans-unit>
+            <trans-unit id="notification.password_updated">
+                <source>notification.password_updated</source>
+                <target>Ton mot de passe a été modifié avec succès.</target>
+            </trans-unit>
+            <trans-unit id="notification.password_incorrect">
+                <source>notification.password_incorrect</source>
+                <target>Ton mot de passe actuel est incorrect.</target>
+            </trans-unit>
+            <trans-unit id="invalid_message.repeat_password">
+                <source>invalid_message.repeat_password</source>
+                <target>Le mot de passe et la confirmation doivent être identiques.</target>
             </trans-unit>
             <trans-unit id="exception.no_reset_token">
                 <source>exception.no_reset_token</source>
@@ -354,6 +426,10 @@
             <trans-unit id="gender.other">
                 <source>gender.other</source>
                 <target>Autre</target>
+            </trans-unit>
+            <trans-unit id="date.account_logs">
+                <source>date.account_logs</source>
+                <target><![CDATA[Était-ce toi ? Connexion le {login_date, date} à {login_date, time, short} GMT.]]></target>
             </trans-unit>
             <trans-unit id="or">
                 <source>or</source>
