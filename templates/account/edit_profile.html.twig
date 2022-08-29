@@ -9,6 +9,9 @@
 			{% include "account/_nav.html.twig" %}
 			<div class="col-12 col-lg-8">
 				<div class="border p-3 mb-3">
+                    {% for flash_error in app.flashes('verify_email_error') %}
+                        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+                    {% endfor %}
 					{% for message in app.flashes('success') %}
 						<p class="alert alert-success">{{ message }}</p>
 					{% endfor %} 
