@@ -46,6 +46,18 @@
                 <source>title.account_logs</source>
                 <target>Actividad de inicio de sesión</target>
             </trans-unit>
+            <trans-unit id="title.activity_index">
+                <source>title.activity_index</source>
+                <target>Feed de actividad de la comunidad</target>
+            </trans-unit>
+            <trans-unit id="title.new_activity">
+                <source>title.new_activity</source>
+                <target>Crear nueva actividad</target>
+            </trans-unit>
+            <trans-unit id="title.edit_activity">
+                <source>title.edit_activity</source>
+                <target>Editar actividad</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan es una red social para encontrar compañeros de viaje cerca de ti o de tus destinos. Comparte tus vacaciones, conoce gente y vive aventuras enriquecedoras.</target>
@@ -90,9 +102,25 @@
                 <source>headline.account_logs</source>
                 <target>Actividad de inicio de sesión</target>
             </trans-unit>
+            <trans-unit id="headline.activity_index">
+                <source>headline.activity_index</source>
+                <target>Feed de actividad de la comunidad</target>
+            </trans-unit>
+            <trans-unit id="headline.new_activity">
+                <source>headline.new_activity</source>
+                <target>Crear nueva actividad</target>
+            </trans-unit>
+            <trans-unit id="headline.edit_activity">
+                <source>headline.edit_activity</source>
+                <target>Edita tu Actividad</target>
+            </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: ¿Qué es?</target>
+            </trans-unit>
+            <trans-unit id="heading.activity_date">
+                <source>heading.activity_date</source>
+                <target>La fecha deseada</target>
             </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
@@ -126,9 +154,21 @@
                 <source>lead.what_is_it_top</source>
                 <target>En cuanto a las plataformas para conocer a otros viajeros, la mayoría de las veces tienes que elegir entre plataformas híbridas cuyo propósito real es venderte algo como viajes organizados u otras que están disponibles en un solo idioma, disponibles solo para mujeres, su red social parece inactivo durante varios años, algunos son foros no optimizados para conocer viajeros. Estás aquí porque no importa si estás planeando una actividad en tu país o al otro lado del mundo; quieres conocer a otros compañeros de viaje. Y porque no siempre es fácil. Estamos aquí para ayudarlo a alcanzar su meta sin desviarse.</target>
             </trans-unit>
-            <trans-unit id="lead.what_is_it_bpttom">
+            <trans-unit id="lead.what_is_it_bottom">
                 <source>lead.what_is_it_bottom</source>
                 <target>Eres estudiante, estás buscando una experiencia gratificante para agregar a tu CV y ​​tienes habilidades mínimas en Javascript, css o idiomas. Contáctanos a través de nuestras redes sociales o a través del formulario de contacto tenemos una misión para ti.</target>
+            </trans-unit>
+            <trans-unit id="lead.activity_index">
+                <source>lead.activity_index</source>
+                <target>Contacta con tus miembros favoritos, según tus preferencias y comenta tus proyectos.</target>
+            </trans-unit>
+            <trans-unit id="lead.new_activity">
+                <source>lead.new_activity</source>
+                <target>Añade tu actividad y aumenta tus posibilidades de encontrar un compañero de viaje que comparta el mismo proyecto que tú.</target>
+            </trans-unit>
+            <trans-unit id="lead.edit_activity">
+                <source>lead.edit_activity</source>
+                <target>Actualice su actividad y aumente sus posibilidades de encontrar un compañero de viaje que comparta el mismo proyecto que usted.</target>
             </trans-unit>
             <trans-unit id="content.join_the_community">
                 <source>content.join_the_community</source>
@@ -201,6 +241,10 @@
                 <source>action.update</source>
                 <target>Cambiar la contraseña</target>
             </trans-unit>
+            <trans-unit id="action.publish">
+                <source>action.publish</source>
+                <target>Publicado</target>
+            </trans-unit>
             <trans-unit id="action.send_reset_password">
                 <source>action.send_reset_password</source>
                 <target>Enviar enlace de reinicio</target>
@@ -217,6 +261,10 @@
             <trans-unit id="action.send">
                 <source>action.send</source>
                 <target>Enviar</target>
+            </trans-unit>
+            <trans-unit id="action.send_him_message">
+                <source>action.send_him_message</source>
+                <target>Envíale un mensaje</target>
             </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
@@ -270,9 +318,25 @@
                 <source>label.message</source>
                 <target>Mensaje</target>
             </trans-unit>
+            <trans-unit id="label.description">
+                <source>label.description</source>
+                <target>Descripción</target>
+            </trans-unit>
+            <trans-unit id="label.start_date">
+                <source>label.start_date</source>
+                <target>Desde el</target>
+            </trans-unit>
+            <trans-unit id="label.end_date">
+                <source>label.end_date</source>
+                <target>Hasta que</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Seleccione</target>
+            </trans-unit>
+            <trans-unit id="placeholder.description">
+                <source>placeholder.description</source>
+                <target>Escriba tantos detalles como sea posible sobre su viaje. Cuanta más información proporcione, más fácil será para otros compañeros de viaje comprender su proyecto.</target>
             </trans-unit>
             <trans-unit id="alt.jumbotron">
                 <source>alt.jumbotron</source>
@@ -362,6 +426,10 @@
                 <source>help.account_logs</source>
                 <target>Revise y administre su actividad de inicio de sesión.</target>
             </trans-unit>
+            <trans-unit id="help.activity_date">
+                <source>help.activity_date</source>
+                <target>Si aún no tienes idea de la fecha, no te preocupes, pon una fecha aproximada u omite este paso.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Se le ha enviado un correo electrónico de confirmación.</target>
@@ -385,6 +453,10 @@
             <trans-unit id="notification.password_incorrect">
                 <source>notification.password_incorrect</source>
                 <target>Tu contraseña actual es incorrecta.</target>
+            </trans-unit>
+            <trans-unit id="notification.empty_activity">
+                <source>notification.empty_activity</source>
+                <target>No se encontró actividad.</target>
             </trans-unit>
             <trans-unit id="invalid_message.repeat_password">
                 <source>invalid_message.repeat_password</source>
@@ -426,6 +498,26 @@
             <trans-unit id="gender.other">
                 <source>gender.other</source>
                 <target>Otro</target>
+            </trans-unit>
+            <trans-unit id="activity.type">
+                <source>activity.type</source>
+                <target>Tipo de actividad</target>
+            </trans-unit>
+            <trans-unit id="activity.desired_date">
+                <source>activity.desired_date</source>
+                <target>La fecha deseada</target>
+            </trans-unit>
+            <trans-unit id="activity.destinations">
+                <source>activity.destinations</source>
+                <target>Países de destino</target>
+            </trans-unit>
+            <trans-unit id="activity.description">
+                <source>activity.description</source>
+                <target>Mi mensaje</target>
+            </trans-unit>
+            <trans-unit id="activity.confirm_delete">
+                <source>activity.confirm_delete</source>
+                <target>¿Estás seguro de que quieres eliminar este artículo ?</target>
             </trans-unit>
             <trans-unit id="date.account_logs">
                 <source>date.account_logs</source>

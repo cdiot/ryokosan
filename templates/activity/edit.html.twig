@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.edit_activity'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+                {% for message in app.flashes('notice') %}
+                    <p class="alert alert-warning">{{ message }}</p>
+                {% endfor %}
+                <h1 class="heading mt-3 mb-4 text-center">
+                    {{ 'headline.edit_activity'|trans }}
+                </h1>
+                <p class="lead">{{ 'lead.edit_activity'|trans }}</p>
+                <!-- Edit Activity form START -->
+                {{ include('activity/_form.html.twig') }}
+                <!-- Edit Activity form End -->
+                {{ include('activity/_delete_form.html.twig') }}
+            </div>
+        </div>
+    </section>
+{% endblock %}

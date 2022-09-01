@@ -30,8 +30,8 @@
                 <source>constraints.blank_birthday</source>
                 <target>Per favore inserisci LA TUA data di nascita.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_nationality">
-                <source>constraints.blank_nationality</source>
+            <trans-unit id="constraints.blank_geolocalisation">
+                <source>constraints.blank_geolocalisation</source>
                 <target>Per favore inserisci la tua nazionalità.</target>
             </trans-unit>
             <trans-unit id="constraints.blank_subject">
@@ -41,6 +41,10 @@
             <trans-unit id="constraints.blank_message">
                 <source>constraints.blank_message</source>
                 <target>Inserisci il tuo messaggio.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_description">
+                <source>constraints.blank_description</source>
+                <target>Per favore inserisci la tua descrizione.</target>
             </trans-unit>
             <trans-unit id="constraints.lessthanorequal_birthday">
                 <source>constraints.lessthanorequal_birthday</source>

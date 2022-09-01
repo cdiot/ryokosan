@@ -30,17 +30,21 @@
                 <source>constraints.blank_birthday</source>
                 <target>Por favor introduzca su cumpleaños.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_nationality">
-                <source>constraints.blank_nationality</source>
+            <trans-unit id="constraints.blank_geolocalisation">
+                <source>constraints.blank_geolocalisation</source>
                 <target>Por favor introduzca su nacionalidad.</target>
             </trans-unit>
-             <trans-unit id="constraints.blank_subject">
+            <trans-unit id="constraints.blank_subject">
                 <source>constraints.blank_subject</source>
                 <target>Por favor ingrese su asunto.</target>
             </trans-unit>
             <trans-unit id="constraints.blank_message">
                 <source>constraints.blank_message</source>
                 <target>Por favor ingrese su mensaje.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_description">
+                <source>constraints.blank_description</source>
+                <target>Por favor ingrese su descripción.</target>
             </trans-unit>
             <trans-unit id="constraints.lessthanorequal_birthday">
                 <source>constraints.lessthanorequal_birthday</source>

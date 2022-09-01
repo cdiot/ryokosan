@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.new_activity'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+                {% for message in app.flashes('notice') %}
+                    <p class="alert alert-warning">{{ message }}</p>
+                {% endfor %}
+                <h1 class="heading mt-3 mb-4 text-center">
+                    {{ 'headline.new_activity'|trans }}
+                </h1>
+                <p class="lead">{{ 'lead.new_activity'|trans }}</p>
+                <!-- New Activity form START -->
+                {{ include('activity/_form.html.twig') }}
+                <!-- New Activity form End -->
+            </div>
+        </div>
+    </section>
+{% endblock %}
