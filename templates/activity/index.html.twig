@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.activity_index'|trans }} {{ parent() }} 
+{% endblock %}
+
+{% block body %}
+    <!-- Activity section START -->
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="heading">{{ 'headline.activity_index'|trans }}</h1>
+                <p class="lead">{{ 'lead.activity_index'|trans }}</p>
+            </div>
+            <aside class="col-12 col-lg-4 mb-4 bg-light">
+            </aside>
+
+            <section class="col-12 col-lg-8 mb-4">
+                {% for activity in activities %}
+                    <!-- Activity START -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-white border-0 pb-0">
+                            <div class="d-flex align-items-center">   
+                                <!-- Avatar -->
+                                <div class="avatar me-2">
+                                    <img class="avatar-img rounded-circle" src="{{ asset('build/images/default_profile.png') }}" alt="" width="96" height="96">
+                                </div>
+                                <!-- Title -->
+                                <div>
+                                    <h6 class="card-title fw-bold mb-0">
+                                        {{ activity.user.firstname }} ({{ age(activity.user.birthday|date) }})
+                                    </h6>
+                                    <span class="card-subtitle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    </svg> {{ country(activity.user.geolocalisation) }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {% if activity.startDate|length or activity.endDate|length  > 0 %}
+                                <p class="mb-0"> <strong>{{ 'activity.desired_date'|trans }} </strong><br> {{ activity.startDate ? activity.startDate|date('Y-m-d') : '' }} - {{ activity.endDate ? activity.endDate|date('Y-m-d') : '' }}</p>
+                            {% endif %}
+                            <p class="mb-3"> <strong>{{ 'activity.description'|trans }} </strong><br> {{ activity.description }}</p>
+                            <a class="button button-action btn-sm" href="#">{{ 'action.send_him_message'|trans }}</a>
+                        </div>
+                    </div>
+                    <!-- Activity END -->
+                {% else %}
+                    <p>{{ 'notification.empty_activity'|trans }}</p>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+    <!-- Activity section END -->
+{% endblock %}

@@ -30,9 +30,17 @@
                 <source>constraints.blank_geolocalisation</source>
                 <target>Enter your geolocalisation.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_sponsorship">
-                <source>constraints.blank_sponsorship</source>
-                <target>Enter your sponsorship.</target>
+            <trans-unit id="constraints.blank_subject">
+                <source>constraints.blank_subject</source>
+                <target>Enter your subject.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_message">
+                <source>constraints.blank_message</source>
+                <target>Enter your message.</target>
+            </trans-unit>
+            <trans-unit id="constraints.blank_description">
+                <source>constraints.blank_description</source>
+                <target>Enter your description.</target>
             </trans-unit>
             <trans-unit id="constraints.lessthanorequal_birthday">
                 <source>constraints.lessthanorequal_birthday</source>

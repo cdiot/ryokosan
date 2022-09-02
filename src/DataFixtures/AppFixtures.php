@@ -2,6 +2,8 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Activity;
+use App\Entity\Destination;
 use App\Entity\Logs;
 use App\Entity\User;
 use DateTimeImmutable;
@@ -12,6 +14,7 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 class AppFixtures extends Fixture
 {
     private array $users = [];
+    private array $activities = [];
 
     public function __construct(private UserPasswordHasherInterface $passwordHasher)
     {
@@ -21,6 +24,7 @@ class AppFixtures extends Fixture
     {
         $this->loadUsers($manager);
         $this->loadLogs($manager);
+        $this->loadActivities($manager);
     }
 
     private function loadUsers(ObjectManager $manager): void
@@ -55,6 +59,21 @@ class AppFixtures extends Fixture
         $manager->flush();
     }
 
+    private function loadActivities(ObjectManager $manager): void
+    {
+        foreach ($this->getActivityData() as [$user, $createdAt, $startDate, $endDate, $description]) {
+            $activity = new Activity();
+            $activity->setCreatedAt($createdAt)
+                ->setStartDate($startDate)
+                ->setEndDate($endDate)
+                ->setDescription($description)
+                ->setUser($this->users[$user]);
+            $manager->persist($activity);
+            $this->activities[] = $activity;
+        }
+        $manager->flush();
+    }
+
     private function getUserData(): array
     {
         return [
@@ -78,6 +97,17 @@ class AppFixtures extends Fixture
             [new DateTimeImmutable('2022-08-21 13:27:52'), '192.155.87.0', true, 3],
             [new DateTimeImmutable('2022-08-31 15:23:48'), '192.168.1.2', true, 1],
             [new DateTimeImmutable('2022-08-03 22:44:18'), '212.85.150.133', true, 0],
+        ];
+    }
+
+    private function getActivityData(): array
+    {
+        return [
+            //[$user, $createdAt, $startDate, $endDate, $description]
+            [0, new DateTimeImmutable('2022-12-18'), new DateTimeImmutable('2023-01-17'), new DateTimeImmutable('2023-03-26'), 'Excited to travel around Asia. I have no plan, just enjoy.'],
+            [1, new DateTimeImmutable('2022-08-15'), new DateTimeImmutable('2022-10-18'), new DateTimeImmutable('2022-12-24'), 'I am plan to visit the West Coast of the United States. This will be my first trip.'],
+            [2, new DateTimeImmutable('2023-09-21'), new DateTimeImmutable('2023-11-22'), new DateTimeImmutable('2024-11-22'), 'I go to Canada with working holiday visa around october 2023 :)'],
+            [3, new DateTimeImmutable('2023-01-05'), new DateTimeImmutable('2023-03-01'), new DateTimeImmutable('2023-07-30'), 'J\'organise la première saison de ryokosan Vlog, la destination n\'est pas encore choisi.'],
         ];
     }
 }
