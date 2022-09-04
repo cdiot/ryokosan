@@ -58,6 +58,10 @@
                 <source>title.edit_activity</source>
                 <target>Modifier ton activité</target>
             </trans-unit>
+            <trans-unit id="title.dashboard">
+                <source>title.dashboard</source>
+                <target>Tableau de bord</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -114,6 +118,10 @@
                 <source>headline.edit_activity</source>
                 <target>Modifier ton activité</target>
             </trans-unit>
+            <trans-unit id="headline.dashboard">
+                <source>headline.dashboard</source>
+                <target>Tableau de bord</target>
+            </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: qu'est-ce que c'est ?</target>
@@ -121,6 +129,10 @@
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>La date souhaitée</target>
+            </trans-unit>
+            <trans-unit id="heading.sponsor_list">
+                <source>heading.sponsor_list</source>
+                <target>Liste des sponsors</target>
             </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
@@ -274,6 +286,14 @@
                 <source>label.password</source>
                 <target>Mot de passe</target>
             </trans-unit>
+            <trans-unit id="label.is_verified">
+                <source>label.is_verified</source>
+                <target>Vérifié</target>
+            </trans-unit>
+            <trans-unit id="label.roles">
+                <source>label.roles</source>
+                <target>Rôle</target>
+            </trans-unit>
             <trans-unit id="label.current_password">
                 <source>label.current_password</source>
                 <target>Mot de passe actuel</target>
@@ -410,6 +430,14 @@
                 <source>menu.user_log</source>
                 <target>Activité de connexion</target>
             </trans-unit>
+            <trans-unit id="menu.dashboard">
+                <source>menu.dashboard</source>
+                <target>Tableau de bord</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>menu.users</source>
+                <target>Utilisateurs</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Entre ton adresse e-mail et nous t'enverrons un lien pour réinitialiser ton mot de passe.</target>
@@ -482,6 +510,14 @@
                 <source>reset_token.content</source>
                 <target><![CDATA[S'il existe un compte correspondant à ton email, un email vient d'être envoyé 
                 contenant un lien te permettant de réinitialiser ton mot de passe. <br> Ce lien expirera dans]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_users">
+                <source>dashboard.count_users</source>
+                <target><![CDATA[Déjà {count} <strong class="text-gray-700">covoyageurs</strong> inscrits]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_activities">
+                <source>dashboard.count_activities</source>
+                <target><![CDATA[Environ {count} <strong class="text-gray-700">activités</strong> en cours]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>

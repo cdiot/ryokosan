@@ -1,0 +1,30 @@
+{# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block page_title %} {{ 'title.dashboard'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block main %}
+	<section class="container">
+		<div class="row">
+			<div class="col-6 alert-info">
+				<span class="display-5">{{ 'dashboard.count_activities'|trans({'count': countAllActivity['value']})|raw }}
+                </span>
+			</div>
+			<div class="col-6 alert-success">
+				<span class="display-5">{{ 'dashboard.count_users'|trans({'count': countAllUser['value']})|raw }}
+                </span>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-12">
+				<h2 class="heading">{{ 'heading.sponsor_list'|trans }}</h2>
+				<ul class="list-group">
+					{% for sponsorshipByUser in countAllSponsorshipByUser %}
+						<li class="list-group-item">{{ sponsorshipByUser.sponsorship }} {{ sponsorshipByUser['value'] }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endblock %}

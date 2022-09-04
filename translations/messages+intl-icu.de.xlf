@@ -58,6 +58,10 @@
                 <source>title.edit_activity</source>
                 <target>Bearbeiten Sie Ihre Aktivität</target>
             </trans-unit>
+            <trans-unit id="title.dashboard">
+                <source>title.dashboard</source>
+                <target>Armaturenbrett</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -114,6 +118,10 @@
                 <source>headline.edit_activity</source>
                 <target>Aktivität bearbeiten</target>
             </trans-unit>
+            <trans-unit id="headline.dashboard">
+                <source>headline.dashboard</source>
+                <target>Armaturenbrett</target>
+            </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: Was ist es ?</target>
@@ -121,6 +129,10 @@
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>The desired date</target>
+            </trans-unit>
+            <trans-unit id="heading.sponsor_list">
+                <source>heading.sponsor_list</source>
+                <target>Sponsorenliste</target>
             </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
@@ -274,6 +286,14 @@
                 <source>label.password</source>
                 <target>Passwort</target>
             </trans-unit>
+            <trans-unit id="label.is_verified">
+                <source>label.is_verified</source>
+                <target>Geprüft</target>
+            </trans-unit>
+            <trans-unit id="crud.roles">
+                <source>crud.roles</source>
+                <target>Rolle</target>
+            </trans-unit>
             <trans-unit id="label.current_password">
                 <source>label.current_password</source>
                 <target>Jetziges Passwort</target>
@@ -410,6 +430,14 @@
                 <source>menu.user_log</source>
                 <target>Login-Aktivität</target>
             </trans-unit>
+            <trans-unit id="menu.dashboard">
+                <source>menu.dashboard</source>
+                <target>Armaturenbrett</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>menu.users</source>
+                <target>Benutzer</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.</target>
@@ -482,6 +510,14 @@
                 <source>reset_token.content</source>
                 <target><![CDATA[Wenn es ein Konto gibt, das Ihrer E-Mail-Adresse entspricht, wurde gerade eine E-Mail gesendet
                 enthält einen Link, mit dem Sie Ihr Passwort zurücksetzen können. <br> Dieser Link läuft ab in]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_users">
+                <source>dashboard.count_users</source>
+                <target><![CDATA[Bereits {count} <strong class="text-gray-700">Mitreisende</strong> registriert]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_activities">
+                <source>dashboard.count_activities</source>
+                <target><![CDATA[Etwa {count} <strong class="text-gray-700">Aktivitäten</strong> in Bearbeitung]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>
