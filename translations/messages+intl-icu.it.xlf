@@ -58,6 +58,10 @@
                 <source>title.edit_activity</source>
                 <target>Modifica la tua attività</target>
             </trans-unit>
+            <trans-unit id="title.dashboard">
+                <source>title.dashboard</source>
+                <target>Pannello di controllo</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -113,6 +117,10 @@
             <trans-unit id="headline.edit_activity">
                 <source>headline.edit_activity</source>
                 <target>Modifica attività</target>
+            </trans-unit>
+            <trans-unit id="headline.dashboard">
+                <source>headline.dashboard</source>
+                <target>Pannello di controllo</target>
             </trans-unit>
             <trans-unit id="heading.what_is_it">
                 <source>heading.what_is_it</source>
@@ -410,6 +418,10 @@
                 <source>menu.user_log</source>
                 <target>Attività di accesso</target>
             </trans-unit>
+            <trans-unit id="menu.dashboard">
+                <source>menu.dashboard</source>
+                <target>Pannello di controllo</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la tua password.</target>
@@ -482,6 +494,14 @@
                 <source>reset_token.content</source>
                 <target><![CDATA[Se esiste un account corrispondente alla tua e-mail, allora è stata appena inviata un'e-mail
                 contiene un collegamento che puoi utilizzare per reimpostare la password. <br> Questo link scadrà tra]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_users">
+                <source>dashboard.count_users</source>
+                <target><![CDATA[Già {count} <strong class="text-gray-700">co-viaggiatori</strong> registrati]]></target>
+            </trans-unit>
+            <trans-unit id="dashboard.count_activities">
+                <source>dashboard.count_activities</source>
+                <target><![CDATA[Informazioni su {count} <strong class="text-gray-700">attività</strong> in corso]]></target>
             </trans-unit>
             <trans-unit id="gender.empty">
                 <source>gender.empty</source>
