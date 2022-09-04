@@ -130,6 +130,10 @@
                 <source>heading.activity_date</source>
                 <target>The desired date</target>
             </trans-unit>
+            <trans-unit id="heading.sponsor_list">
+                <source>heading.sponsor_list</source>
+                <target>Sponsorenliste</target>
+            </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
                 <target>Trete der Community bei</target>

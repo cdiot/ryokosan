@@ -31,6 +31,7 @@ class DashboardController extends AbstractDashboardController
         return $this->render('bundles/EasyAdminBundle/welcome.html.twig', [
             'countAllUser' => $this->userRepository->countAllUser(),
             'countAllActivity' => $this->activityRepository->countAllActivity(),
+            'countAllSponsorshipByUser' => $this->userRepository->countAllSponsorshipByUser(),
         ]);
 
         // Option 1. You can make your dashboard redirect to some common page of your backend

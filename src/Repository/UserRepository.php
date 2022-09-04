@@ -67,6 +67,18 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
             ->getOneOrNullResult();
     }
 
+    /**
+     * Used to count all sponsorship by user.
+     */
+    public function countAllSponsorshipByUser()
+    {
+        return $this->createQueryBuilder('u')
+            ->select('u.sponsorship, COUNT(u.sponsorship) as value')
+            ->addGroupBy('u.sponsorship')
+            ->getQuery()
+            ->getResult();
+    }
+
     //    /**
     //     * @return User[] Returns an array of User objects
     //     */

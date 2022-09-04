@@ -16,5 +16,15 @@
                 </span>
 			</div>
 		</div>
+		<div class="row mt-3">
+			<div class="col-12">
+				<h2 class="heading">{{ 'heading.sponsor_list'|trans }}</h2>
+				<ul class="list-group">
+					{% for sponsorshipByUser in countAllSponsorshipByUser %}
+						<li class="list-group-item">{{ sponsorshipByUser.sponsorship }} {{ sponsorshipByUser['value'] }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 	</section>
 {% endblock %}
