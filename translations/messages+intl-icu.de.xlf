@@ -282,6 +282,14 @@
                 <source>label.password</source>
                 <target>Passwort</target>
             </trans-unit>
+            <trans-unit id="label.is_verified">
+                <source>label.is_verified</source>
+                <target>Geprüft</target>
+            </trans-unit>
+            <trans-unit id="crud.roles">
+                <source>crud.roles</source>
+                <target>Rolle</target>
+            </trans-unit>
             <trans-unit id="label.current_password">
                 <source>label.current_password</source>
                 <target>Jetziges Passwort</target>
@@ -421,6 +429,10 @@
             <trans-unit id="menu.dashboard">
                 <source>menu.dashboard</source>
                 <target>Armaturenbrett</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>menu.users</source>
+                <target>Benutzer</target>
             </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>

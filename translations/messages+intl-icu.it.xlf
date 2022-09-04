@@ -422,6 +422,10 @@
                 <source>menu.dashboard</source>
                 <target>Pannello di controllo</target>
             </trans-unit>
+            <trans-unit id="menu.users">
+                <source>menu.users</source>
+                <target>Utenti</target>
+            </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
                 <target>Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la tua password.</target>

@@ -282,6 +282,14 @@
                 <source>label.password</source>
                 <target>Mot de passe</target>
             </trans-unit>
+            <trans-unit id="label.is_verified">
+                <source>label.is_verified</source>
+                <target>Vérifié</target>
+            </trans-unit>
+            <trans-unit id="label.roles">
+                <source>label.roles</source>
+                <target>Rôle</target>
+            </trans-unit>
             <trans-unit id="label.current_password">
                 <source>label.current_password</source>
                 <target>Mot de passe actuel</target>
@@ -421,6 +429,10 @@
             <trans-unit id="menu.dashboard">
                 <source>menu.dashboard</source>
                 <target>Tableau de bord</target>
+            </trans-unit>
+            <trans-unit id="menu.users">
+                <source>menu.users</source>
+                <target>Utilisateurs</target>
             </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
