@@ -26,7 +26,9 @@ class DashboardController extends AbstractDashboardController
     ], name: 'admin')]
     public function index(): Response
     {
-        return parent::index();
+        return $this->render('bundles/EasyAdminBundle/welcome.html.twig', [
+            'countAllUser' => $this->userRepository->countAllUser(),
+        ]);
 
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
