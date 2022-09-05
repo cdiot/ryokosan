@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.privacy'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+                <!-- General terms and conditions of use Start -->
+                {{ 'general_terms_and_conditions_of_use'|trans|raw }}
+                <!-- General terms and conditions of use End -->
+            </div>
+        </div>
+    </section>
+{% endblock %}
