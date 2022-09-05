@@ -62,6 +62,10 @@
                 <source>title.dashboard</source>
                 <target>Armaturenbrett</target>
             </trans-unit>
+            <trans-unit id="title.about">
+                <source>title.about</source>
+                <target>Um</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -133,6 +137,14 @@
             <trans-unit id="heading.sponsor_list">
                 <source>heading.sponsor_list</source>
                 <target>Sponsorenliste</target>
+            </trans-unit>
+            <trans-unit id="heading.about_creator">
+                <source>heading.about_creator</source>
+                <target>Wer ist der Schöpfer ?</target>
+            </trans-unit>
+            <trans-unit id="heading.about_us">
+                <source>heading.about_us</source>
+                <target>Wie unterscheiden wir uns von anderen ?</target>
             </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
@@ -206,6 +218,30 @@
                 <source>content.verified_profiles_and_guaranteed</source>
                 <target>Alle unsere Profile werden per E-Mail validiert und durch manuelle Moderation durch unsere Moderatoren verifiziert. Für verdächtige Profile gibt es ein Zertifizierungsverfahren. Sie können uns diese über das Kontaktformular melden.</target>
             </trans-unit>
+            <trans-unit id="content.about_creator_top">
+                <source>content.about_creator_top</source>
+                <target>Ich bin Chris, der Schöpfer von Ryokosan, und ich habe 2022 auf dieser Plattform angefangen, als ich nach dem Verlust eines geliebten Menschen vor einigen Jahren aus einer schwierigen Zeit herauskam. Ich wollte meine erste Reise machen, 
+                    um einen Neuanfang zu simulieren, aber mir wurde klar, dass es manchmal schwierig ist, Menschen mit der gleichen Verfügbarkeit wie Sie in Ihrer Nähe zu finden. Ich finde keine Plattform nach meinem Geschmack, ich
+                    hat Ryokosan geschaffen, eine menschliche Plattform, die das Mitreisen teilt und die Profile jedes Einzelnen sowie das Ziel vorstellt.</target>
+            </trans-unit>
+            <trans-unit id="content.about_creator_bottom">
+                <source>content.about_creator_bottom</source>
+                <target>Warum Ihnen diese Geschichte erzählen, denn hinter Ryokosan steht ein menschliches Team mit Werten und Erfahrungen.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_top">
+                <source>content.about_us_top</source>
+                <target>Ryokosan ist eine europäische Plattform, die es Ihnen ermöglicht, andere Menschen unabhängig von ihrer Nationalität mit den gleichen Wünschen wie Sie in Bezug auf Reisen und Aktivitäten zu treffen. Unser Konzept liegt auf halbem Weg zwischen einem sozialen Netzwerk
+                    und eine Dating-Site, die es tatsächlich ermöglicht, Profile nach Zielort, Geolokalisierung, Interesse, Alter, Geschlecht abzugleichen,
+                    Das ist immer noch effizienter als ein Forum, in dem Sie ein bisschen von allem und jedem posten. Ryokosan ist auch eine kostenlose Seite, ohne
+                    jedes Abonnement, bei dem jedes Profil verifiziert wird und wir Sie nicht beeinflussen werden, Ihnen organisierte Reisen zu verkaufen, Sie sind frei. Sie können stöbern
+                    leise ohne Werbung und Ihre Daten gehören Ihnen, Sie behalten sie! Das Team ist jung zwischen 19 und 26 Jahre alt, dynamisch und
+                    in den Netzwerken aktiv. Mitreisen ist eine Art des Reisens, die es seit Jahrtausenden gibt, wir werden nicht vorgeben, sie neu zu erfinden
+                    Rad, sondern wir hoffen, Sie direkt an Ihr Ziel zu bringen.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_bottom">
+                <source>content.about_us_bottom</source>
+                <target>Wenden Sie sich bei Fragen an das Ryokosan-Team: contact@ryokosan.com</target>
+            </trans-unit> 
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
                 <target><![CDATA[Das Ryokosan-Team bedankt sich für das entgegengebrachte Vertrauen.
@@ -562,6 +598,157 @@
             <trans-unit id="or">
                 <source>or</source>
                 <target>ODER</target>
+            </trans-unit>
+            <trans-unit id="privacy_policy">
+                <source>privacy_policy</source>
+                <target><![CDATA[
+                    <h1 class="heading mt-3 mb-4 text-center">Datenschutzerklärung</h1>
+                    <p>Die Ryokosan-Website ist Eigentum von Christopher Diot, der für die Verarbeitung Ihrer personenbezogenen Daten verantwortlich ist.</p>
+                    <p>Wir haben diese Datenschutzrichtlinie angenommen, die darlegt, wie wir mit den von ryokosan erfassten Informationen umgehen, und die auch die Gründe dafür angibt, warum wir bestimmte personenbezogene Daten über Sie erfassen müssen. Daher sollten Sie diese Datenschutzrichtlinie lesen, bevor Sie die Ryokosan-Website nutzen.</p>
+                    <p>Wir kümmern uns um Ihre personenbezogenen Daten und verpflichten uns, deren Vertraulichkeit und Sicherheit zu gewährleisten.</p>
+                    <h2 class="subheading">Die von uns erhobenen personenbezogenen Daten:</h2>
+                    <p>Wenn Sie das Ryokosan besuchen, erfassen wir automatisch bestimmte Informationen über Ihr Gerät, einschließlich Informationen über Ihren Webbrowser, Ihre IP-Adresse, Ihre Zeitzone und einige der auf Ihrem Gerät installierten Cookies. Während Sie auf der Website surfen, erfassen wir außerdem Informationen über die von Ihnen angezeigten Webseiten oder einzelnen Produkte, die Websites oder Suchbegriffe, die Sie auf die Website verwiesen haben, und darüber, wie Sie mit der Website interagieren. Seite? ˅. Wir bezeichnen diese automatisch gesammelten Informationen als „Geräteinformationen“. Darüber hinaus können wir die von Ihnen angegebenen personenbezogenen Daten (insbesondere Vorname, Geburtsdatum, E-Mail etc.) bei der Registrierung erheben, um den Vertrag durchführen zu können.</p>
+                    <h2 class="subheading">Warum verarbeiten wir Ihre Daten?</h2>
+                    <p>Unsere oberste Priorität ist die Sicherheit der Kundendaten und daher können wir nur minimale Benutzerdaten verarbeiten, sofern dies für die Aufrechterhaltung der Website unbedingt erforderlich ist. Die automatisch erhobenen Informationen dienen lediglich dazu, mögliche Missbrauchsfälle zu erkennen und statistische Informationen über die Nutzung der Website zu erstellen. Diese statistischen Informationen werden nicht anderweitig aggregiert, um einen bestimmten Benutzer des Systems zu identifizieren.</p>
+                    <p>Sie können die Website besuchen, ohne uns mitzuteilen, wer Sie sind, oder Informationen preiszugeben, anhand derer Sie jemand als bestimmte, identifizierbare Person identifizieren könnte. Wenn Sie jedoch bestimmte Funktionen der Website nutzen oder unseren Newsletter erhalten oder andere Informationen durch Ausfüllen eines Formulars übermitteln möchten, können Sie uns personenbezogene Daten wie Ihre E-Mail-Adresse, Ihren Vornamen, Ihr Wohnsitzland. Sie können sich dafür entscheiden, uns Ihre personenbezogenen Daten nicht zur Verfügung zu stellen, aber dann können Sie möglicherweise bestimmte Funktionen der Website nicht nutzen. Beispielsweise können Sie unseren Newsletter nicht erhalten oder uns direkt von der Website aus kontaktieren. Benutzer, die nicht wissen, welche Informationen erforderlich sind, werden gebeten, uns über contact@ryokosan.com zu kontaktieren.</p>
+                    <h2 class="subheading">Ihre Rechte:</h2>
+                    <p>Wenn Sie in Europa ansässig sind, haben Sie die folgenden Rechte in Bezug auf Ihre personenbezogenen Daten:</p>
+                    <ul>
+                    <li>Das Recht, informiert zu werden.</li>
+                    <li>Das Zugriffsrecht.</li>
+                    <li>Das Recht auf Berichtigung.</li>
+                    <li>Das Recht auf Löschung.</li>
+                    <li>Das Recht auf Einschränkung der Verarbeitung.</li>
+                    <li>Das Recht auf Datenübertragbarkeit.</li>
+                    <li>Das Widerspruchsrecht.</li>
+                    </ul>
+                    <p>Die Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung.</p>
+                    <p>Wenn Sie von diesem Recht Gebrauch machen möchten, kontaktieren Sie uns bitte über die untenstehenden Kontaktdaten.</p>
+                    <p>Wenn Sie in Europa ansässig sind, stellen wir außerdem fest, dass wir Ihre Daten verarbeiten, um Verträge zu erfüllen, die wir möglicherweise mit Ihnen haben (z. B. wenn Sie eine Bestellung über die Website aufgeben), oder um anderweitig unsere Rechte zu verfolgen oben aufgeführten Geschäftsinteressen. Bitte beachten Sie außerdem, dass Ihre Informationen außerhalb Europas übertragen werden können, einschließlich nach Kanada und in die Vereinigten Staaten.</p>
+                    <h2 class="subheading">Links zu anderen Websites :</h2>
+                    <p>Unsere Website kann Links zu anderen Websites enthalten, die nicht unser Eigentum sind oder von uns kontrolliert werden. Bitte beachten Sie, dass wir nicht für diese anderen Websites oder die Datenschutzpraktiken Dritter verantwortlich sind. Wir empfehlen Ihnen, sich bewusst zu sein, wenn Sie unsere Website verlassen, und die Datenschutzerklärungen jeder Website zu lesen, die möglicherweise personenbezogene Daten sammelt.
+                    <h2 class="subheading">Informationssicherheit:</h2>
+                    <p>Wir sichern die von Ihnen bereitgestellten Informationen auf Computerservern in einer kontrollierten, sicheren Umgebung, die vor unbefugtem Zugriff, Verwendung oder Offenlegung geschützt ist. Wir unterhalten angemessene administrative, technische und physische Sicherheitsvorkehrungen zum Schutz vor unbefugtem Zugriff, Verwendung, Änderung und Offenlegung von personenbezogenen Daten, die sich unter seiner Kontrolle und Verwahrung befinden. Es kann jedoch keine Datenübertragung über das Internet oder drahtlose Netzwerke garantiert werden.</p>
+                    <h2 class="subheading">Rechtliche Hinweise:</h2>
+                    <p>Wir werden alle Informationen, die wir sammeln, verwenden oder erhalten, offenlegen, wenn dies gesetzlich vorgeschrieben oder erlaubt ist, z. B. um einer Vorladung oder einem ähnlichen Rechtsverfahren nachzukommen, und wenn wir in gutem Glauben davon ausgehen, dass die Offenlegung erforderlich ist um unsere Rechte, Ihre Sicherheit oder die Sicherheit anderer zu schützen, Betrug zu untersuchen oder auf eine behördliche Anfrage zu reagieren.</p>
+                    <h2 class="subheading">Kontaktinformationen :</h2>
+                    <p>Wenn Sie uns kontaktieren möchten, um mehr über diese Richtlinie zu erfahren, oder wenn Sie uns bezüglich Fragen zu individuellen Rechten und Ihren persönlichen Daten kontaktieren möchten, können Sie eine E-Mail an contact@ryhokosan.com senden.</p>
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="general_terms_and_conditions_of_use">
+                <source>general_terms_and_conditions_of_use</source>
+                <target><![CDATA[
+                    <h1 class="heading mt-3 mb-4 text-center">
+                    Nutzungsbedingungen</h1>
+                    <p>
+                    Gültig ab 09.03.2022</p>
+                    <p>
+                    Der Zweck dieser Allgemeinen Nutzungsbedingungen (bekannt als "AGB") besteht darin, einen rechtlichen Rahmen für die Bedingungen für die Bereitstellung der Website und Dienste durch ryokosan bereitzustellen und die Bedingungen für den Zugang und die Nutzung der Dienste zu definieren durch "den 'Benutzer'.</p>
+                    <p>
+                    Jede Registrierung oder Nutzung der Website impliziert die Annahme ohne Vorbehalt oder Einschränkung dieser AGB durch den Benutzer. Bei der Registrierung auf der Website über das Registrierungsformular akzeptiert jeder Benutzer diese AGB ausdrücklich, indem er das Kästchen vor dem folgenden Text ankreuzt: "Akzeptieren Sie die Bedingungen".</p>
+                    <p>
+                    Im Falle der Nichtannahme der in diesem Vertrag festgelegten AGB muss der Benutzer auf den Zugriff auf die von der Website angebotenen Dienste verzichten.
+                    ryokosan.com behält sich das Recht vor, den Inhalt dieser AGB jederzeit einseitig zu ändern.</p>
+                    <h2 class="subheading">
+                    Artikel 1 : Rechtliche Hinweise</h2>
+                    <p>
+                    Die Bearbeitung und Verwaltung der Veröffentlichung der Website ryokosan.com erfolgt durch christopher diot mit Sitz in Frankreich.
+                    <br>
+                    E-Mail-Adresse contact@ryokosan.com.
+                    <br>
+                    Der Host der Website ryokosan.com ist Hostinger International Ltd, dessen Hauptsitz sich in der 61 Lordou Vironos st. 6023 Larnaca, Republik Zypern.</p>
+                    <h2 class="subheading">
+                    ARTIKEL 2 : Zugriff auf die Website</h2>
+                    <p>
+                    Die Website ryokosan.com ermöglicht dem Benutzer den kostenlosen Zugang zu den folgenden Diensten :</p>
+                    <ul>
+                    <li>Aktivitäten anzeigen, hinzufügen, bearbeiten und löschen.</li>
+                    <li>Erstellen, bearbeiten und löschen sind Profile.</li>
+                    <li>Senden und empfangen Sie private Nachrichten.</li>
+                    </ul>
+                    <p>Die Website ist für jeden Benutzer mit Internetzugang überall kostenlos zugänglich. Alle Kosten, die der Benutzer für den Zugriff auf den Dienst trägt (Hardware, Software, Internetverbindung usw.), gehen zu seinen Lasten.</p>
+                    <p>
+                    Der Nichtmitgliedsnutzer hat keinen Zugang zu den reservierten Diensten. Dazu muss er sich registrieren, indem er das Formular ausfüllt. Mit der Zustimmung zur Registrierung für die reservierten Dienste verpflichtet sich der Mitgliedsnutzer, aufrichtige und genaue Angaben zu seinem Familienstand und seinen Kontaktdaten, insbesondere zu seiner E-Mail-Adresse, zu machen.
+                    <br>
+                    Für den Zugang zu den Diensten muss sich der Nutzer dann mit seinem Benutzernamen und seinem Passwort identifizieren.
+                    <br>
+                    Jeder regelmäßig registrierte Mitgliedsbenutzer kann auch seine Abmeldung beantragen, indem er auf die entsprechende Seite in seinem persönlichen Bereich geht. Dies wird innerhalb einer angemessenen Frist wirksam.
+                    Alle Ereignisse, die auf einen Fall höherer Gewalt zurückzuführen sind, die zu einer Fehlfunktion der Website oder des Servers führen und im Falle von Wartungsarbeiten einer Unterbrechung oder Änderung unterliegen, übernehmen keine Verantwortung von ryokosan.com. In diesen Fällen erklärt sich der Benutzer damit einverstanden, den Herausgeber auch ohne Vorankündigung nicht für eine Unterbrechung oder Einstellung des Dienstes verantwortlich zu machen.
+                    <br>
+                    Der Benutzer hat die Möglichkeit, die Website per E-Mail an die in ARTIKEL 1 angegebene E-Mail-Adresse des Herausgebers zu kontaktieren.</p>
+                    <h2 class="subheading">
+                    ARTIKEL 3 : Datenerhebung</h2>
+                    <p>
+                    Für die Erstellung des Benutzerkontos ist die Erfassung von Informationen zum Zeitpunkt der Registrierung auf der Website erforderlich und obligatorisch. Gemäß dem Gesetz Nr. 78-17 vom 6. Januar über Datenverarbeitung, Dateien und Freiheiten erfolgt die Erhebung und Verarbeitung personenbezogener Daten unter Wahrung der Privatsphäre.
+                    <br>
+                    Gemäß dem Datenschutzgesetz vom 6. Januar 1978, Artikel 39 und 40, hat der Benutzer das Recht auf Zugang, Berichtigung, Löschung und Widerspruch seiner personenbezogenen Daten. Die Ausübung dieses Rechts erfolgt durch:</p>
+                    <h2 class="subheading">
+                    ARTIKEL 4 : Geistiges Eigentum</h2>
+                    <p>
+                    Die Marken, Logos, Zeichen sowie der gesamte Inhalt der Website (Texte, Bilder, Ton usw.) sind durch das Gesetz über geistiges Eigentum und insbesondere durch das Urheberrecht geschützt.</p>
+                    <p>
+                    Die Marke Ryokosan ist eine von Diot Christopher eingetragene Marke. Jegliche Darstellung und/oder Vervielfältigung und/oder teilweise oder vollständige Nutzung dieser Marke, gleich welcher Art, ist absolut verboten.</p>
+                    <p>
+                    Der Benutzer muss die vorherige Genehmigung der Website für jede Reproduktion, Veröffentlichung, Kopie der verschiedenen Inhalte einholen. Er verpflichtet sich, die Inhalte der Seite in einem rein privaten Kontext zu nutzen, jegliche Nutzung zu kommerziellen und werblichen Zwecken ist strengstens untersagt.
+                    <br>
+                    Jegliche vollständige oder teilweise Darstellung dieser Website, auf welche Weise auch immer, ohne die ausdrückliche Genehmigung des Betreibers der Website stellt eine Verletzung dar, die nach Artikel L 335-2 ff. des Gesetzes über geistiges Eigentum strafbar ist.
+                    <br>
+                    Es wird gemäß Artikel L122-5 des Gesetzes über geistiges Eigentum daran erinnert, dass der Benutzer, der den geschützten Inhalt reproduziert, kopiert oder veröffentlicht, den Autor und seine Quelle angeben muss.</p>
+                    <h2 class="subheading">
+                    ARTIKEL 5 : Haftung</h2>
+                    <p>
+                    Die Quellen der auf der Website ryokosan.com veröffentlichten Informationen gelten als zuverlässig, aber die Website garantiert nicht, dass sie frei von Fehlern, Fehlern oder Auslassungen sind.
+                    <br>
+                    Die bereitgestellten Informationen dienen Informations- und allgemeinen Zwecken ohne vertraglichen Wert. <br>
+                    Trotz regelmäßiger Aktualisierungen kann die Website ryokosan.com nicht für Änderungen der Verwaltungs- und Rechtsbestimmungen verantwortlich gemacht werden, die nach der Veröffentlichung eintreten. Ebenso kann die Website nicht für die Verwendung und Interpretation der auf dieser Website enthaltenen Informationen verantwortlich gemacht werden.</p>
+                    <p>
+                    Der Nutzer verpflichtet sich, sein Passwort geheim zu halten. Jegliche Weitergabe des Passwortes, in welcher Form auch immer, ist untersagt. Er übernimmt die mit der Verwendung seines Benutzernamens und Passworts verbundenen Risiken. Die Website lehnt jegliche Verantwortung ab.
+                    <br>
+                    Die Website ryokosan.com kann nicht für Viren verantwortlich gemacht werden, die den Computer oder die Computerausrüstung des Internetbenutzers nach der Nutzung, dem Zugriff oder dem Herunterladen von dieser Website infizieren könnten.<br >
+                    Die Website kann nicht haftbar gemacht werden im Falle höherer Gewalt oder der unvorhersehbaren und unüberwindbaren Handlung eines Dritten.</p>
+                    <h2 class="subheading">
+                    ARTIKEL 6 : Hypertext-Links</h2>
+                    <p>
+                    Auf der Website können Hypertext-Links vorhanden sein. Der Benutzer wird darüber informiert, dass er durch Klicken auf diese Links die Website ryokosan.com verlässt. Letzterer hat keine Kontrolle über die Webseiten, zu denen diese Links führen, und kann unter keinen Umständen für deren Inhalt verantwortlich gemacht werden.</p>
+                    <h2 class="subheading">
+                    ABSCHNITT 7 : Cookies</h2>
+                    <p>
+                    Der Benutzer wird darüber informiert, dass während seiner Besuche auf der Website automatisch ein Cookie in seiner Navigationssoftware installiert werden kann.
+                    <br>
+                    Cookies sind kleine Dateien, die vorübergehend von Ihrem Browser auf der Festplatte des Computers des Benutzers gespeichert werden und die für die Nutzung der Website ryokosan.com erforderlich sind. Cookies enthalten keine personenbezogenen Daten und können nicht zur Identifizierung von Personen verwendet werden. Ein Cookie enthält eine eindeutige, zufällig generierte und daher anonyme Kennung. Einige Cookies verfallen am Ende des Besuchs des Benutzers, andere bleiben bestehen.
+                    <br>
+                    Die in den Cookies enthaltenen Informationen werden zur Verbesserung der Website ryokosan.com verwendet.
+                    Durch das Surfen auf der Website akzeptiert der Benutzer diese.
+                    <br>
+                    Allerdings muss der Nutzer der Verwendung bestimmter Cookies zustimmen.
+                    Bei fehlender Annahme wird der Benutzer darüber informiert, dass bestimmte Funktionen oder Seiten abgelehnt werden können.
+                    <br>
+                    Der Nutzer kann diese Cookies über die Einstellungen seiner Browser-Software deaktivieren.</p>
+                    <h2 class="subheading">
+                    ARTIKEL 8 : Veröffentlichung durch den Nutzer</h2>
+                    <p>
+                    Auf der Website können Mitglieder die folgenden Inhalte veröffentlichen :
+                    Aktivitäten.
+                    <br>
+                    Das Mitglied verpflichtet sich, in seinen Veröffentlichungen die Regeln der Netiquette (Verhaltensregeln des Internets) und die geltenden Rechtsnormen einzuhalten.
+                    <br>
+                    Die Website kann die Veröffentlichungen moderieren und behält sich das Recht vor, ihre Online-Veröffentlichung abzulehnen, ohne dies gegenüber dem Mitglied rechtfertigen zu müssen.
+                    <br>
+                    Das Mitglied bleibt Inhaber aller seiner geistigen Eigentumsrechte. Durch die Veröffentlichung einer Veröffentlichung auf der Website überträgt er dem Verlag jedoch das nicht ausschließliche und kostenlose Recht, seine Veröffentlichung direkt oder über einen autorisierten Dritten weltweit auf jedem Medium darzustellen, zu reproduzieren, anzupassen, zu modifizieren, zu verteilen und zu verteilen (digital oder physisch) für die Dauer des geistigen Eigentums. Das Mitglied überträgt insbesondere das Recht zur Nutzung seiner Veröffentlichung im Internet und in Mobilfunknetzen.
+                    <br>
+                    Der Verlag verpflichtet sich, bei jeder Verwendung seiner Publikation den Namen des Mitglieds anzugeben.
+                    <br>
+                    Alle vom Benutzer veröffentlichten Inhalte liegen in seiner alleinigen Verantwortung. Der Nutzer verpflichtet sich, keine Inhalte hochzuladen, die den Interessen Dritter schaden könnten. Alle Klagen, die von einem geschädigten Dritten gegen die Website erhoben werden, gehen zu Lasten des Benutzers.</p>
+                    <p>
+                    Der Inhalt des Benutzers kann jederzeit und ohne Angabe von Gründen von der Website ohne Vorankündigung gelöscht oder geändert werden.</p>
+                    <h2 class="Unterüberschrift">
+                    ARTIKEL 9 : Anwendbares Recht und zuständige Gerichtsbarkeit</h2>
+                    <p>
+                    Auf diesen Vertrag findet französisches Recht Anwendung. Falls es zu keiner gütlichen Beilegung einer Streitigkeit zwischen den Parteien kommt, sind ausschließlich die französischen Gerichte für deren Verhandlung zuständig.
+                    Bei Fragen zur Anwendung dieser AGB können Sie sich unter den in ARTIKEL 1 aufgeführten Kontaktdaten an den Herausgeber wenden.</p>
+                    ]]>
+                </target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>

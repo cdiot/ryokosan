@@ -62,6 +62,10 @@
                 <source>title.dashboard</source>
                 <target>Pannello di controllo</target>
             </trans-unit>
+            <trans-unit id="title.about">
+                <source>title.about</source>
+                <target>Di</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -134,6 +138,14 @@
                 <source>heading.sponsor_list</source>
                 <target>Elenco degli sponsor</target>
             </trans-unit>
+            <trans-unit id="heading.about_creator">
+                <source>heading.about_creator</source>
+                <target>Chi è il creatore ?</target>
+            </trans-unit>
+            <trans-unit id="heading.about_us">
+                <source>heading.about_us</source>
+                <target>In che modo siamo diversi dagli altri ?</target>
+            </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
                 <target>Unisciti alla comunità</target>
@@ -205,6 +217,30 @@
             <trans-unit id="content.verified_profiles_and_guaranteed">
                 <source>content.verified_profiles_and_guaranteed</source>
                 <target>Tutti i nostri profili sono convalidati via e-mail e verificati tramite moderazione manuale dai nostri moderatori. È in atto un processo di certificazione per i profili sospetti. puoi segnalarcelo tramite il modulo di contatto.</target>
+            </trans-unit>
+            <trans-unit id="content.about_creator_top">
+                <source>content.about_creator_top</source>
+                <target>Sono Chris il creatore di ryokosan e ho iniziato su questa piattaforma nel 2022, momento in cui sono uscito da un periodo difficile in seguito alla perdita di una persona cara qualche anno fa. Volevo fare il mio primo viaggio simbolizzando 
+                    un nuovo inizio ma mi sono reso conto che a volte è difficile trovare persone intorno a te con la tua stessa disponibilità. Non trovando una piattaforma di mio gradimento, I
+                    ha creato ryokosan, una piattaforma umana che condivide il co-viaggio mettendo in primo piano i profili di ciascuno, così come la destinazione.</target>
+            </trans-unit>
+            <trans-unit id="content.about_creator_bottom">
+                <source>content.about_creator_bottom</source>
+                <target>Perché raccontarti questa storia perché dietro al ryokosan c'è un team umano con valori ed esperienze.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_top">
+                <source>content.about_us_top</source>
+                <target>Ryokosan è una piattaforma europea che ti permette di incontrare altre persone indipendentemente dalla loro nazionalità con i tuoi stessi desideri in termini di viaggi e attività. Il nostro concetto è a metà strada tra un social network
+                    e un sito di incontri, infatti permette di abbinare i profili in base alla loro destinazione, geolocalizzazione, interesse, età, sesso,
+                    che è ancora più efficiente di un forum in cui pubblichi un po' di tutto e di niente. Ryokosan è anche un sito gratuito, senza
+                    qualsiasi abbonamento in cui ogni profilo è verificato e non ti influenzeremo a venderti viaggi organizzati, sei libero. Puoi navigare
+                    tranquillamente senza pubblicità e i tuoi dati ti appartengono, li tieni! La squadra è giovane tra i 19 ei 26 anni, dinamica e
+                    attivo sulle reti. Il co-viaggiare è un modo di viaggiare che esiste da millenni, non pretenderemo di reinventarlo
+                    ruota, ma speriamo di portarti direttamente al tuo obiettivo.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_bottom">
+                <source>content.about_us_bottom</source>
+                <target>Per qualsiasi domanda, contatta il team Ryokosan: contact@ryokosan.com</target>
             </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
@@ -554,6 +590,157 @@
             <trans-unit id="or">
                 <source>or</source>
                 <target>O</target>
+            </trans-unit>
+            <trans-unit id="privacy_policy">
+                <source>privacy_policy</source>
+                <target><![CDATA[
+                    <h1 class="heading mt-3 mb-4 text-center">Informativa sulla privacy</h1>
+                    <p>Il sito web di ryokosan è di proprietà di Christopher Diot, che è un titolare del trattamento dei tuoi dati personali.</p>
+                    <p>Abbiamo adottato questa politica sulla privacy, che stabilisce come trattiamo le informazioni raccolte da ryokosan, che fornisce anche i motivi per cui abbiamo bisogno di raccogliere determinati dati personali su di te. Pertanto, dovresti leggere la presente Informativa sulla privacy prima di utilizzare il sito Web di ryokosan.</p>
+                    <p>Ci prendiamo cura dei tuoi dati personali e ci impegniamo a garantirne la riservatezza e la sicurezza.</p>
+                    <h2 class="subheading">Le informazioni personali che raccogliamo:</h2>
+                    <p>Quando visiti il ​​ryokosan, raccogliamo automaticamente alcune informazioni sul tuo dispositivo, incluse informazioni sul tuo browser web, indirizzo IP, fuso orario e alcuni dei cookie installati sul tuo dispositivo. Inoltre, mentre navighi sul Sito, raccogliamo informazioni sulle pagine web o sui singoli prodotti che visualizzi, sui siti web o sui termini di ricerca che ti hanno indirizzato al Sito e su come interagisci con il Sito. luogo. Ci riferiamo a queste informazioni raccolte automaticamente come "Informazioni sul dispositivo". Inoltre, potremmo raccogliere i dati personali che ci fornisci (inclusi, a titolo esemplificativo, nome, data di nascita, e-mail, ecc.) durante la registrazione per poter eseguire il contratto.</ p>
+                    <h2 class="subheading">Perché elaboriamo i tuoi dati?</h2>
+                    <p>La nostra massima priorità è la sicurezza dei dati dei clienti e in quanto tale possiamo elaborare solo dati utente minimi, solo nella misura in cui è assolutamente necessario per mantenere il sito web. Le informazioni raccolte automaticamente vengono utilizzate al solo fine di identificare potenziali casi di abuso e per ricavare informazioni statistiche sull'uso del sito web. Queste informazioni statistiche non vengono altrimenti aggregate in modo tale da identificare un particolare utente del sistema.</p>
+                    <p>Puoi visitare il sito Web senza dirci chi sei o rivelare informazioni mediante le quali qualcuno potrebbe identificarti come un individuo specifico e identificabile. Tuttavia, se desideri utilizzare alcune funzionalità del sito Web, o se desideri ricevere la nostra newsletter o fornire altri dettagli compilando un modulo, puoi fornirci dati personali, come il tuo indirizzo e-mail, nome, il tuo paese di residenza. Puoi scegliere di non fornirci i tuoi dati personali, ma in tal caso potresti non essere in grado di sfruttare alcune funzionalità del sito web. Ad esempio, non potrai ricevere la nostra newsletter o contattarci direttamente dal sito. Gli utenti che non conoscono le informazioni richieste sono invitati a contattarci tramite contact@ryokosan.com.</p>
+                    <h2 class="subheading">I tuoi diritti :</h2>
+                    <p>Se risiedi in Europa, hai i seguenti diritti relativi ai tuoi dati personali:</p>
+                    <ul>
+                    <li>Il diritto all'informazione.</li>
+                    <li>Il diritto di accesso.</li>
+                    <li>Diritto di rettifica.</li>
+                    <li>Il diritto alla cancellazione.</li>
+                    <li>Il diritto di limitare il trattamento.</li>
+                    <li>Diritto alla portabilità dei dati.</li>
+                    <li>Diritto di opposizione.</li>
+                    </ul>
+                    <p>I diritti relativi al processo decisionale automatizzato e alla profilazione.</p>
+                    <p>Se desideri esercitare questo diritto, ti preghiamo di contattarci utilizzando i dettagli di contatto di seguito.</p>
+                    <p>Inoltre, se sei residente in Europa, prendiamo atto che stiamo elaborando le tue informazioni al fine di eseguire i contratti che potremmo avere con te (ad esempio, se effettui un ordine tramite il Sito), o altrimenti per perseguire il nostro legittimo interessi commerciali sopra elencati. Inoltre, tieni presente che le tue informazioni potrebbero essere trasferite al di fuori dell'Europa, inclusi Canada e Stati Uniti.</p>
+                    <h2 class="subheading">Link ad altri siti web:</h2>
+                    <p>Il nostro sito Web può contenere collegamenti ad altri siti Web che non sono di nostra proprietà o controllati. Tieni presente che non siamo responsabili per questi altri siti Web o per le pratiche sulla privacy di terze parti. Ti invitiamo a essere consapevole quando esci dal nostro sito Web e a leggere le informative sulla privacy di ciascun sito Web che potrebbe raccogliere informazioni personali.
+                    <h2 class="subheading">Sicurezza delle informazioni:</h2>
+                    <p>Proteggiamo le informazioni che fornisci sui server dei computer in un ambiente controllato e sicuro, protetto da accesso, uso o divulgazione non autorizzati. Manteniamo ragionevoli salvaguardie amministrative, tecniche e fisiche per proteggere dall'accesso, dall'uso, dalla modifica e dalla divulgazione non autorizzati dei dati personali sotto il suo controllo e custodia. Tuttavia, non è possibile garantire la trasmissione di dati su Internet o reti wireless.</p>
+                    <h2 class="subheading">Divulgazione legale:</h2>
+                    <p>Divulgheremo tutte le informazioni che raccogliamo, utilizziamo o riceviamo se richiesto o consentito dalla legge, ad esempio per ottemperare a una citazione o a un procedimento legale simile, e quando riteniamo in buona fede che la divulgazione sia necessaria per proteggere i nostri diritti, la tua sicurezza o quella degli altri, indagare su frodi o rispondere a una richiesta del governo.</p>
+                    <h2 class="subheading">Informazioni di contatto:</h2>
+                    <p>Se desideri contattarci per saperne di più su questa politica o se desideri contattarci in merito a qualsiasi domanda relativa ai diritti individuali e alle tue informazioni personali, puoi inviare un'e-mail a contact@ryhokosan.com.</ p>
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="general_terms_and_conditions_of_use">
+                <source>general_terms_and_conditions_of_use</source>
+                <target><![CDATA[
+                    <h1 class="heading mt-3 mb-4 text-center">
+                    Termini di utilizzo</h1>
+                    <p>
+                    In vigore dal 03/09/2022</p>
+                    <p>
+                    Lo scopo di questi termini e condizioni generali d'uso (noti come "GTU") è quello di fornire un quadro giuridico per i termini e le condizioni per la fornitura del sito e dei servizi da parte di ryokosan e di definire le condizioni di accesso e utilizzo dei servizi da "l'"Utente".</p>
+                    <p>
+                    Qualsiasi registrazione o utilizzo del sito implica l'accettazione senza alcuna riserva o restrizione dei presenti T&C da parte dell'utente. Al momento della registrazione al sito tramite il Modulo di Registrazione, ciascun utente accetta espressamente i presenti T&C spuntando la casella che precede il testo seguente: "Accetta le condizioni".</p>
+                    <p>
+                    In caso di mancata accettazione dei T&C stipulati nel presente contratto, l'Utente dovrà rinunciare all'accesso ai servizi offerti dal sito.
+                    ryokosan.com si riserva il diritto di modificare unilateralmente il contenuto di questi T&C in qualsiasi momento.</p>
+                    <h2 class="subheading">
+                    Articolo 1 : Note legali</h2>
+                    <p>
+                    La redazione e la gestione della pubblicazione del sito ryokosan.com è affidata a christopher diot, domiciliato in Francia.
+                    <br>
+                    Indirizzo e-mail contact@ryokosan.com.
+                    <br>
+                    L'host del sito ryokosan.com è Hostinger International Ltd, la cui sede principale si trova in 61 Lordou Vironos st. 6023 Larnaca, Repubblica di Cipro.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 2 : Accesso al sito</h2>
+                    <p>
+                    Il sito web ryokosan.com consente all'Utente di accedere gratuitamente ai seguenti servizi :</p>
+                    <ul>
+                    <li>Visualizza, aggiungi, modifica ed elimina un'attività.</li>
+                    <li>Crea, modifica ed elimina sono profili.</li>
+                    <li>Invia e ricevi messaggi privati.</li>
+                    </ul>
+                    <p>Il sito è accessibile gratuitamente ovunque a qualsiasi Utente con accesso a Internet. Tutti i costi sostenuti dall'Utente per l'accesso al servizio (hardware, software, connessione Internet, ecc.) sono a suo carico.</p>
+                    <p>
+                    L'Utente non membro non ha accesso ai servizi riservati. Per questo, deve registrarsi compilando il modulo. Accettando di registrarsi ai servizi riservati, l'Utente Membro si impegna a fornire informazioni sincere e corrette sul proprio stato civile e sui dati di contatto, in particolare il proprio indirizzo di posta elettronica.
+                    <br>
+                    Per accedere ai servizi, l'Utente dovrà poi identificarsi utilizzando il proprio nome utente e password.
+                    <br>
+                    Ogni Utente Membro regolarmente registrato può anche richiedere la cancellazione dell'iscrizione accedendo alla pagina dedicata del proprio spazio personale. Questo sarà efficace entro un tempo ragionevole.
+                    Qualsiasi evento dovuto a causa di forza maggiore risultante in un malfunzionamento del sito o del server e soggetto a qualsiasi interruzione o modifica in caso di manutenzione, non impegna la responsabilità di ryokosan.com. In questi casi, l'Utente accetta pertanto di non ritenere l'editore responsabile per qualsiasi interruzione o sospensione del servizio, anche senza preavviso.
+                    <br>
+                    L'Utente ha la possibilità di contattare il sito tramite e-mail all'indirizzo e-mail dell'editore fornito nell'ARTICOLO 1.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 3 : Raccolta dei dati</h2>
+                    <p>
+                    Per la creazione dell'account dell'Utente, la raccolta delle informazioni al momento della registrazione al sito è necessaria ed obbligatoria. In conformità con la legge n° 78-17 del 6 gennaio relativa al trattamento dei dati, agli archivi e alle libertà, la raccolta e il trattamento dei dati personali avviene nel rispetto della privacy.
+                    <br>
+                    Ai sensi della legge sulla protezione dei dati del 6 gennaio 1978, articoli 39 e 40, l'Utente ha il diritto di accedere, rettificare, cancellare e opporsi ai propri dati personali. L'esercizio di tale diritto è svolto da:</p>
+                    <h2 class="subheading">
+                    ARTICOLO 4 : Proprietà intellettuale</h2>
+                    <p>
+                    I marchi, i loghi, le insegne nonché tutti i contenuti del sito (testi, immagini, suoni, ecc.) sono protetti dal Codice della Proprietà Intellettuale e più in particolare dal diritto d'autore.</p>
+                    <p>
+                    Il marchio ryokosan è un marchio registrato da Diot Christopher. Qualsiasi rappresentazione e/o riproduzione e/o sfruttamento parziale o totale di questo marchio, di qualsiasi natura, è totalmente vietata.</p>
+                    <p>
+                    L'Utente deve chiedere la preventiva autorizzazione del sito per qualsiasi riproduzione, pubblicazione, copia dei vari contenuti. Si impegna ad utilizzare i contenuti del sito in un contesto strettamente privato, ogni utilizzo per fini commerciali e pubblicitari è severamente vietato.
+                    <br>
+                    Qualsiasi rappresentazione totale o parziale di questo sito con qualsiasi mezzo, senza l'espressa autorizzazione del gestore del sito Web, costituirebbe una violazione punibile dall'articolo L 335-2 e seguenti del Codice della proprietà intellettuale.
+                    <br>
+                    Si ricorda ai sensi dell'articolo L122-5 del Codice della Proprietà Intellettuale che l'Utente che riproduce, copia o pubblica il contenuto protetto deve citare l'autore e la sua fonte.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 5 : Responsabilità</h2>
+                    <p>
+                    Le fonti delle informazioni pubblicate sul sito ryokosan.com sono ritenute affidabili, ma il sito non garantisce che sia esente da vizi, errori od omissioni.
+                    <br>
+                    Le informazioni fornite sono presentate a scopo informativo e generale senza valore contrattuale. <br>
+                    Nonostante i regolari aggiornamenti, il sito ryokosan.com non può essere ritenuto responsabile per i cambiamenti nelle disposizioni amministrative e legali che si verificano dopo la pubblicazione. Allo stesso modo, il sito non può essere ritenuto responsabile per l'uso e l'interpretazione delle informazioni contenute in questo sito.</p>
+                    <p>
+                    L'Utente si assicura di mantenere segreta la propria password. È vietata qualsiasi divulgazione della password, in qualsiasi forma. Si assume i rischi associati all'uso del suo nome utente e password. Il sito declina ogni responsabilità.
+                    <br>
+                    Il sito ryokosan.com non può essere ritenuto responsabile per eventuali virus che potrebbero infettare il computer o qualsiasi apparecchiatura informatica dell'utente Internet, a seguito dell'uso, dell'accesso o del download da questo sito.<br >
+                    Il sito non può essere ritenuto responsabile in caso di forza maggiore o atto fortuito e insormontabile di un terzo.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 6 : Collegamenti ipertestuali</h2>
+                    <p>
+                    Sul sito possono essere presenti collegamenti ipertestuali. L'Utente è informato che cliccando su questi collegamenti abbandonerà il sito ryokosan.com. Quest'ultimo non ha alcun controllo sulle pagine web a cui conducono questi collegamenti e non può, in nessun caso, essere responsabile del loro contenuto.</p>
+                    <h2 class="subheading">
+                    SEZIONE 7 : Cookie</h2>
+                    <p>
+                    L'Utente è informato che durante le sue visite al sito, un cookie potrebbe essere installato automaticamente sul suo software di navigazione.
+                    <br>
+                    I cookie sono piccoli file memorizzati temporaneamente sul disco rigido del computer dell'Utente dal browser e necessari per l'utilizzo del sito ryokosan.com. I cookie non contengono informazioni personali e non possono essere utilizzati per identificare nessuno. Un cookie contiene un identificatore univoco, generato casualmente e quindi anonimo. Alcuni cookie scadono al termine della visita dell'Utente, altri rimangono.
+                    <br>
+                    Le informazioni contenute nei cookie vengono utilizzate per migliorare il sito ryokosan.com.
+                    Navigando nel sito, l'Utente li accetta.
+                    <br>
+                    Tuttavia, l'Utente deve dare il proprio consenso all'uso di alcuni cookie.
+                    In mancanza di accettazione, l'Utente è informato che alcune funzionalità o pagine potrebbero essere rifiutate.
+                    <br>
+                    L'Utente può disattivare questi cookie tramite le impostazioni del software del proprio browser.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 8 : Pubblicazione da parte dell'Utente</h2>
+                    <p>
+                    Il sito consente ai membri di pubblicare i seguenti contenuti :
+                    attività.
+                    <br>
+                    Nelle sue pubblicazioni, il membro si impegna a rispettare le regole di Netiquette (regole di buona condotta di Internet) e le norme di legge vigenti.
+                    <br>
+                    Il sito può esercitare moderazione sulle pubblicazioni e si riserva il diritto di rifiutare di metterle online, senza doverlo giustificare al membro.
+                    <br>
+                    Il membro rimane titolare di tutti i suoi diritti di proprietà intellettuale. Ma pubblicando una pubblicazione sul sito, cede alla casa editrice il diritto non esclusivo e gratuito di rappresentare, riprodurre, adattare, modificare, distribuire e distribuire la sua pubblicazione, direttamente o tramite un terzo autorizzato, in tutto il mondo, su qualsiasi supporto (digitale o fisico), per la durata della proprietà intellettuale. In particolare, il Membro cede il diritto di utilizzare la sua pubblicazione su Internet e su reti di telefonia mobile.
+                    <br>
+                    La casa editrice si impegna ad inserire il nome del socio in corrispondenza di ogni utilizzo della sua pubblicazione.
+                    <br>
+                    Qualsiasi contenuto pubblicato dall'Utente è di sua esclusiva responsabilità. L'Utente si impegna a non caricare contenuti che possano ledere gli interessi di terzi. Qualsiasi azione legale intentata da una terza parte lesa nei confronti del sito sarà a carico dell'Utente.</p>
+                    <p>
+                    I contenuti dell'Utente possono essere in qualsiasi momento e per qualsiasi motivo cancellati o modificati dal sito, senza preavviso.</p>
+                    <h2 class="subheading">
+                    ARTICOLO 9 : Legge applicabile e foro competente</h2>
+                    <p>
+                    A questo contratto si applica la legge francese. In caso di assenza di risoluzione amichevole di una controversia insorta tra le parti, i tribunali francesi saranno i soli competenti a conoscerla.
+                    Per qualsiasi domanda relativa all'applicazione di questi T&C, puoi contattare l'editore ai recapiti indicati nell'ARTICOLO 1.</p>
+                    ]]>
+                </target>
             </trans-unit>
             <trans-unit id="copyright">
                 <source>copyright</source>
