@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.about'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+                <!-- About Start -->
+                <h1 class="heading mt-3 mb-4 text-center">
+                    {{ 'title.about'|trans }} {{ parent() }}
+                </h1>
+                <h2 class="subheading">{{ 'heading.about_creator'|trans }}</h2>
+                <p>{{ 'content.about_creator_top'|trans }}</p>
+                <p>{{ 'content.about_creator_bottom'|trans }}</p>
+                <h2 class="subheading">{{ 'heading.about_us'|trans }}</h2>
+                <p>{{ 'content.about_us_top'|trans }}</p>
+                <p>{{ 'content.about_us_bottom'|trans }}</p>
+                <!-- About End -->
+            </div>
+        </div>
+    </section>
+{% endblock %}

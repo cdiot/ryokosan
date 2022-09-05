@@ -62,6 +62,10 @@
                 <source>title.dashboard</source>
                 <target>Pannello di controllo</target>
             </trans-unit>
+            <trans-unit id="title.about">
+                <source>title.about</source>
+                <target>Di</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan è un social network per trovare compagni di viaggio intorno a te o alle tue destinazioni. Condividi le tue vacanze, incontra persone e vivi avventure arricchenti.</target>
@@ -134,6 +138,14 @@
                 <source>heading.sponsor_list</source>
                 <target>Elenco degli sponsor</target>
             </trans-unit>
+            <trans-unit id="heading.about_creator">
+                <source>heading.about_creator</source>
+                <target>Chi è il creatore ?</target>
+            </trans-unit>
+            <trans-unit id="heading.about_us">
+                <source>heading.about_us</source>
+                <target>In che modo siamo diversi dagli altri ?</target>
+            </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
                 <target>Unisciti alla comunità</target>
@@ -205,6 +217,30 @@
             <trans-unit id="content.verified_profiles_and_guaranteed">
                 <source>content.verified_profiles_and_guaranteed</source>
                 <target>Tutti i nostri profili sono convalidati via e-mail e verificati tramite moderazione manuale dai nostri moderatori. È in atto un processo di certificazione per i profili sospetti. puoi segnalarcelo tramite il modulo di contatto.</target>
+            </trans-unit>
+            <trans-unit id="content.about_creator_top">
+                <source>content.about_creator_top</source>
+                <target>Sono Chris il creatore di ryokosan e ho iniziato su questa piattaforma nel 2022, momento in cui sono uscito da un periodo difficile in seguito alla perdita di una persona cara qualche anno fa. Volevo fare il mio primo viaggio simbolizzando 
+                    un nuovo inizio ma mi sono reso conto che a volte è difficile trovare persone intorno a te con la tua stessa disponibilità. Non trovando una piattaforma di mio gradimento, I
+                    ha creato ryokosan, una piattaforma umana che condivide il co-viaggio mettendo in primo piano i profili di ciascuno, così come la destinazione.</target>
+            </trans-unit>
+            <trans-unit id="content.about_creator_bottom">
+                <source>content.about_creator_bottom</source>
+                <target>Perché raccontarti questa storia perché dietro al ryokosan c'è un team umano con valori ed esperienze.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_top">
+                <source>content.about_us_top</source>
+                <target>Ryokosan è una piattaforma europea che ti permette di incontrare altre persone indipendentemente dalla loro nazionalità con i tuoi stessi desideri in termini di viaggi e attività. Il nostro concetto è a metà strada tra un social network
+                    e un sito di incontri, infatti permette di abbinare i profili in base alla loro destinazione, geolocalizzazione, interesse, età, sesso,
+                    che è ancora più efficiente di un forum in cui pubblichi un po' di tutto e di niente. Ryokosan è anche un sito gratuito, senza
+                    qualsiasi abbonamento in cui ogni profilo è verificato e non ti influenzeremo a venderti viaggi organizzati, sei libero. Puoi navigare
+                    tranquillamente senza pubblicità e i tuoi dati ti appartengono, li tieni! La squadra è giovane tra i 19 ei 26 anni, dinamica e
+                    attivo sulle reti. Il co-viaggiare è un modo di viaggiare che esiste da millenni, non pretenderemo di reinventarlo
+                    ruota, ma speriamo di portarti direttamente al tuo obiettivo.</target>
+            </trans-unit>
+            <trans-unit id="content.about_us_bottom">
+                <source>content.about_us_bottom</source>
+                <target>Per qualsiasi domanda, contatta il team Ryokosan: contact@ryokosan.com</target>
             </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
