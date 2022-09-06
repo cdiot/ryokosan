@@ -6,7 +6,7 @@ use App\Entity\Logs;
 use DateTime;
 use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 
-class AuthenticationListener
+class AuthenticationEventListener
 {
     public function __construct(private $doctrine, private $request)
     {
