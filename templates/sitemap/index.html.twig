@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    {% for url in urls %}
+        <url>
+            <loc>{{ hostname }}{{ url.en }}</loc>
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ hostname }}{{ url.en }}" />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="{{ hostname }}{{ url.en }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="{{ hostname }}{{ url.de }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="{{ hostname }}{{ url.es }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="{{ hostname }}{{ url.fr }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="it"
+              href="{{ hostname }}{{ url.it }}"/>
+        </url>
+        <url>
+            <loc>{{ hostname }}{{ url.de }}</loc>
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ hostname }}{{ url.en }}" />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="{{ hostname }}{{ url.en }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="{{ hostname }}{{ url.de }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="{{ hostname }}{{ url.es }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="{{ hostname }}{{ url.fr }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="it"
+              href="{{ hostname }}{{ url.it }}"/>
+        </url>
+        <url>
+            <loc>{{ hostname }}{{ url.es }}</loc>
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ hostname }}{{ url.en }}" />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="{{ hostname }}{{ url.en }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="{{ hostname }}{{ url.de }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="{{ hostname }}{{ url.es }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="{{ hostname }}{{ url.fr }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="it"
+              href="{{ hostname }}{{ url.it }}"/>
+        </url>
+        <url>
+            <loc>{{ hostname }}{{ url.fr }}</loc>
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ hostname }}{{ url.en }}" />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="{{ hostname }}{{ url.en }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="{{ hostname }}{{ url.de }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="{{ hostname }}{{ url.es }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="{{ hostname }}{{ url.fr }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="it"
+              href="{{ hostname }}{{ url.it }}"/>
+        </url>
+        <url>
+            <loc>{{ hostname }}{{ url.it }}</loc>
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ hostname }}{{ url.en }}" />
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="{{ hostname }}{{ url.en }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="de"
+              href="{{ hostname }}{{ url.de }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="es"
+              href="{{ hostname }}{{ url.es }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="{{ hostname }}{{ url.fr }}"/>
+            <xhtml:link
+              rel="alternate"
+              hreflang="it"
+              href="{{ hostname }}{{ url.it }}"/>
+        </url>
+    {% endfor %}
+
+</urlset>
