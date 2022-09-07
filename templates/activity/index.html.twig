@@ -15,7 +15,7 @@
             </aside>
 
             <section class="col-12 col-lg-8 mb-4">
-                {% for activity in activities %}
+                {% for activity in pagination %}
                     <!-- Activity START -->
                     <div class="card mb-4">
                         <div class="card-header bg-white border-0 pb-0">
@@ -50,6 +50,9 @@
                     <p>{{ 'notification.empty_activity'|trans }}</p>
                 {% endfor %}
             </section>
+            <div class="d-flex justify-content-center">
+                {{ knp_pagination_render(pagination, 'base/_pagination.html.twig') }}
+            </div>
         </div>
     </div>
     <!-- Activity section END -->
