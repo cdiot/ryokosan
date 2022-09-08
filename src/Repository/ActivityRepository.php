@@ -39,6 +39,11 @@ class ActivityRepository extends ServiceEntityRepository
         }
     }
 
+    public function findAll()
+    {
+        return $this->findBy([], ['createdAt' => 'DESC']);
+    }
+
     /**
      * Used to count all created activities.
      */
