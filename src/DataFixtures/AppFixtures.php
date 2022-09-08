@@ -81,7 +81,11 @@ class AppFixtures extends Fixture
             ['123456', 'foo@gmail.com', ['ROLE_USER'], 'f', 'Mandy', new DateTimeImmutable('2003-10-18'), 'GB', 'mandy'],
             ['123456', 'foobar@gmail.com', ['ROLE_USER'], 'f', 'Riley', new DateTimeImmutable('2004-09-21'), 'FR', 'riley'],
             ['123456', 'baz@gmail.com', ['ROLE_USER'], 'o', 'Blu', new DateTimeImmutable('1999-12-31'), 'DE', 'Blu'],
-            ['123456', 'bar@gmail.com', ['ROLE_ADMIN'], 'm', 'Eliot', new DateTimeImmutable('2003-05-03'), 'FR', ''],
+            ['123456', 'bar@ryokosan.com', ['ROLE_ADMIN'], 'm', 'Eliot', new DateTimeImmutable('2003-05-03'), 'FR', ''],
+            ['123456', 'hoge@live.com', ['ROLE_USER'], 'f', 'Diego', new DateTimeImmutable('1999-08-14'), 'ES', ''],
+            ['123456', 'fuga@hotmail.com', ['ROLE_USER'], 'f', 'Noah', new DateTimeImmutable('1998-07-19'), 'GB', ''],
+            ['123456', 'piyo@gmail.com', ['ROLE_USER'], 'o', 'Fry', new DateTimeImmutable('1997-11-13'), 'GB', 'Blu'],
+            ['123456', 'hogera@orange.fr', ['ROLE_USER'], 'm', 'Abraham', new DateTimeImmutable('2002-04-05'), 'DE', ''],
         ];
     }
 
@@ -108,6 +112,10 @@ class AppFixtures extends Fixture
             [1, new DateTimeImmutable('2022-08-15'), new DateTimeImmutable('2022-10-18'), new DateTimeImmutable('2022-12-24'), 'I am plan to visit the West Coast of the United States. This will be my first trip.'],
             [2, new DateTimeImmutable('2023-09-21'), new DateTimeImmutable('2023-11-22'), new DateTimeImmutable('2024-11-22'), 'I go to Canada with working holiday visa around october 2023 :)'],
             [3, new DateTimeImmutable('2023-01-05'), new DateTimeImmutable('2023-03-01'), new DateTimeImmutable('2023-07-30'), 'J\'organise la première saison de ryokosan Vlog, la destination n\'est pas encore choisi.'],
+            [4, new DateTimeImmutable('2022-12-18'), new DateTimeImmutable('2023-01-17'), new DateTimeImmutable('2023-03-26'), 'Quiero ir a ver la aurora boreal en Noruega. Quien viene ?'],
+            [5, new DateTimeImmutable('2022-08-15'), new DateTimeImmutable('2022-10-18'), new DateTimeImmutable('2022-12-24'), 'It\'s my first time in Paris, I don\'t have a precise date. I want to see the eiffel tower.'],
+            [6, new DateTimeImmutable('2023-09-21'), new DateTimeImmutable('2023-11-22'), new DateTimeImmutable('2024-11-22'), 'Like every year I\'m going to do a hike in Wales and followed by another in Scotland, it\'s wonderful!! :)'],
+            [7, new DateTimeImmutable('2023-01-05'), new DateTimeImmutable('2023-03-01'), new DateTimeImmutable('2023-07-30'), 'Ich fahre nach Thailand, um in den neuen Jahren auf der Vollmondparty zu feiern.'],
         ];
     }
 }
