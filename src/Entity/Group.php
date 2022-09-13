@@ -30,9 +30,13 @@ class Group
     #[ORM\JoinTable(name: "user_group")]
     private Collection $userToGroups;
 
+    #[ORM\ManyToMany(targetEntity: Message::class, mappedBy: 'messageToGroups')]
+    private Collection $messages;
+
     public function __construct()
     {
         $this->userToGroups = new ArrayCollection();
+        $this->messages = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -96,6 +100,33 @@ class Group
     public function removeUserToGroups(User $userToGroups): self
     {
         $this->userToGroups->removeElement($userToGroups);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Message>
+     */
+    public function getMessages(): Collection
+    {
+        return $this->messages;
+    }
+
+    public function addMessage(Message $message): self
+    {
+        if (!$this->messages->contains($message)) {
+            $this->messages->add($message);
+            $message->addMessageToGroup($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMessage(Message $message): self
+    {
+        if ($this->messages->removeElement($message)) {
+            $message->removeMessageToGroup($this);
+        }
 
         return $this;
     }
