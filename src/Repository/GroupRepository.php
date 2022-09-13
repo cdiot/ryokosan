@@ -39,6 +39,22 @@ class GroupRepository extends ServiceEntityRepository
         }
     }
 
+    /**
+     * Search vaults
+     * @param string $id
+     * @return array
+     **/
+    public function groupsOfUser(string $id): array
+    {
+        $qb = $this->createQueryBuilder('g')
+            ->leftJoin('g.userToGroups', 'u')
+            ->where('u.email = :id')
+            ->setParameter('id', $id);
+
+        $query = $qb->getQuery();
+        return $query->execute();
+    }
+
     //    /**
     //     * @return Group[] Returns an array of Group objects
     //     */

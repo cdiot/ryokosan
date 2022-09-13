@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.messaging_index'|trans }} {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8 mb-3">
+                <h1 class="heading mt-3 mb-4">
+                    {{ 'title.messaging_index'|trans }}
+                </h1>
+                <p class="lead">{{ 'lead.messaging_index'|trans }}</p>
+                <ul class="list-group">
+                    {% if groups %}
+                        {% for group in groups %}
+                            <li class="list-group-item">
+                                <div class="d-flex align-items-center">
+                                    <h3 class="paragraph m-2">
+                                        {{ group.Name }}<br>
+                                        <small>
+                                        {{ group.UpdatedAt|format_datetime('full', 'short', locale=app.request.locale) }}
+                                        </small>
+                                    </h3>
+                                </div>
+							</li>
+                        {% else %}
+                            <div class="alert alert-info text-center">
+                                {{ 'notification.empty_messaging'|trans|raw }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+                <div class="input-group mb-3 pt-3 d-flex justify-content-end">
+                    <a href="{{ path('app_group_new') }}" class="button button-outline-action">{{ 'action.new_group'|trans }}</a>
+                </div>
+            </div>
+		</div>
+	</section>
+{% endblock %}
+

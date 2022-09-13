@@ -32,7 +32,7 @@ class Group
 
     public function __construct()
     {
-        $this->userToGroup = new ArrayCollection();
+        $this->userToGroups = new ArrayCollection();
     }
 
     public function getId(): ?int

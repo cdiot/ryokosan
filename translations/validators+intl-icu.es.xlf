@@ -46,6 +46,10 @@
                 <source>constraints.blank_description</source>
                 <target>Por favor ingrese su descripción.</target>
             </trans-unit>
+            <trans-unit id="constraints.blank_name">
+                <source>constraints.blank_name</source>
+                <target>Introduzca el nombre del grupo.</target>
+            </trans-unit>
             <trans-unit id="constraints.lessthanorequal_birthday">
                 <source>constraints.lessthanorequal_birthday</source>
                 <target>La edad mínima requerida para registrarse es de 15 años.</target>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.messaging_new'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8 mb-3">
+                <h1 class="heading mt-3 mb-4">
+                    {{ 'title.messaging_new'|trans }}
+                </h1>
+                <p class="lead">{{ 'lead.messaging_new'|trans }}</p>
+                <!-- New Group form START -->
+                {{ form_start(form) }}
+                    {{ form_row(form.name) }}
+                    <h2 class="heading text-center">{{ 'heading.messaging_member_conversation'|trans }}</h2>
+                    <p class="paragraph">{{ 'help.messaging_member_conversation'|trans }}</p>
+                    {{ form_row(form.userToGroups) }}
+                    <button class="button button-action mb-3" type="submit">{{ 'action.save'|trans }}</button>
+                {{ form_end(form) }}
+                <!-- New Group form End -->
+            </div>
+		</div>
+	</section>
+{% endblock %}

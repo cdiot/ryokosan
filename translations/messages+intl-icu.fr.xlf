@@ -66,6 +66,14 @@
                 <source>title.about</source>
                 <target>À propos</target>
             </trans-unit>
+            <trans-unit id="title.messaging_index">
+                <source>title.messaging_index</source>
+                <target>Messagerie</target>
+            </trans-unit>
+            <trans-unit id="title.messaging_new">
+                <source>title.messaging_new</source>
+                <target>Nouvelle conversation</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -146,6 +154,10 @@
                 <source>heading.about_us</source>
                 <target>En quoi sommes-nous différents des autres ?</target>
             </trans-unit>
+            <trans-unit id="heading.messaging_member_conversation">
+                <source>heading.messaging_member_conversation</source>
+                <target>Les membres de la conversation</target>
+            </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
                 <target>Rejoint la communauté</target>
@@ -193,6 +205,14 @@
             <trans-unit id="lead.edit_activity">
                 <source>lead.edit_activity</source>
                 <target>Modifie ton activité et augmente tes chances de trouver un compagnon de voyage partageant le même projet que toi.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_index">
+                <source>lead.messaging_index</source>
+                <target>Ryokosan Messaging est le service de messagerie instantanée, intégré à la plateforme Ryokosan. Cette messagerie vous permet d'échanger avec les autres membres.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_new">
+                <source>lead.messaging_new</source>
+                <target>Créer une nouvelle conversation et commence à discuter avec nos autres membres.</target>
             </trans-unit>
             <trans-unit id="content.join_the_community">
                 <source>content.join_the_community</source>
@@ -314,6 +334,10 @@
                 <source>action.send_him_message</source>
                 <target>Envoie lui un message</target>
             </trans-unit>
+            <trans-unit id="action.new_group">
+                <source>action.new_group</source>
+                <target>Nouvelle Conversation</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -385,6 +409,14 @@
             <trans-unit id="label.end_date">
                 <source>label.end_date</source>
                 <target>Jusqu'au</target>
+            </trans-unit>
+            <trans-unit id="label.name">
+                <source>label.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="label.users">
+                <source>label.users</source>
+                <target>Utilisateurs</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -494,6 +526,10 @@
                 <source>help.activity_date</source>
                 <target>Si tu n'as pas encore d'idée de date, ne t'inquiétez pas, met une date approximative ou saute cette étape.</target>
             </trans-unit>
+            <trans-unit id="help.messaging_member_conversation">
+                <source>help.messaging_member_conversation</source>
+                <target>Ce système de sélection des utilisateurs en est à sa première version, et sera optimisé dans notre prochaine mise à jour pour être plus convivial.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Un email de confirmation ta été envoyé.</target>
@@ -521,6 +557,10 @@
             <trans-unit id="notification.empty_activity">
                 <source>notification.empty_activity</source>
                 <target>Aucune activité trouvée.</target>
+            </trans-unit>
+            <trans-unit id="notification.empty_messaging">
+                <source>notification.empty_messaging</source>
+                <target><![CDATA[Pas de message pour l'instant,<br> démarer une convertation.]]></target>
             </trans-unit>
             <trans-unit id="invalid_message.repeat_password">
                 <source>invalid_message.repeat_password</source>
