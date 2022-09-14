@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.messaging_chat'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8 mb-3">
+                <h1 class="heading mt-3 mb-4">
+                    {{ 'title.messaging_chat'|trans }}
+                </h1>
+                <p class="lead">{{ 'lead.messaging_chat'|trans }}</p>
+                <div class="p-4 h-60 rounded d-flex flex-column mt-2" id="chatBox">
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if message.user == user %}
+
+                                <p class="align-self-end border rounded p-2 mb-1 a">
+                                    {{ message.Message }}
+                                    <small class="d-block">
+                                    <b>{{ user.Firstname }}</b>
+                                    <br>
+                                    {{ message.CreatedAt|format_datetime('short', 'short', locale=app.request.locale) }}
+                                    </small>
+                                </p>
+                            {% else %}
+                                <p class="align-self-start border rounded p-2 mb-1">
+                                    {{ message.Message }}
+                                    <small class="d-block">
+                                        <b>{{ message.User.Firstname }}</b>
+                                        <br>
+                                        {{ message.CreatedAt|format_datetime('short', 'short', locale='fr') }}
+                                    </small>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <div class="alert alert-info text-center">
+                            {{ 'notification.empty_chat'|trans|raw }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- Form Message START --> 
+        </div>
+        {{ form_start(form) }}
+            <div class="row justify-content-center p-4">
+                <div class="col-8 p-0">{{ form_row(form.message, {'label': false}) }}</div>
+                <div class="col-2 p-0">
+                    <button class="btn btn-primary p-3" type="submit">
+                        {{ 'action.send'|trans }}
+                    </button>
+                </div>
+            </div>
+        {{ form_end(form) }}
+        <!-- Form Message END -->
+	</section>
+{% endblock %}

@@ -66,6 +66,18 @@
                 <source>title.about</source>
                 <target>A proposito</target>
             </trans-unit>
+            <trans-unit id="title.messaging_index">
+                <source>title.messaging_index</source>
+                <target>Mensajería</target>
+            </trans-unit>
+            <trans-unit id="title.messaging_new">
+                <source>title.messaging_new</source>
+                <target>Nueva conversación</target>
+            </trans-unit>
+            <trans-unit id="title.messaging_chat">
+                <source>title.messaging_chat</source>
+                <target>Charlar</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan es una red social para encontrar compañeros de viaje cerca de ti o de tus destinos. Comparte tus vacaciones, conoce gente y vive aventuras enriquecedoras.</target>
@@ -146,6 +158,10 @@
                 <source>heading.about_us</source>
                 <target>¿Cómo somos diferentes de los demás ?</target>
             </trans-unit>
+            <trans-unit id="heading.messaging_member_conversation">
+                <source>heading.messaging_member_conversation</source>
+                <target>Los integrantes de la conversación</target>
+            </trans-unit>
             <trans-unit id="sub_heading.join_the_community">
                 <source>sub_heading.join_the_community</source>
                 <target>Unete a la communidad</target>
@@ -193,6 +209,18 @@
             <trans-unit id="lead.edit_activity">
                 <source>lead.edit_activity</source>
                 <target>Actualice su actividad y aumente sus posibilidades de encontrar un compañero de viaje que comparta el mismo proyecto que usted.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_index">
+                <source>lead.messaging_index</source>
+                <target>Ryokosan Messaging es el servicio de mensajería instantánea, integrado en la plataforma Ryokosan. Esta mensajería le permite intercambiar con otros miembros.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_new">
+                <source>lead.messaging_new</source>
+                <target>Cree una nueva conversación y comience a chatear con nuestros otros miembros.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_chat">
+                <source>lead.messaging_chat</source>
+                <target>El chat evolucionará en futuras actualizaciones. Actualmente, para ver los últimos mensajes recibidos o el mensaje que acaba de enviar, actualice la página.</target>
             </trans-unit>
             <trans-unit id="content.join_the_community">
                 <source>content.join_the_community</source>
@@ -313,6 +341,10 @@
                 <source>action.send_him_message</source>
                 <target>Envíale un mensaje</target>
             </trans-unit>
+            <trans-unit id="action.new_group">
+                <source>action.new_group</source>
+                <target>Nueva conversación</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Correo electrónico</target>
@@ -384,6 +416,14 @@
             <trans-unit id="label.end_date">
                 <source>label.end_date</source>
                 <target>Hasta que</target>
+            </trans-unit>
+            <trans-unit id="label.name">
+                <source>label.name</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="label.users">
+                <source>label.users</source>
+                <target>Usuarios</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -493,6 +533,10 @@
                 <source>help.activity_date</source>
                 <target>Si aún no tienes idea de la fecha, no te preocupes, pon una fecha aproximada u omite este paso.</target>
             </trans-unit>
+            <trans-unit id="help.messaging_member_conversation">
+                <source>help.messaging_member_conversation</source>
+                <target>Este sistema de selección de usuarios está en su primera versión y se optimizará en nuestra próxima actualización para que sea más fácil de usar.</target>
+            </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>
                 <target>Se le ha enviado un correo electrónico de confirmación.</target>
@@ -520,6 +564,14 @@
             <trans-unit id="notification.empty_activity">
                 <source>notification.empty_activity</source>
                 <target>No se encontró actividad.</target>
+            </trans-unit>
+            <trans-unit id="notification.empty_messaging">
+                <source>notification.empty_messaging</source>
+                <target><![CDATA[Aún no hay ningún mensaje,<br> iniciar una conversión.]]></target>
+            </trans-unit>
+            <trans-unit id="notification.empty_chat">
+                <source>notification.empty_chat</source>
+                <target><![CDATA[Aún no hay mensajes,<br> ¡comienza la conversación!]]></target>
             </trans-unit>
             <trans-unit id="invalid_message.repeat_password">
                 <source>invalid_message.repeat_password</source>

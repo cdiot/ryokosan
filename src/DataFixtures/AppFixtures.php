@@ -107,7 +107,7 @@ class AppFixtures extends Fixture
     private function getActivityData(): array
     {
         return [
-            //[$user, $createdAt, $startDate, $endDate, $description]
+            // $ActivityData = [$user, $createdAt, $startDate, $endDate, $description]
             [0, new DateTimeImmutable('2022-12-18'), new DateTimeImmutable('2023-01-17'), new DateTimeImmutable('2023-03-26'), 'Excited to travel around Asia. I have no plan, just enjoy.'],
             [1, new DateTimeImmutable('2022-08-15'), new DateTimeImmutable('2022-10-18'), new DateTimeImmutable('2022-12-24'), 'I am plan to visit the West Coast of the United States. This will be my first trip.'],
             [2, new DateTimeImmutable('2023-09-21'), new DateTimeImmutable('2023-11-22'), new DateTimeImmutable('2024-11-22'), 'I go to Canada with working holiday visa around october 2023 :)'],

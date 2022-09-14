@@ -79,6 +79,37 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
             ->getResult();
     }
 
+    /**
+     * Search vaults
+     * @param int $userId
+     * @return array
+     */
+    public function userInGroup(int $userId): array
+    {
+        $qb = $this->createQueryBuilder('u')
+            ->leftJoin('u.myGroups', 'g')
+            ->where('u.id = :id')
+            ->setParameter('id', $userId);
+
+        $query = $qb->getQuery();
+        return $query->execute();
+    }
+
+    /**
+     * Search vaults
+     * @param string $username
+     * @return array
+     */
+    public function user(string $username): array
+    {
+        $qb = $this->createQueryBuilder('u')
+            ->where('u.email = :username')
+            ->setParameter('username', $username);
+
+        $query = $qb->getQuery();
+        return $query->execute();
+    }
+
     //    /**
     //     * @return User[] Returns an array of User objects
     //     */

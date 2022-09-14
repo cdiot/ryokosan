@@ -57,10 +57,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Activity::class, orphanRemoval: true)]
     private Collection $activities;
 
+    #[ORM\ManyToMany(targetEntity: Group::class, mappedBy: 'userToGroups')]
+    private Collection $myGroups;
+
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Message::class, orphanRemoval: true)]
+    private Collection $messages;
+
     public function __construct()
     {
         $this->logs = new ArrayCollection();
         $this->activities = new ArrayCollection();
+        $this->myGroups = new ArrayCollection();
+        $this->messages = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -259,6 +267,68 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
             // set the owning side to null (unless already changed)
             if ($activity->getUser() === $this) {
                 $activity->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Group>
+     */
+    public function getGroups(): Collection
+    {
+        return $this->myGroups;
+    }
+
+    public function addGroups(Group $myGroups): self
+    {
+        if (!$this->myGroups->contains($myGroups)) {
+            $this->myGroups->add($myGroups);
+            $myGroups->addUserToGroups($this);
+        }
+
+        return $this;
+    }
+
+    public function removeGroups(Group $myGroups): self
+    {
+        if ($this->myGroups->removeElement($myGroups)) {
+            $myGroups->removeUserToGroups($this);
+        }
+
+        return $this;
+    }
+
+    public function __call($name, $arguments)
+    {
+        return $this->email;
+    }
+
+    /**
+     * @return Collection<int, Message>
+     */
+    public function getMessages(): Collection
+    {
+        return $this->messages;
+    }
+
+    public function addMessage(Message $message): self
+    {
+        if (!$this->messages->contains($message)) {
+            $this->messages->add($message);
+            $message->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMessage(Message $message): self
+    {
+        if ($this->messages->removeElement($message)) {
+            // set the owning side to null (unless already changed)
+            if ($message->getUser() === $this) {
+                $message->setUser(null);
             }
         }
 

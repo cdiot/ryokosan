@@ -42,7 +42,7 @@
                                 <p class="mb-0"> <strong>{{ 'activity.desired_date'|trans }} </strong><br> {{ activity.startDate ? activity.startDate|date('Y-m-d') : '' }} - {{ activity.endDate ? activity.endDate|date('Y-m-d') : '' }}</p>
                             {% endif %}
                             <p class="mb-3"> <strong>{{ 'activity.description'|trans }} </strong><br> {{ activity.description }}</p>
-                            <a class="button button-action btn-sm" href="#">{{ 'action.send_him_message'|trans }}</a>
+                            <a class="button button-action btn-sm" href="{{ path("app_group_index") }}">{{ 'action.send_him_message'|trans }}</a>
                         </div>
                     </div>
                     <!-- Activity END -->
