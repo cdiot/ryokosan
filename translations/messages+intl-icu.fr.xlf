@@ -74,6 +74,10 @@
                 <source>title.messaging_new</source>
                 <target>Nouvelle conversation</target>
             </trans-unit>
+            <trans-unit id="title.messaging_chat">
+                <source>title.messaging_chat</source>
+                <target>Discuter</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -213,6 +217,10 @@
             <trans-unit id="lead.messaging_new">
                 <source>lead.messaging_new</source>
                 <target>Créer une nouvelle conversation et commence à discuter avec nos autres membres.</target>
+            </trans-unit>
+            <trans-unit id="lead.messaging_chat">
+                <source>lead.messaging_chat</source>
+                <target>Le chat évoluera dans les futures mises à jour. Actuellement pour voir les derniers messages reçus ou le message que tu viens d'envoyer, actualise la page.</target>
             </trans-unit>
             <trans-unit id="content.join_the_community">
                 <source>content.join_the_community</source>
@@ -561,6 +569,10 @@
             <trans-unit id="notification.empty_messaging">
                 <source>notification.empty_messaging</source>
                 <target><![CDATA[Pas de message pour l'instant,<br> démarer une convertation.]]></target>
+            </trans-unit>
+            <trans-unit id="notification.empty_chat">
+                <source>notification.empty_chat</source>
+                <target><![CDATA[Pas de message pour l'instant,<br> commencer la conversation!]]></target>
             </trans-unit>
             <trans-unit id="invalid_message.repeat_password">
                 <source>invalid_message.repeat_password</source>

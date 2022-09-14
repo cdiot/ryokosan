@@ -55,6 +55,22 @@ class GroupRepository extends ServiceEntityRepository
         return $query->execute();
     }
 
+    /**
+     * Search vaults
+     * @param int $id
+     * @return array
+     **/
+    public function oneGroup(int $id): array
+    {
+        $qb = $this->createQueryBuilder('g')
+            ->leftJoin('g.messages', 'm')
+            ->where('g.id = :id')
+            ->setParameter('id', $id);
+
+        $query = $qb->getQuery();
+        return $query->execute();
+    }
+
     //    /**
     //     * @return Group[] Returns an array of Group objects
     //     */

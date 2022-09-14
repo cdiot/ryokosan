@@ -14,7 +14,8 @@
                 <ul class="list-group">
                     {% if groups %}
                         {% for group in groups %}
-                            <li class="list-group-item">
+                            <li class="list-group-item mb-2">
+                            <a href="{{ path('app_chat', {'id':group.id}) }}">
                                 <div class="d-flex align-items-center">
                                     <h3 class="paragraph m-2">
                                         {{ group.Name }}<br>
@@ -24,6 +25,7 @@
                                     </h3>
                                 </div>
 							</li>
+                            </a>
                         {% else %}
                             <div class="alert alert-info text-center">
                                 {{ 'notification.empty_messaging'|trans|raw }}

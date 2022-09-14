@@ -3,8 +3,12 @@
 namespace App\Controller;
 
 use App\Entity\Group;
+use App\Entity\Message;
 use App\Repository\GroupRepository;
 use App\Form\GroupFormType;
+use App\Form\MessageFormType;
+use App\Repository\MessageRepository;
+use App\Repository\UserRepository;
 use DateTime;
 use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
@@ -78,6 +82,42 @@ class MessagingController extends AbstractController
 
         return $this->renderForm('messaging/new_group.html.twig', [
             'form' => $form,
+        ]);
+    }
+
+    #[Route(path: [
+        'en' => '/conversation/{id}',
+        'de' => '/gespräch/{id}',
+        'es' => '/conversación/{id}',
+        'fr' => '/conversation/{id}',
+        'it' => '/conversazione/{id}',
+    ], name: 'app_chat')]
+    public function chat($id, Request $request, UserRepository $userRepository, GroupRepository $groupRepository, MessageRepository $messageRepository): Response
+    {
+        $user = $userRepository->user($this->getUser()->getUserIdentifier());
+        $userInConv = $userRepository->userInGroup($user[0]->getId());
+        $group = $groupRepository->oneGroup($id);
+        $messages = $messageRepository->messagesOfGroup($group);
+
+        $newMessage = new Message();
+        $form = $this->createForm(MessageFormType::class, $newMessage);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $newMessage->setCreatedAt(new DateTimeImmutable());
+            $newMessage->setUser($this->getUser());
+            $newMessage->addMessageToGroup($this->entityManager->getReference(Group::class, $id));
+            $this->entityManager->persist($newMessage);
+            $this->entityManager->flush();
+            $this->redirectToRoute('app_chat', ['id' => $id]);
+        }
+
+        return $this->render('messaging/chat.html.twig', [
+            'user' => $this->getUser(),
+            'userInConv' => $userInConv,
+            'group' => $group,
+            'messages' => $messages,
+            'form' => $form->createView()
         ]);
     }
 }
