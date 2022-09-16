@@ -142,6 +142,10 @@
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: what is it ?</target>
             </trans-unit>
+            <trans-unit id="heading.activity_destinations">
+                <source>heading.activity_destinations</source>
+                <target>Precision on the destination(s)</target>
+            </trans-unit>
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>The desired date</target>
@@ -426,6 +430,10 @@
                 <source>label.users</source>
                 <target>Users</target>
             </trans-unit>
+            <trans-unit id="label.destinations">
+                <source>label.destinations</source>
+                <target>Destination</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Select</target>
@@ -530,6 +538,10 @@
                 <source>help.account_logs</source>
                 <target>Review and manage your login activity.</target>
             </trans-unit>
+            <trans-unit id="help.activity_destinations">
+                <source>help.activity_destinations</source>
+                <target>Choose a country, a city or skip this step.</target>
+            </trans-unit>
             <trans-unit id="help.activity_date">
                 <source>help.activity_date</source>
                 <target>If you have no idea of the date yet, don't worry, put an approximate date or skip this step.</target>
@@ -633,7 +645,7 @@
             </trans-unit>
             <trans-unit id="activity.destinations">
                 <source>activity.destinations</source>
-                <target>Destination countries</target>
+                <target>Destination</target>
             </trans-unit>
             <trans-unit id="activity.description">
                 <source>activity.description</source>

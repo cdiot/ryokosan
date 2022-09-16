@@ -1,5 +1,8 @@
 {{ form_start(form) }}
     {{ form_row(form.description) }}
+    <h2 class="heading text-center">{{ 'heading.activity_destinations'|trans }}</h2>
+    <p class="paragraph">{{ 'help.activity_destinations'|trans }}</p>
+    {{ form_row(form.destinations) }} 
     <h2 class="heading text-center">{{ 'heading.activity_date'|trans }}</h2>
     <p class="paragraph">{{ 'help.activity_date'|trans }}</p>
     {{ form_row(form.startDate) }}

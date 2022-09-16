@@ -142,6 +142,10 @@
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: che cos'è?</target>
             </trans-unit>
+            <trans-unit id="heading.activity_destinations">
+                <source>heading.activity_destinations</source>
+                <target>Precisione sulla/e destinazione/i</target>
+            </trans-unit>
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>La data desiderata</target>
@@ -418,6 +422,10 @@
                 <source>label.users</source>
                 <target>Utenti</target>
             </trans-unit>
+            <trans-unit id="label.destinations">
+                <source>label.destinations</source>
+                <target>Destinazione</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Selezionare</target>
@@ -522,6 +530,10 @@
                 <source>help.account_logs</source>
                 <target>Rivedi e gestisci la tua attività di accesso.</target>
             </trans-unit>
+            <trans-unit id="help.activity_destinations">
+                <source>help.activity_destinations</source>
+                <target>Scegli un paese, una città o salta questo passaggio.</target>
+            </trans-unit>
             <trans-unit id="help.activity_date">
                 <source>help.activity_date</source>
                 <target>Se non hai ancora idea della data, non preoccuparti, inserisci una data approssimativa o salta questo passaggio.</target>
@@ -625,7 +637,7 @@
             </trans-unit>
             <trans-unit id="activity.destinations">
                 <source>activity.destinations</source>
-                <target>Paesi di destinazione</target>
+                <target>Destinazione</target>
             </trans-unit>
             <trans-unit id="activity.description">
                 <source>activity.description</source>

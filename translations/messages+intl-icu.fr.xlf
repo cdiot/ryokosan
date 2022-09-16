@@ -142,6 +142,10 @@
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: qu'est-ce que c'est ?</target>
             </trans-unit>
+            <trans-unit id="heading.activity_destinations">
+                <source>heading.activity_destinations</source>
+                <target>Précision sur la ou les destination(s)</target>
+            </trans-unit>
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>La date souhaitée</target>
@@ -426,12 +430,16 @@
                 <source>label.users</source>
                 <target>Utilisateurs</target>
             </trans-unit>
+            <trans-unit id="label.destinations">
+                <source>label.destinations</source>
+                <target>Destination</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Sélectionner</target>
             </trans-unit>
-            <trans-unit id="placeholder.description">
-                <source>placeholder.description</source>
+            <trans-unit id="lead.description">
+                <source>lead.description</source>
                 <target>Écrit un max de détails sur ton voyage. Plus tu donne d'informations plus ce sera facile pour les autres covoyageurs de comprendre ton projet.</target>
             </trans-unit>
             <trans-unit id="alt.jumbotron">
@@ -529,6 +537,10 @@
             <trans-unit id="help.account_logs">
                 <source>help.account_logs</source>
                 <target>Examine et gére ton activité de connexion.</target>
+            </trans-unit>
+            <trans-unit id="help.activity_destinations">
+                <source>help.activity_destinations</source>
+                <target>Choisi un pays, une ville ou ou saute cette étape.</target>
             </trans-unit>
             <trans-unit id="help.activity_date">
                 <source>help.activity_date</source>
@@ -633,7 +645,7 @@
             </trans-unit>
             <trans-unit id="activity.destinations">
                 <source>activity.destinations</source>
-                <target>Pays de destinations</target>
+                <target>Destination</target>
             </trans-unit>
             <trans-unit id="activity.description">
                 <source>activity.description</source>
