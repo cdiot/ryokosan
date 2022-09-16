@@ -38,8 +38,15 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            {% if activity.startDate|length or activity.endDate|length  > 0 %}
+                            {% if activity.startDate|length and activity.endDate|length  > 0 %}
                                 <p class="mb-0"> <strong>{{ 'activity.desired_date'|trans }} </strong><br> {{ activity.startDate ? activity.startDate|date('Y-m-d') : '' }} - {{ activity.endDate ? activity.endDate|date('Y-m-d') : '' }}</p>
+                            {% endif %}
+                            {% if activity.destinations|length > 0 %}
+                                <p class="mb-0"> <strong>{{ 'activity.destinations'|trans }} </strong><br> 
+                                    {% for destination in activity.destinations %}
+                                        {{ destination.name }},
+                                    {% endfor %}
+                                </p>
                             {% endif %}
                             <p class="mb-3"> <strong>{{ 'activity.description'|trans }} </strong><br> {{ activity.description }}</p>
                             <a class="button button-action btn-sm" href="{{ path("app_group_index") }}">{{ 'action.send_him_message'|trans }}</a>

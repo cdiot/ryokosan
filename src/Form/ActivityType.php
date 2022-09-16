@@ -3,6 +3,8 @@
 namespace App\Form;
 
 use App\Entity\Activity;
+use App\Entity\Destination;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -25,6 +27,17 @@ class ActivityType extends AbstractType
                     new NotBlank([
                         'message' => 'constraints.blank_description',
                     ])
+                ]
+            ])
+            ->add('destinations', EntityType::class, [
+                'label' => 'label.destinations',
+                'required' => true,
+                'class' => Destination::class,
+                'choice_label' => 'name',
+                'multiple' => true,
+                'expanded' => false,
+                'attr' => [
+                    'class' => 'js-example-basic-single'
                 ]
             ])
             ->add('startDate', DateType::class, [

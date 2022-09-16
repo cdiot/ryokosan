@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Activity;
 use App\Form\ActivityType;
 use App\Repository\ActivityRepository;
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -51,6 +52,7 @@ class ActivityController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $activity->setUser($this->getUser());
+            $activity->setCreatedAt(new DateTime());
             $activityRepository->add($activity, true);
 
             return $this->redirectToRoute('app_activity_index', [], Response::HTTP_SEE_OTHER);

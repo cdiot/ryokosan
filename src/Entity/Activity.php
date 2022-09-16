@@ -34,6 +34,9 @@ class Activity
     #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
 
+    #[ORM\ManyToMany(targetEntity: Destination::class, inversedBy: 'activities')]
+    private Collection $destinations;
+
     public function __construct()
     {
         $this->destinations = new ArrayCollection();
@@ -100,6 +103,33 @@ class Activity
     public function setUser(?user $user): self
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Destination>
+     */
+    public function getDestinations(): Collection
+    {
+        return $this->destinations;
+    }
+
+    public function addDestination(Destination $destination): self
+    {
+        if (!$this->destinations->contains($destination)) {
+            $this->destinations->add($destination);
+            $destination->addActivity($this);
+        }
+
+        return $this;
+    }
+
+    public function removeDestination(Destination $destination): self
+    {
+        if ($this->destinations->removeElement($destination)) {
+            $destination->removeActivity($this);
+        }
 
         return $this;
     }

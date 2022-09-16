@@ -142,6 +142,10 @@
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: ¿Qué es?</target>
             </trans-unit>
+            <trans-unit id="heading.activity_destinations">
+                <source>heading.activity_destinations</source>
+                <target>Precisión en el(los) destino(s)</target>
+            </trans-unit>
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>La fecha deseada</target>
@@ -425,6 +429,10 @@
                 <source>label.users</source>
                 <target>Usuarios</target>
             </trans-unit>
+            <trans-unit id="label.destinations">
+                <source>label.destinations</source>
+                <target>Destino</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Seleccione</target>
@@ -529,6 +537,10 @@
                 <source>help.account_logs</source>
                 <target>Revise y administre su actividad de inicio de sesión.</target>
             </trans-unit>
+            <trans-unit id="help.activity_destinations">
+                <source>help.activity_destinations</source>
+                <target>Elija un país, una ciudad u omita este paso.</target>
+            </trans-unit>
             <trans-unit id="help.activity_date">
                 <source>help.activity_date</source>
                 <target>Si aún no tienes idea de la fecha, no te preocupes, pon una fecha aproximada u omite este paso.</target>
@@ -632,7 +644,7 @@
             </trans-unit>
             <trans-unit id="activity.destinations">
                 <source>activity.destinations</source>
-                <target>Países de destino</target>
+                <target>Destino</target>
             </trans-unit>
             <trans-unit id="activity.description">
                 <source>activity.description</source>

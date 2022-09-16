@@ -142,6 +142,10 @@
                 <source>heading.what_is_it</source>
                 <target>Ryokosan: Was ist es ?</target>
             </trans-unit>
+            <trans-unit id="heading.activity_destinations">
+                <source>heading.activity_destinations</source>
+                <target>Präzision auf das Ziel (die Ziele)</target>
+            </trans-unit>
             <trans-unit id="heading.activity_date">
                 <source>heading.activity_date</source>
                 <target>The desired date</target>
@@ -426,6 +430,10 @@
                 <source>label.users</source>
                 <target>Benutzer</target>
             </trans-unit>
+            <trans-unit id="label.destinations">
+                <source>label.destinations</source>
+                <target>Ziel</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Auswählen</target>
@@ -530,6 +538,10 @@
                 <source>help.account_logs</source>
                 <target>Überprüfen und verwalten Sie Ihre Anmeldeaktivitäten.</target>
             </trans-unit>
+            <trans-unit id="help.activity_destinations">
+                <source>help.activity_destinations</source>
+                <target>Wählen Sie ein Land, eine Stadt oder überspringen Sie diesen Schritt.</target>
+            </trans-unit>
             <trans-unit id="help.activity_date">
                 <source>help.activity_date</source>
                 <target>Wenn Sie das Datum noch nicht kennen, machen Sie sich keine Sorgen, geben Sie ein ungefähres Datum ein oder überspringen Sie diesen Schritt.</target>
@@ -633,7 +645,7 @@
             </trans-unit>
             <trans-unit id="activity.destinations">
                 <source>activity.destinations</source>
-                <target>Zielländer</target>
+                <target>Ziel</target>
             </trans-unit>
             <trans-unit id="activity.description">
                 <source>activity.description</source>
