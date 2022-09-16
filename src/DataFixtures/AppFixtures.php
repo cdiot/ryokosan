@@ -25,6 +25,7 @@ class AppFixtures extends Fixture
         $this->loadUsers($manager);
         $this->loadLogs($manager);
         $this->loadActivities($manager);
+        $this->loadDestinations($manager);
     }
 
     private function loadUsers(ObjectManager $manager): void
@@ -74,6 +75,16 @@ class AppFixtures extends Fixture
         $manager->flush();
     }
 
+    private function loadDestinations(ObjectManager $manager): void
+    {
+        foreach ($this->getDestinationsData() as [$name]) {
+            $destinations = new Destination();
+            $destinations->setName($name);
+            $manager->persist($destinations);
+        }
+        $manager->flush();
+    }
+
     private function getUserData(): array
     {
         return [
@@ -116,6 +127,23 @@ class AppFixtures extends Fixture
             [5, new DateTimeImmutable('2022-08-15'), new DateTimeImmutable('2022-10-18'), new DateTimeImmutable('2022-12-24'), 'It\'s my first time in Paris, I don\'t have a precise date. I want to see the eiffel tower.'],
             [6, new DateTimeImmutable('2023-09-21'), new DateTimeImmutable('2023-11-22'), new DateTimeImmutable('2024-11-22'), 'Like every year I\'m going to do a hike in Wales and followed by another in Scotland, it\'s wonderful!! :)'],
             [7, new DateTimeImmutable('2023-01-05'), new DateTimeImmutable('2023-03-01'), new DateTimeImmutable('2023-07-30'), 'Ich fahre nach Thailand, um in den neuen Jahren auf der Vollmondparty zu feiern.'],
+        ];
+    }
+
+    private function getDestinationsData(): array
+    {
+        return [
+            //[$name]
+            ['Thailand'],
+            ['Malaysia'],
+            ['Vietnam '],
+            ['Cambodia'],
+            ['United States'],
+            ['Canada'],
+            ['Norway'],
+            ['France'],
+            ['United Kingdom'],
+            ['Japan'],
         ];
     }
 }
