@@ -350,6 +350,10 @@
                 <source>action.new_group</source>
                 <target>New Conversation</target>
             </trans-unit>
+            <trans-unit id="action.search">
+                <source>action.search</source>
+                <target>Search</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -433,6 +437,14 @@
             <trans-unit id="label.destinations">
                 <source>label.destinations</source>
                 <target>Destination</target>
+            </trans-unit>
+            <trans-unit id="label.minAge">
+                <source>label.minAge</source>
+                <target>Minimum age</target>
+            </trans-unit>
+            <trans-unit id="label.maxAge">
+                <source>label.maxAge</source>
+            <target>Maximum age</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>

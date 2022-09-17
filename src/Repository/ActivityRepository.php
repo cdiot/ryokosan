@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Activity;
+use App\Service\ActivitySearch;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -53,6 +54,49 @@ class ActivityRepository extends ServiceEntityRepository
             ->select('COUNT(a.id) as value')
             ->getQuery()
             ->getOneOrNullResult();
+    }
+
+    /**
+     * Retrieve activities based on user research
+     * @param ActivitySearch $search
+     * @return Activity[]
+     */
+    public function findBySearch(ActivitySearch $search)
+    {
+        $query = $this
+            ->createQueryBuilder('a')
+            ->select('u', 'a')
+            ->join('a.user', 'u');
+        if ($search->getDestinations()->count() > 0) {
+            $key = 0;
+            foreach ($search->getDestinations() as $destination) {
+                $key++;
+                $query = $query
+                    ->andWhere(":destination$key MEMBER OF a.destinations")
+                    ->setParameter("destination$key", $destination);
+            }
+        }
+        if ($search->getMinAge()) {
+            $query = $query
+                ->andWhere('u.birthday <= :minAge')
+                ->setParameter('minAge', $search->getMinAge());
+        }
+        if ($search->getMaxAge()) {
+            $query = $query
+                ->andWhere('u.birthday >= :maxAge')
+                ->setParameter('maxAge', $search->getMaxAge());
+        }
+        if ($search->getStartDate()) {
+            $query = $query
+                ->andWhere('a.startDate >= :startDate')
+                ->setParameter('startDate', $search->getStartDate());
+        }
+        if ($search->getGender()) {
+            $query = $query
+                ->andWhere('u.gender = :gender')
+                ->setParameter('gender', $search->getGender());
+        }
+        return $query->getQuery()->getResult();
     }
 
     //    /**
