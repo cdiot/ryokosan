@@ -349,6 +349,10 @@
                 <source>action.new_group</source>
                 <target>Nueva conversación</target>
             </trans-unit>
+            <trans-unit id="action.search">
+                <source>action.search</source>
+                <target>Búsqueda</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Correo electrónico</target>
@@ -432,6 +436,14 @@
             <trans-unit id="label.destinations">
                 <source>label.destinations</source>
                 <target>Destino</target>
+            </trans-unit>
+            <trans-unit id="label.minAge">
+                <source>label.minAge</source>
+                <target>Edad mínima</target>
+            </trans-unit>
+            <trans-unit id="label.maxAge">
+                <source>label.maxAge</source>
+                <target>Edad máxima</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>

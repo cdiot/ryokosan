@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Activity;
+use App\Form\ActivitySearchType;
 use App\Form\ActivityType;
 use App\Repository\ActivityRepository;
+use App\Service\ActivitySearch;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Knp\Component\Pager\PaginatorInterface;
@@ -24,7 +26,15 @@ class ActivityController extends AbstractController
     ], name: 'app_activity_index', methods: ['GET'])]
     public function index(ActivityRepository $activityRepository, PaginatorInterface $paginator, Request $request): Response
     {
-        $query = $activityRepository->findAll();
+        $search = new ActivitySearch();
+        $form = $this->createForm(ActivitySearchType::class, $search);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $query = $activityRepository->findBySearch($search);
+        } else {
+            $query = $activityRepository->findAll();
+        }
 
         $pagination = $paginator->paginate(
             $query, /* query NOT result */
@@ -32,7 +42,10 @@ class ActivityController extends AbstractController
             6 /*limit per page*/
         );
 
-        return $this->render('activity/index.html.twig', ['pagination' => $pagination]);
+        return $this->render('activity/index.html.twig', [
+            'pagination' => $pagination,
+            'form' => $form->createView(),
+        ]);
     }
 
     #[Route(path: [
