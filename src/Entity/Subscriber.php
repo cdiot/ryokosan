@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\SubscriberRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: SubscriberRepository::class)]
@@ -28,9 +30,13 @@ class Subscriber
     #[ORM\Column]
     private ?bool $isValid = null;
 
+    #[ORM\ManyToMany(targetEntity: Rubric::class, mappedBy: 'subscribers')]
+    private Collection $rubrics;
+
     public function __construct()
     {
         $this->created_at = new \DateTimeImmutable();
+        $this->rubrics = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -95,6 +101,29 @@ class Subscriber
     {
         $this->isValid = $isValid;
 
+        return $this;
+    }
+
+    /**
+     * @return Collection|Rubric[]
+     */
+    public function getRubrics(): Collection
+    {
+        return $this->rubrics;
+    }
+
+    public function addRubric(Rubric $rubric): self
+    {
+        if (!$this->rubrics->contains($rubric)) {
+            $this->rubrics[] = $rubric;
+        }
+
+        return $this;
+    }
+
+    public function removeRubric(Rubric $rubric): self
+    {
+        $this->rubrics->removeElement($rubric);
         return $this;
     }
 }

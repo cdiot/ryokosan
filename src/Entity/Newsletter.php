@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\NewsletterRepository;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -25,6 +26,10 @@ class Newsletter
 
     #[ORM\Column]
     private ?bool $isSent = null;
+
+    #[ORM\ManyToOne(targetEntity: Rubric::class, inversedBy: "newsletters")]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Rubric $rubrics = null;
 
     public function __construct()
     {
@@ -81,6 +86,18 @@ class Newsletter
     public function setIsSent(bool $isSent): self
     {
         $this->isSent = $isSent;
+
+        return $this;
+    }
+
+    public function getRubrics(): ?Rubric
+    {
+        return $this->rubrics;
+    }
+
+    public function setRubrics(?Rubric $rubrics): self
+    {
+        $this->rubrics = $rubrics;
 
         return $this;
     }
