@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use App\Entity\Activity;
 use App\Entity\Destination;
 use App\Entity\Logs;
+use App\Entity\Rubric;
 use App\Entity\User;
 use DateTimeImmutable;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -26,6 +27,7 @@ class AppFixtures extends Fixture
         $this->loadLogs($manager);
         $this->loadActivities($manager);
         $this->loadDestinations($manager);
+        $this->loadRubrics($manager);
     }
 
     private function loadUsers(ObjectManager $manager): void
@@ -81,6 +83,16 @@ class AppFixtures extends Fixture
             $destinations = new Destination();
             $destinations->setName($name);
             $manager->persist($destinations);
+        }
+        $manager->flush();
+    }
+
+    private function loadRubrics(ObjectManager $manager): void
+    {
+        foreach ($this->getRubricsData() as [$name]) {
+            $rubrics = new Rubric();
+            $rubrics->setName($name);
+            $manager->persist($rubrics);
         }
         $manager->flush();
     }
@@ -144,6 +156,16 @@ class AppFixtures extends Fixture
             ['France'],
             ['United Kingdom'],
             ['Japan'],
+        ];
+    }
+
+    private function getRubricsData(): array
+    {
+        return [
+            //[$name]
+            ['Actuality'],
+            ['Japan'],
+            ['Update'],
         ];
     }
 }
