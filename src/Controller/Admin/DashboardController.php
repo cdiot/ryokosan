@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Rubric;
 use App\Entity\User;
 use App\Repository\ActivityRepository;
 use App\Repository\UserRepository;
@@ -61,6 +62,7 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('menu.dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('menu.users', 'fas fa-user', User::class);
+        yield MenuItem::linkToCrud('label.rubrics', 'fas fa-list', Rubric::class);
 
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
     }
