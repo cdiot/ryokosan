@@ -61,6 +61,13 @@ class SitemapController extends AbstractController
             'it' => $this->generateUrl('app_activity_new', ['_locale' => 'it']),
         ];
         $urls[] = [
+            'en' => $this->generateUrl('app_newsletter', ['_locale' => 'en']),
+            'de' => $this->generateUrl('app_newsletter', ['_locale' => 'de']),
+            'es' => $this->generateUrl('app_newsletter', ['_locale' => 'es']),
+            'fr' => $this->generateUrl('app_newsletter', ['_locale' => 'fr']),
+            'it' => $this->generateUrl('app_newsletter', ['_locale' => 'it']),
+        ];
+        $urls[] = [
             'en' => $this->generateUrl('app_contact', ['_locale' => 'en']),
             'de' => $this->generateUrl('app_contact', ['_locale' => 'de']),
             'es' => $this->generateUrl('app_contact', ['_locale' => 'es']),
