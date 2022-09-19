@@ -34,6 +34,10 @@
                 <source>title.template_contact</source>
                 <target>New message</target>
             </trans-unit>
+            <trans-unit id="title.template_subscribe">
+                <source>title.template_subscribe</source>
+                <target>Your subscription</target>
+            </trans-unit>
             <trans-unit id="title.account_edit">
                 <source>title.account_edit</source>
                 <target>Edit your profile</target>
@@ -77,6 +81,10 @@
             <trans-unit id="title.messaging_chat">
                 <source>title.messaging_chat</source>
                 <target>Chat</target>
+            </trans-unit>
+            <trans-unit id="title.choice_newsletter">
+                <source>title.choice_newsletter</source>
+                <target>Choose your newsletters</target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
@@ -285,6 +293,10 @@
                 <source>content.template_reset_password</source>
                 <target><![CDATA[<h1>Hello!</h1><p>To reset your password, please visit the following link</p>]]></target>
             </trans-unit>
+            <trans-unit id="content.template_subscribe">
+                <source>content.template_subscribe</source>
+                <target><![CDATA[You are now subscribed to the newsletter, confirm your subscription. <br> Click on this link]]></target>
+            </trans-unit>
             <trans-unit id="content.expire_link">
                 <source>content.expire_link</source>
                 <target>This link will expire in</target>
@@ -446,6 +458,10 @@
                 <source>label.maxAge</source>
             <target>Maximum age</target>
             </trans-unit>
+            <trans-unit id="label.rubrics">
+                <source>label.rubrics</source>
+                <target>Rubrics</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Select</target>
@@ -590,6 +606,14 @@
                 <source>notification.empty_activity</source>
                 <target>No activity found.</target>
             </trans-unit>
+            <trans-unit id="notification.subscription_send">
+                <source>notification.subscription_send</source>
+                <target>Subscription awaiting validation.</target>
+            </trans-unit>
+            <trans-unit id="notification.subscription_verified">
+                <source>notification.subscription_verified</source>
+                <target>Your subscription to our newsletter is activated.</target>
+            </trans-unit>
             <trans-unit id="notification.empty_messaging">
                 <source>notification.empty_messaging</source>
                 <target><![CDATA[No message yet,<br> start a conversion.]]></target>
@@ -617,6 +641,10 @@
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Ryokosan Accounts</target>
+            </trans-unit>
+            <trans-unit id="email.subject.subscription">
+                <source>email.subject.subscription</source>
+                <target>Your newsletter subscription</target>
             </trans-unit>
             <trans-unit id="reset_token.content">
                 <source>reset_token.content</source>

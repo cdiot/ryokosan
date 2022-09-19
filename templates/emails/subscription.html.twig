@@ -1,0 +1,2 @@
+<h1>{{ 'title.template_subscribe'|trans }}</h1>
+<p>{{ 'content.template_subscribe'|trans|raw }}<a href="{{ absolute_url(path('app_newsletter_confirm', {id: subscriber.id, token: token})) }}">{{ absolute_url(path('app_newsletter_confirm', {id: subscriber.id, token: token})) }}</a></p>

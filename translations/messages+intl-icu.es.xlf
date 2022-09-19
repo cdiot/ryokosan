@@ -34,6 +34,10 @@
                 <source>title.template_contact</source>
                 <target>Nuevo mensaje</target>
             </trans-unit>
+            <trans-unit id="title.template_subscribe">
+                <source>title.template_subscribe</source>
+                <target>Su suscripción</target>
+            </trans-unit>
             <trans-unit id="title.account_edit">
                 <source>title.account_edit</source>
                 <target>Edite su perfil</target>
@@ -77,6 +81,10 @@
             <trans-unit id="title.messaging_chat">
                 <source>title.messaging_chat</source>
                 <target>Charlar</target>
+            </trans-unit>
+            <trans-unit id="title.choice_newsletter">
+                <source>title.choice_newsletter</source>
+                <target>Elige tus boletines</target>
             </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
@@ -284,6 +292,10 @@
                 <source>content.template_reset_password</source>
                 <target><![CDATA[<h1>¡Hola!</h1><p>Para restablecer su contraseña, visite el siguiente enlace</p>]]></target>
             </trans-unit>
+            <trans-unit id="content.template_subscribe">
+                <source>content.template_subscribe</source>
+                <target><![CDATA[Ahora está suscrito al boletín, confirme su suscripción. <br> Haga clic en este enlace]]></target>
+            </trans-unit>
             <trans-unit id="content.expire_link">
                 <source>content.expire_link</source>
                 <target>Este enlace caducará en</target>
@@ -445,6 +457,10 @@
                 <source>label.maxAge</source>
                 <target>Edad máxima</target>
             </trans-unit>
+            <trans-unit id="label.rubrics">
+                <source>label.rubrics</source>
+                <target>Rúbricas</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Seleccione</target>
@@ -597,6 +613,14 @@
                 <source>notification.empty_chat</source>
                 <target><![CDATA[Aún no hay mensajes,<br> ¡comienza la conversación!]]></target>
             </trans-unit>
+            <trans-unit id="notification.subscription_send">
+                <source>notification.subscription_send</source>
+                <target>Suscripción en espera de validación.</target>
+            </trans-unit>
+            <trans-unit id="notification.subscription_verified">
+                <source>notification.subscription_verified</source>
+                <target>Su suscripción a nuestro boletín está activada.</target>
+            </trans-unit>
             <trans-unit id="invalid_message.repeat_password">
                 <source>invalid_message.repeat_password</source>
                 <target>La contraseña y la confirmación deben ser las mismas.</target>
@@ -616,6 +640,10 @@
             <trans-unit id="email.from.registration">
                 <source>email.from.registration</source>
                 <target>Cuentas Ryokosan</target>
+            </trans-unit>
+            <trans-unit id="email.subject.subscription">
+                <source>email.subject.subscription</source>
+                <target>Su suscripción al boletín</target>
             </trans-unit>
             <trans-unit id="reset_token.content">
                 <source>reset_token.content</source>
