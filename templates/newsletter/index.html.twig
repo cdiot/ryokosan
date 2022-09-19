@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'title.choice_newsletter'|trans }} {{ parent() }}{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+                {% for message in app.flashes('message') %}
+                    <div class="alert alert-success">{{ message }}</div>
+                {% endfor %}
+                <h1 class="heading">{{ 'title.choice_newsletter'|trans }}</h1>
+                {{form(form)}}
+            </div>
+        </div>
+    </section>
+{% endblock %}
