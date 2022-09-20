@@ -13,7 +13,7 @@ class DashboardControllerTest extends WebTestCase
         // get or create the user somehow (e.g. creating some users only
         // for tests while loading the test fixtures)
         $userRepository = static::getContainer()->get(UserRepository::class);
-        $testUser = $userRepository->findOneByEmail('bar@gmail.com');
+        $testUser = $userRepository->findOneByEmail('bar@ryokosan.com');
 
         $client->loginUser($testUser);
 
