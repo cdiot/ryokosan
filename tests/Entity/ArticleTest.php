@@ -36,11 +36,11 @@ class ArticleTest extends TestCase
         $article->setTitle('something new')
             ->setContent('something new')
             ->setFeaturedText('something new')
-            ->setCreatedAt($createdAt)
-            ->setUpdatedAt($updatedAt);
+            ->setCreatedAt($createdYesterday)
+            ->setUpdatedAt($updatedAtYesterday);
 
-        $this->assertFalse($article->getCreatedAt() === $createdYesterday);
-        $this->assertFalse($article->getUpdatedAt() === $updatedAtYesterday);
+        $this->assertFalse($article->getCreatedAt() === new \DateTime());
+        $this->assertFalse($article->getUpdatedAt() === new \DateTime());
         $this->assertFalse($article->getTitle() === 'something');
         $this->assertFalse($article->getContent() === 'something');
         $this->assertFalse($article->getFeaturedText() === 'something');

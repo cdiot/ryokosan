@@ -27,6 +27,9 @@ class Article
     #[ORM\Column(type: 'text', nullable: true)]
     private $featuredText;
 
+    #[ORM\ManyToOne(targetEntity: Media::class)]
+    private $featuredImage;
+
     #[ORM\Column(type: 'datetime')]
     private $createdAt;
 
@@ -119,6 +122,18 @@ class Article
     public function setFeaturedText(?string $featuredText): self
     {
         $this->featuredText = $featuredText;
+
+        return $this;
+    }
+
+    public function getFeaturedImage(): ?Media
+    {
+        return $this->featuredImage;
+    }
+
+    public function setFeaturedImage(?Media $featuredImage): self
+    {
+        $this->featuredImage = $featuredImage;
 
         return $this;
     }
