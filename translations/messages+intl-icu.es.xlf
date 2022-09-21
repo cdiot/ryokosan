@@ -461,6 +461,50 @@
                 <source>label.rubrics</source>
                 <target>Rúbricas</target>
             </trans-unit>
+            <trans-unit id="label.title">
+                <source>label.title</source>
+                <target>Título</target>
+            </trans-unit>
+            <trans-unit id="label.slug">
+                <source>label.slug</source>
+                <target>Slug</target>
+            </trans-unit>
+            <trans-unit id="label.content">
+                <source>label.content</source>
+                <target>Contenido</target>
+            </trans-unit>
+            <trans-unit id="label.featured_text">
+                <source>label.featured_text</source>
+                <target>Texto destacado</target>
+            </trans-unit>
+            <trans-unit id="label.categories">
+                <source>label.categories</source>
+                <target>Categorías</target>
+            </trans-unit>
+            <trans-unit id="label.featured_image">
+                <source>label.featured_image</source>
+                <target>Imagen destacada</target>
+            </trans-unit>
+            <trans-unit id="label.created_at">
+                <source>label.created_at</source>
+                <target>Creado en</target>
+            </trans-unit>
+            <trans-unit id="label.updated_at">
+                <source>label.updated_at</source>
+                <target>Actualizado en</target>
+            </trans-unit>
+            <trans-unit id="label.color">
+                <source>label.color</source>
+                <target>Color</target>
+            </trans-unit>
+            <trans-unit id="label.filename">
+                <source>label.filename</source>
+                <target>Nombre de archivo</target>
+            </trans-unit>
+            <trans-unit id="label.alt_text">
+                <source>label.alt_text</source>
+                <target>Texto alternativo</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Seleccione</target>
@@ -545,9 +589,41 @@
                 <source>menu.dashboard</source>
                 <target>Tablero</target>
             </trans-unit>
-            <trans-unit id="menu.users">
-                <source>menu.users</source>
-                <target>Usuarios</target>
+            <trans-unit id="menu.back_to_site">
+                <source>menu.back_to_site</source>
+                <target>Ir al sitio</target>
+            </trans-unit>
+            <trans-unit id="menu.add">
+                <source>menu.add</source>
+                <target>Agregar</target>
+            </trans-unit>
+            <trans-unit id="menu.accounts">
+                <source>menu.accounts</source>
+                <target>Cuentas</target>
+            </trans-unit>
+            <trans-unit id="menu.all_accounts">
+                <source>menu.all_accounts</source>
+                <target>Todas las cuentas</target>
+            </trans-unit>
+            <trans-unit id="menu.articles">
+                <source>menu.articles</source>
+                <target>Artículos</target>
+            </trans-unit>
+            <trans-unit id="menu.all_articles">
+                <source>menu.all_articles</source>
+                <target>Todos los artículos</target>
+            </trans-unit>
+            <trans-unit id="menu.categories">
+                <source>menu.categories</source>
+                <target>Categorías</target>
+            </trans-unit>
+            <trans-unit id="menu.medias">
+                <source>menu.medias</source>
+                <target>Medios</target>
+            </trans-unit>
+            <trans-unit id="menu.media_library">
+                <source>menu.media_library</source>
+                <target>Mediateca</target>
             </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>
