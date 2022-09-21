@@ -3,10 +3,13 @@
 namespace App\DataFixtures;
 
 use App\Entity\Activity;
+use App\Entity\Article;
+use App\Entity\Category;
 use App\Entity\Destination;
 use App\Entity\Logs;
 use App\Entity\Rubric;
 use App\Entity\User;
+use DateTime;
 use DateTimeImmutable;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -28,6 +31,8 @@ class AppFixtures extends Fixture
         $this->loadActivities($manager);
         $this->loadDestinations($manager);
         $this->loadRubrics($manager);
+        $this->loadArticles($manager);
+        $this->loadCategories($manager);
     }
 
     private function loadUsers(ObjectManager $manager): void
@@ -93,6 +98,32 @@ class AppFixtures extends Fixture
             $rubrics = new Rubric();
             $rubrics->setName($name);
             $manager->persist($rubrics);
+        }
+        $manager->flush();
+    }
+
+    private function loadArticles(ObjectManager $manager): void
+    {
+        foreach ($this->getArticleData() as [$title, $slug, $content, $featuredText]) {
+            $article = new Article();
+            $article->setTitle($title)
+                ->setSlug($slug)
+                ->setContent($content)
+                ->setFeaturedText($featuredText)
+                ->setCreatedAt(new DateTime());
+            $manager->persist($article);
+        }
+        $manager->flush();
+    }
+
+    private function loadCategories(ObjectManager $manager): void
+    {
+        foreach ($this->getCategoryData() as [$name, $slug, $color]) {
+            $category = new Category();
+            $category->setName($name)
+                ->setSlug($slug)
+                ->setColor($color);
+            $manager->persist($category);
         }
         $manager->flush();
     }
@@ -166,6 +197,27 @@ class AppFixtures extends Fixture
             ['Actuality'],
             ['Japan'],
             ['Update'],
+        ];
+    }
+
+    private function getArticleData(): array
+    {
+        return [
+            // $ArticleData = [$title, $slug, $content, $featuredText, $createdAt]
+            ['Are you planning to go to Japan?', 'are-you-planning-to-go-to-japan', 'Eating in the street, showing off your tattoos, talking out loud in the subway... What seems banal to Westerners can surprise or even disconcert the Japanese. Attached to teinei, a notion that encompasses kindness, gentleness or discretion, the inhabitants of Japan can sometimes find it difficult to welcome foreigners because of cultural differences.', 'The extreme courtesy of the Japanese surprises more than one globetrotter. Here are the habits and customs to be respected in the Land of the Rising Sun.'],
+            ['French in the conquest of the West', 'french-in-the-conquest-of-the-west', 'On April 7, A captain writes in his diary: “We were about to penetrate at least two thousand miles into the interior of a country, the ground of which no civilized man had yet trod. It has been a year since a famous expedition, sent by the emperor to discover the unknown territories of the west, left St Louis to go up the Missouri by canoe. From there, they will eventually find a passage through the terrifying Rocky Mountains, despite disease, hunger, grizzly bear attacks, to finally reach the Pacific coast. 
+                With a primarily scientific objective (cartographic survey, discovery of fauna and flora) the expedition, which responds to clearly expansionist aims, will open the way to what is called the Conquest of the West with its procession of destruction and massacres.', 'A Frenchman who participated in an expedition to the American West between 1800 and 1850 and whose success owes him a lot.'],
+            ['Japan hit by Typhoon', 'japan-hit-by-typhoon', 'Along the coast, in the south-east of Japan, in the prefecture of Kochi, the sea was raging: the waves, immense, were several meters high. The roofs were torn off, the trees uprooted, the roads flooded. The inhabitants saw the damage after the passage of the typhoon, Monday, September 19. In a games room, the windows did not resist the power of the winds. Gusts that reached 234 km / h when the typhoon arrived.', 'A typhoon ravaged the coasts of Japan on Monday, September 19. One person died and dozens injured.'],
+        ];
+    }
+
+    private function getCategoryData(): array
+    {
+        return [
+            // $CategoryData =[$name, $slug, $color]
+            ['Ryokosan news', 'ryokosan-news', '#5a4997'],
+            ['Travel stories', 'travel-stories', '#33b72a'],
+            ['Japan', 'japan', '#d7909'],
         ];
     }
 }
