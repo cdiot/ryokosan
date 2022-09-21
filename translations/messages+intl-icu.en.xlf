@@ -86,6 +86,10 @@
                 <source>title.choice_newsletter</source>
                 <target>Choose your newsletters</target>
             </trans-unit>
+            <trans-unit id="title.article_recent">
+                <source>title.article_recent</source>
+                <target>Recent Articles</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -198,6 +202,14 @@
                 <source>sub_heading.verified_profiles_and_guaranteed</source>
                 <target>Verified Profiles and Guaranteed</target>
             </trans-unit>
+            <trans-unit id="sub_heading.about">
+                <source>sub_heading.about</source>
+                <target>About</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.categories">
+                <source>sub_heading.categories</source>
+                <target>Categories</target>
+            </trans-unit>
             <trans-unit id="lead.jumbotron">
                 <source>lead.jumbotron</source>
                 <target>Share your holidays, organize activities and meet people, find a travel companion around you or your destinations.</target>
@@ -281,6 +293,11 @@
             <trans-unit id="content.about_us_bottom">
                 <source>content.about_us_bottom</source>
                 <target>For any questions, contact the Ryokosan team: contact@ryokosan.com</target>
+            </trans-unit>
+            <trans-unit id="content.about_blog">
+                <source>content.about_blog</source>
+                <target>Find here all the news from Ryokosan, travel stories and other useful information about your favorite destinations.
+                    From Japan via Europe or the United States, there are plenty of topics to share our passion with you.</target>
             </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
@@ -537,6 +554,10 @@
             <trans-unit id="menu.add_activity">
                 <source>menu.add_activity</source>
                 <target>Create an activity</target>
+            </trans-unit>
+            <trans-unit id="menu.blog">
+                <source>menu.blog</source>
+                <target>Blog</target>
             </trans-unit>
             <trans-unit id="menu.login">
                 <source>menu.login</source>

@@ -1,0 +1,18 @@
+<article class="article">
+        <div class="img-box">
+            {% if article.featuredImage %}
+                <a href="{{ path('app_article_show', { 'slug': article.slug }) }}">
+                    <img src="/uploads/{{ article.featuredImage.filename }}" alt="{{ article.featuredImage.altText }}" loading="lazy" max-width="220" max-height="155" >
+                </a>
+            {% endif %}
+        </div>
+        <div class="text-box">
+            <h2 class="article-title">
+                <a href="{{ path('app_article_show', { 'slug': article.slug }) }}" class="text-decoration-none">{{ article.title }}</a>
+            </h2>
+            <p>{{ article.featuredText ?: article.content|striptags|slice(0, 130) ~ '...' }}</p>
+            <p class="article-metas">
+                {{ article.createdAt|date('d M Y') }}
+            </p>
+        </div>
+</article>

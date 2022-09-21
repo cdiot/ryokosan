@@ -86,6 +86,10 @@
                 <source>title.choice_newsletter</source>
                 <target>Choisis tes newsletters</target>
             </trans-unit>
+            <trans-unit id="title.article_recent">
+                <source>title.article_recent</source>
+                <target>Articles récents</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan est un réseau social pour trouver des compagnons de voyage autour de vous ou de vos destinations. Partagez vos vacances, faites des rencontres et vivez des aventures enrichissantes.</target>
@@ -198,6 +202,14 @@
                 <source>sub_heading.verified_profiles_and_guaranteed</source>
                 <target>Profils vérifiés et garantis</target>
             </trans-unit>
+            <trans-unit id="sub_heading.about">
+                <source>sub_heading.about</source>
+                <target>À propos</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.categories">
+                <source>sub_heading.categories</source>
+                <target>Catégories</target>
+            </trans-unit>
             <trans-unit id="lead.jumbotron">
                 <source>lead.jumbotron</source>
                 <target>Partage tes vacances, organise des activités et faits des rencontres, trouve un compagnon de voyage autour de toi ou de tes destinations.</target>
@@ -281,6 +293,11 @@
             <trans-unit id="content.about_us_bottom">
                 <source>content.about_us_bottom</source>
                 <target>Pour toute question, contactez l'équipe de Ryokosan : contact@ryokosan.com</target>
+            </trans-unit>
+            <trans-unit id="content.about_blog">
+                <source>content.about_blog</source>
+                <target>Retrouve ici toute l'actualité de Ryokosan, des histoires de voyages et d'autres infos utiles sur vos destinations préférées. 
+                    Du Japon en passant par l'Europe ou les états unis, ce ne sont pas les sujets qui manquent pour partager avec vous notre passion.</target>
             </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
@@ -537,6 +554,10 @@
             <trans-unit id="menu.add_activity">
                 <source>menu.add_activity</source>
                 <target>Créer une activité</target>
+            </trans-unit>
+            <trans-unit id="menu.blog">
+                <source>menu.blog</source>
+                <target>Blog</target>
             </trans-unit>
             <trans-unit id="menu.login">
                 <source>menu.login</source>

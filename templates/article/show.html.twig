@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <h1 class="heading">{{ article.title }}</h1>
+                    <p class="mb-4"><strong>{{ article.featuredText }}</strong></p>
+                        {% if article.featuredImage %}
+                            <a href="{{ path('app_article_show', { 'slug': article.slug }) }}">
+                                <img src="/uploads/{{ article.featuredImage.filename }}" alt="{{ article.featuredImage.altText }}" class="mb-4" loading="lazy">
+                            </a>
+                        {% endif %}
+                    <p>{{ article.content|raw }}</p>
+                </article>
+            </div>
+        </div>
+    </div>
+{% endblock %}

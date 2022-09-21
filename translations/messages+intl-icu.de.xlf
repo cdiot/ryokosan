@@ -86,6 +86,10 @@
                 <source>title.choice_newsletter</source>
                 <target>Wählen Sie Ihre Newsletter aus</target>
             </trans-unit>
+            <trans-unit id="title.article_recent">
+                <source>title.article_recent</source>
+                <target>Aktuelle Artikel</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan ist ein soziales Netzwerk, um Reisefreunde in Ihrer Nähe oder an Ihren Reisezielen zu finden. Teilen Sie Ihren Urlaub, treffen Sie Leute und erleben Sie bereichernde Abenteuer.</target>
@@ -198,6 +202,14 @@
                 <source>sub_heading.verified_profiles_and_guaranteed</source>
                 <target>Verifizierte Profile und garantiert</target>
             </trans-unit>
+            <trans-unit id="sub_heading.about">
+                <source>sub_heading.about</source>
+                <target>Um</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.categories">
+                <source>sub_heading.categories</source>
+                <target>Kategorien</target>
+            </trans-unit>
             <trans-unit id="lead.jumbotron">
                 <source>lead.jumbotron</source>
                 <target>Teilen Sie Ihren Urlaub, organisieren Sie Aktivitäten und treffen Sie Leute, finden Sie einen Reisebegleiter in Ihrer Nähe oder an Ihren Zielen.</target>
@@ -281,7 +293,12 @@
             <trans-unit id="content.about_us_bottom">
                 <source>content.about_us_bottom</source>
                 <target>Wenden Sie sich bei Fragen an das Ryokosan-Team: contact@ryokosan.com</target>
-            </trans-unit> 
+            </trans-unit>
+            <trans-unit id="content.about_blog">
+                <source>content.about_blog</source>
+                <target>Hier finden Sie alle Neuigkeiten von Ryokosan, Reisegeschichten und andere nützliche Informationen zu Ihren Lieblingszielen.
+                    Von Japan über Europa oder die Vereinigten Staaten gibt es viele Themen, um unsere Leidenschaft mit Ihnen zu teilen.</target>
+            </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
                 <target><![CDATA[Das Ryokosan-Team bedankt sich für das entgegengebrachte Vertrauen.
@@ -537,6 +554,10 @@
             <trans-unit id="menu.add_activity">
                 <source>menu.add_activity</source>
                 <target>Erstellen Sie eine Aktivität</target>
+            </trans-unit>
+            <trans-unit id="menu.blog">
+                <source>menu.blog</source>
+                <target>Bloggen</target>
             </trans-unit>
             <trans-unit id="menu.login">
                 <source>menu.login</source>

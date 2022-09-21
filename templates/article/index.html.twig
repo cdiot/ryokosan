@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'title.article_recent'|trans }} {{ parent() }} 
+{% endblock %}
+
+{% block body %}
+    <div class="container py-4 blog archive">
+        <div class="row">
+            <div class="col-lg-8">
+                <section>
+                    <h1 class="heading">{{ 'title.article_recent'|trans }}</h1>
+                    <div id="article-list">
+                        {% include 'article/_list.html.twig' with { articles: articles } %}
+                    </div>
+                <section>
+            </div>
+            <div class="col-lg-4">
+                    <div class="p-3 mb-2 rounded widget-about">
+                        <h3 class="subheading">{{ 'sub_heading.about'|trans }}</h3>
+                        <p class="head mb-0">{{ 'content.about_blog'|trans }}</p>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="subheading">{{ 'sub_heading.categories'|trans }}</h3>
+                        <ol class="list-unstyled mb-0">
+                            {%  for category in categories %}
+                                <li><a class="text-decoration-none" href="{{ path('app_category_show', { 'slug': category.slug }) }}">{{ category.name }}</a></li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
