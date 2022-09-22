@@ -86,6 +86,10 @@
                 <source>title.choice_newsletter</source>
                 <target>Choose your newsletters</target>
             </trans-unit>
+            <trans-unit id="title.article_recent">
+                <source>title.article_recent</source>
+                <target>Recent Articles</target>
+            </trans-unit>
             <trans-unit id="description.head">
                 <source>description.head</source>
                 <target>Ryokosan is a social network to find travel buddies around you or your destinations. Share your holidays, meet people and live enriching adventures.</target>
@@ -198,6 +202,14 @@
                 <source>sub_heading.verified_profiles_and_guaranteed</source>
                 <target>Verified Profiles and Guaranteed</target>
             </trans-unit>
+            <trans-unit id="sub_heading.about">
+                <source>sub_heading.about</source>
+                <target>About</target>
+            </trans-unit>
+            <trans-unit id="sub_heading.categories">
+                <source>sub_heading.categories</source>
+                <target>Categories</target>
+            </trans-unit>
             <trans-unit id="lead.jumbotron">
                 <source>lead.jumbotron</source>
                 <target>Share your holidays, organize activities and meet people, find a travel companion around you or your destinations.</target>
@@ -281,6 +293,11 @@
             <trans-unit id="content.about_us_bottom">
                 <source>content.about_us_bottom</source>
                 <target>For any questions, contact the Ryokosan team: contact@ryokosan.com</target>
+            </trans-unit>
+            <trans-unit id="content.about_blog">
+                <source>content.about_blog</source>
+                <target>Find here all the news from Ryokosan, travel stories and other useful information about your favorite destinations.
+                    From Japan via Europe or the United States, there are plenty of topics to share our passion with you.</target>
             </trans-unit>
             <trans-unit id="content.template_registration">
                 <source>content.template_registration</source>
@@ -462,6 +479,54 @@
                 <source>label.rubrics</source>
                 <target>Rubrics</target>
             </trans-unit>
+            <trans-unit id="label.title">
+                <source>label.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="label.slug">
+                <source>label.slug</source>
+                <target>Slug</target>
+            </trans-unit>
+            <trans-unit id="label.content">
+                <source>label.content</source>
+                <target>Content</target>
+            </trans-unit>
+            <trans-unit id="label.featured_text">
+                <source>label.featured_text</source>
+                <target>Featured text</target>
+            </trans-unit>
+            <trans-unit id="label.categories">
+                <source>label.categories</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="label.featured_image">
+                <source>label.featured_image</source>
+                <target>Featured image</target>
+            </trans-unit>
+            <trans-unit id="label.created_at">
+                <source>label.created_at</source>
+                <target>Created at</target>
+            </trans-unit>
+            <trans-unit id="label.updated_at">
+                <source>label.updated_at</source>
+                <target>Updated at</target>
+            </trans-unit>
+            <trans-unit id="label.is_published">
+                <source>label.is_published</source>
+                <target>Is published</target>
+            </trans-unit>
+            <trans-unit id="label.color">
+                <source>label.color</source>
+                <target>Color</target>
+            </trans-unit>
+            <trans-unit id="label.filename">
+                <source>label.filename</source>
+                <target>Filename</target>
+            </trans-unit>
+            <trans-unit id="label.alt_text">
+                <source>label.alt_text</source>
+                <target>Alt text</target>
+            </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
                 <target>Select</target>
@@ -493,6 +558,10 @@
             <trans-unit id="menu.add_activity">
                 <source>menu.add_activity</source>
                 <target>Create an activity</target>
+            </trans-unit>
+            <trans-unit id="menu.blog">
+                <source>menu.blog</source>
+                <target>Blog</target>
             </trans-unit>
             <trans-unit id="menu.login">
                 <source>menu.login</source>
@@ -546,9 +615,41 @@
                 <source>menu.dashboard</source>
                 <target>Dashboard</target>
             </trans-unit>
-            <trans-unit id="menu.users">
-                <source>menu.users</source>
-                <target>Users</target>
+            <trans-unit id="menu.back_to_site">
+                <source>menu.back_to_site</source>
+                <target>Go to the site</target>
+            </trans-unit>
+            <trans-unit id="menu.add">
+                <source>menu.add</source>
+                <target>Add</target>
+            </trans-unit>
+            <trans-unit id="menu.accounts">
+                <source>menu.accounts</source>
+                <target>Accounts</target>
+            </trans-unit>
+            <trans-unit id="menu.all_accounts">
+                <source>menu.all_accounts</source>
+                <target>All accounts</target>
+            </trans-unit>
+            <trans-unit id="menu.articles">
+                <source>menu.articles</source>
+                <target>Articles</target>
+            </trans-unit>
+            <trans-unit id="menu.all_articles">
+                <source>menu.all_articles</source>
+                <target>All articles</target>
+            </trans-unit>
+            <trans-unit id="menu.categories">
+                <source>menu.categories</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="menu.medias">
+                <source>menu.medias</source>
+                <target>Medias</target>
+            </trans-unit>
+            <trans-unit id="menu.media_library">
+                <source>menu.media_library</source>
+                <target>Media library</target>
             </trans-unit>
             <trans-unit id="help.enter_reset_password">
                 <source>help.enter_reset_password</source>

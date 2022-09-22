@@ -1,0 +1,46 @@
+/*
+Author : Chris ;
+Theme : Pure CSS;
+Description : Module article ;
+Tags : CSS, Symfony ;
+*/
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.article .img-box {
+    width: 30%;
+    padding-right: 1.25rem;
+}
+
+.article .text-box {
+    width: 70%;
+}
+
+.article h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.article h2+p {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .article h2+p {
+        display: block;
+        color: #333;
+    }
+}
+
+.article-metas {
+    color: var(--grey);
+}

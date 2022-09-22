@@ -25,7 +25,7 @@ class SubscriberTest extends TestCase
     {
         $subscriber = new Subscriber();
         $subscriber->setEmail('bar@gmail.com')
-            ->setIsRgpd(true)
+            ->setIsRgpd(false)
             ->setValidationToken('something new')
             ->setIsValid(false);
 

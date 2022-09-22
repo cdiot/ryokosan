@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repository\ArticleRepository;
+use App\Repository\CategoryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,8 +14,11 @@ class SitemapController extends AbstractController
     #[Route('/site-map.xml', name: 'app_site_map', defaults: [
         '_format' => 'xml',
     ])]
-    public function index(Request $request): Response
-    {
+    public function index(
+        Request $request,
+        ArticleRepository $articleRepository,
+        CategoryRepository $categoryRepository
+    ): Response {
         $hostname = $request->getSchemeAndHttpHost();
 
         $urls = [];
@@ -54,12 +59,60 @@ class SitemapController extends AbstractController
             'it' => $this->generateUrl('app_activity_index', ['_locale' => 'it']),
         ];
         $urls[] = [
-            'en' => $this->generateUrl('app_activity_new', ['_locale' => 'en']),
-            'de' => $this->generateUrl('app_activity_new', ['_locale' => 'de']),
-            'es' => $this->generateUrl('app_activity_new', ['_locale' => 'es']),
-            'fr' => $this->generateUrl('app_activity_new', ['_locale' => 'fr']),
-            'it' => $this->generateUrl('app_activity_new', ['_locale' => 'it']),
+            'en' => $this->generateUrl('app_article_index', ['_locale' => 'en']),
+            'de' => $this->generateUrl('app_article_index', ['_locale' => 'de']),
+            'es' => $this->generateUrl('app_article_index', ['_locale' => 'es']),
+            'fr' => $this->generateUrl('app_article_index', ['_locale' => 'fr']),
+            'it' => $this->generateUrl('app_article_index', ['_locale' => 'it']),
         ];
+        foreach ($articleRepository->findAll() as $article) {
+            $urls[] = [
+                'en' => $this->generateUrl('app_article_show', [
+                    'slug' => $article->getSlug(),
+                    '_locale' => 'en'
+                ]),
+                'de' => $this->generateUrl('app_article_show', [
+                    'slug' => $article->getSlug(),
+                    '_locale' => 'de'
+                ]),
+                'es' => $this->generateUrl('app_article_show', [
+                    'slug' => $article->getSlug(),
+                    '_locale' => 'es'
+                ]),
+                'fr' => $this->generateUrl('app_article_show', [
+                    'slug' => $article->getSlug(),
+                    '_locale' => 'fr'
+                ]),
+                'it' => $this->generateUrl('app_article_show', [
+                    'slug' => $article->getSlug(),
+                    '_locale' => 'it'
+                ]),
+            ];
+        }
+        foreach ($categoryRepository->findAll() as $category) {
+            $urls[] = [
+                'en' => $this->generateUrl('app_category_show', [
+                    'slug' => $category->getSlug(),
+                    '_locale' => 'en'
+                ]),
+                'de' => $this->generateUrl('app_category_show', [
+                    'slug' => $category->getSlug(),
+                    '_locale' => 'de'
+                ]),
+                'es' => $this->generateUrl('app_category_show', [
+                    'slug' => $category->getSlug(),
+                    '_locale' => 'es'
+                ]),
+                'fr' => $this->generateUrl('app_category_show', [
+                    'slug' => $category->getSlug(),
+                    '_locale' => 'fr'
+                ]),
+                'it' => $this->generateUrl('app_category_show', [
+                    'slug' => $category->getSlug(),
+                    '_locale' => 'it'
+                ]),
+            ];
+        }
         $urls[] = [
             'en' => $this->generateUrl('app_newsletter', ['_locale' => 'en']),
             'de' => $this->generateUrl('app_newsletter', ['_locale' => 'de']),
