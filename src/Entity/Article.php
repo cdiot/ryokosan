@@ -40,6 +40,9 @@ class Article implements TimestampedInterface
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'articles')]
     private $categories;
 
+    #[ORM\Column]
+    private ?bool $isPublished = null;
+
     public function __construct()
     {
         $this->categories = new ArrayCollection();
@@ -159,6 +162,18 @@ class Article implements TimestampedInterface
     public function removeCategory(Category $category): self
     {
         $this->categories->removeElement($category);
+
+        return $this;
+    }
+
+    public function isIsPublished(): ?bool
+    {
+        return $this->isPublished;
+    }
+
+    public function setIsPublished(bool $isPublished): self
+    {
+        $this->isPublished = $isPublished;
 
         return $this;
     }

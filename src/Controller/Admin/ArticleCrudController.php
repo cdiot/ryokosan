@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Article;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
@@ -31,6 +32,7 @@ class ArticleCrudController extends AbstractCrudController
             AssociationField::new('featuredImage', 'label.featured_image'),
             DateTimeField::new('createdAt', 'label.created_at')->hideOnForm(),
             DateTimeField::new('updatedAt', 'label.updated_at')->hideOnForm(),
+            BooleanField::new('isPublished', 'label.is_published'),
         ];
     }
 }

@@ -110,7 +110,8 @@ class AppFixtures extends Fixture
                 ->setSlug($slug)
                 ->setContent($content)
                 ->setFeaturedText($featuredText)
-                ->setCreatedAt(new DateTime());
+                ->setCreatedAt(new DateTime())
+                ->isIsPublished(true);
             $manager->persist($article);
         }
         $manager->flush();

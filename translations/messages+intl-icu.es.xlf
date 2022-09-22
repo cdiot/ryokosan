@@ -510,6 +510,10 @@
                 <source>label.updated_at</source>
                 <target>Actualizado en</target>
             </trans-unit>
+            <trans-unit id="label.is_published">
+                <source>label.is_published</source>
+                <target>Esta publicado</target>
+            </trans-unit>
             <trans-unit id="label.color">
                 <source>label.color</source>
                 <target>Color</target>
