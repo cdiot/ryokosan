@@ -5,8 +5,9 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     app.default_locale: 'en'
-    # This parameter defines the codes of the locales (languages) enabled in the application
+    # This parameter defines the codes of the locales (languages) enabled in the application illustrations
     app.supported_locales: en|de|es|fr|it
+    images_directory: "%kernel.project_dir%/public/uploads/pictures"
 
 services:
     # default configuration for services in *this* file
@@ -31,4 +32,8 @@ services:
             - { name: kernel.event_listener, event: security.interactive_login, method: onAuthenticationSuccess }
 
     # add more service definitions when explicit configuration is needed
+    # add more service definitions when explicit configuration is needed
+    App\Service\FileUploader:
+        arguments:
+            $targetDirectory: "%images_directory%"
     # please note that last definitions always *replace* previous ones
