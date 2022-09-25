@@ -63,6 +63,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Message::class, orphanRemoval: true)]
     private Collection $messages;
 
+    #[ORM\OneToOne(mappedBy: 'user', cascade: ['persist', 'remove'])]
+    private ?ProfilePicture $profilePicture = null;
+
     public function __construct()
     {
         $this->logs = new ArrayCollection();
@@ -331,6 +334,23 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $message->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getProfilePicture(): ?ProfilePicture
+    {
+        return $this->profilePicture;
+    }
+
+    public function setProfilePicture(ProfilePicture $profilePicture): self
+    {
+        // set the owning side of the relation if necessary
+        if ($profilePicture->getUser() !== $this) {
+            $profilePicture->setUser($this);
+        }
+
+        $this->profilePicture = $profilePicture;
 
         return $this;
     }
