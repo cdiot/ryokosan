@@ -383,6 +383,10 @@
                 <source>action.search</source>
                 <target>Rechercher</target>
             </trans-unit>
+            <trans-unit id="action.profile_picture_delete">
+                <source>action.profile_picture_delete</source>
+                <target>Supprimer ta photo de profil</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -678,6 +682,14 @@
             <trans-unit id="help.messaging_member_conversation">
                 <source>help.messaging_member_conversation</source>
                 <target>Ce système de sélection des utilisateurs en est à sa première version, et sera optimisé dans notre prochaine mise à jour pour être plus convivial.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_edit">
+                <source>help.profile_picture_edit</source>
+                <target>Si une photo de profile existe déjà supprime là, avant d'en ajouter une nouvelle. Ce système sera simplifié dans les prochaines mises à jour.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_delete">
+                <source>help.profile_picture_delete</source>
+                <target>Voulez-vous supprimer cette image ?</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>

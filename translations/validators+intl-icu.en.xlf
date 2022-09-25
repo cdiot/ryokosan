@@ -62,6 +62,10 @@
                 <source>constraints.true_agree_terms</source>
                 <target>You must agree to our terms.</target>
             </trans-unit>
+            <trans-unit id="constraints.valid_profile_picture">
+                <source>constraints.valid_profile_picture</source>
+                <target>Please upload a valid profile picture.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -383,6 +383,10 @@
                 <source>action.search</source>
                 <target>Suche</target>
             </trans-unit>
+            <trans-unit id="action.profile_picture_delete">
+                <source>action.profile_picture_delete</source>
+                <target>Lösche dein Profilbild</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>Email</target>
@@ -678,6 +682,14 @@
             <trans-unit id="help.messaging_member_conversation">
                 <source>help.messaging_member_conversation</source>
                 <target>Dieses Benutzerauswahlsystem befindet sich in seiner ersten Version und wird in unserem nächsten Update optimiert, um benutzerfreundlicher zu sein.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_edit">
+                <source>help.profile_picture_edit</source>
+                <target>Wenn bereits ein Profilbild vorhanden ist, löschen Sie es, bevor Sie ein neues hinzufügen. Dieses System wird in zukünftigen Updates vereinfacht.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_delete">
+                <source>help.profile_picture_delete</source>
+                <target>Möchten Sie dieses Bild löschen?</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>

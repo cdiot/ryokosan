@@ -66,6 +66,10 @@
                 <source>constraints.true_agree_terms</source>
                 <target>Vous devez accepter nos conditions.</target>
             </trans-unit>
+            <trans-unit id="constraints.valid_profile_picture">
+                <source>constraints.valid_profile_picture</source>
+                <target>Veuillez télécharger une photo de profil valide.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
