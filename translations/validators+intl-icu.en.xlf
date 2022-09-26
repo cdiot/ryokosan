@@ -18,9 +18,9 @@
                 <source>constraints.blank_gender</source>
                 <target>Enter your gender.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_firstname">
-                <source>constraints.blank_firstname</source>
-                <target>Enter your firstname.</target>
+            <trans-unit id="constraints.blank_username">
+                <source>constraints.blank_username</source>
+                <target>Enter your username.</target>
             </trans-unit>
             <trans-unit id="constraints.blank_birthday">
                 <source>constraints.blank_birthday</source>

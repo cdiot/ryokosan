@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -39,14 +40,14 @@ class EditProfileType extends AbstractType
                     ])
                 ],
             ])
-            ->add('firstname', TextType::class, [
-                'label' => 'label.firstname',
+            ->add('username', TextType::class, [
+                'label' => 'label.username',
                 'attr' => [
-                    'placeholder' => 'label.firstname'
+                    'placeholder' => 'label.username'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'constraints.blank_firstname',
+                        'message' => 'constraints.blank_username',
                     ])
                 ]
             ])
@@ -93,6 +94,13 @@ class EditProfileType extends AbstractType
                     new NotBlank([
                         'message' => 'constraints.blank_geolocalisation',
                     ])
+                ]
+            ])
+            ->add('bio', TextType::class, [
+                'label' => 'label.bio',
+                'required'   => false,
+                'attr' => [
+                    'placeholder' => 'label.bio'
                 ]
             ]);
     }

@@ -419,9 +419,9 @@
                 <source>label.gender</source>
                 <target>Genre</target>
             </trans-unit>
-            <trans-unit id="label.firstname">
-                <source>label.firstname</source>
-                <target>Prénom</target>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Nom d'utilisateur</target>
             </trans-unit>
             <trans-unit id="label.birthday">
                 <source>label.birthday</source>
@@ -530,6 +530,10 @@
             <trans-unit id="label.alt_text">
                 <source>label.alt_text</source>
                 <target>Texte alternatif</target>
+            </trans-unit>
+            <trans-unit id="label.bio">
+                <source>label.bio</source>
+                <target>Bio</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>

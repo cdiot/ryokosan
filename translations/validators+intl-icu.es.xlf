@@ -18,9 +18,9 @@
                 <source>constraints.blank_gender</source>
                 <target>Por favor introduzca su género.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_firstname">
-                <source>constraints.blank_firstname</source>
-                <target>Por favor introduzca su primer nombre.</target>
+            <trans-unit id="constraints.blank_username">
+                <source>constraints.blank_username</source>
+                <target>Por favor introduzca su nombre de usuario.</target>
             </trans-unit>
             <trans-unit id="constraints.blank_lastname">
                 <source>constraints.blank_lastname</source>
@@ -68,7 +68,8 @@
             </trans-unit>
             <trans-unit id="constraints.valid_profile_picture">
                 <source>constraints.valid_profile_picture</source>
-                <target>Sube una imagen de perfil válida.</target>
+                <target>Sube una imagen de perfil válida.
+                </target>
             </trans-unit>
         </body>
     </file>

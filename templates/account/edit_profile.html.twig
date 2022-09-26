@@ -21,7 +21,7 @@
 						{% if user.profilePicture.filename is defined %}
 							<div class="row mb-3">
 								<div class="col-sm-9 col-form-label">
-									<img class="rounded-circle" src="{{ asset('/uploads/pictures/' ~ user.profilePicture.filename) }}" alt="{{ user.firstname }}" width="52" height="52"><br>
+									<img class="rounded-circle" src="{{ asset('/uploads/pictures/' ~ user.profilePicture.filename) }}" alt="{{ user.username }}" width="52" height="52"><br>
 									<a href="{{ path('app_delete_picture', {id: user.profilePicture.id}) }}" data-delete data-token="{{ csrf_token('delete' ~ user.profilePicture.id) }}">{{ 'action.profile_picture_delete'|trans }}</a>
 								</div>
 							</div>
@@ -32,8 +32,12 @@
 							<div class="col-sm-9">{{ form_row(form.files, {'label': false}) }}</div>
 						</div>
 						<div class="row mb-3">
-							<div class="col-sm-3 col-form-label">{{ form_label(form.firstname) }}</div>
-							<div class="col-sm-9">{{ form_row(form.firstname, {'label': false}) }}</div>
+							<div class="col-sm-3 col-form-label">{{ form_label(form.username) }}</div>
+							<div class="col-sm-9">{{ form_row(form.username, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.bio) }}</div>
+							<div class="col-sm-9">{{ form_row(form.bio, {'label': false}) }}</div>
 						</div>
 						<div class="row mb-3">
 							<div class="col-sm-3 col-form-label">{{ form_label(form.email) }}</div>

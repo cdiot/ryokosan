@@ -18,9 +18,9 @@
                 <source>constraints.blank_gender</source>
                 <target>Veuillez saisir votre genre.</target>
             </trans-unit>
-            <trans-unit id="constraints.blank_firstname">
-                <source>constraints.blank_firstname</source>
-                <target>Veuillez saisir votre prénom.</target>
+            <trans-unit id="constraints.blank_username">
+                <source>constraints.blank_username</source>
+                <target>Veuillez saisir votre nom d'utilisateur.</target>
             </trans-unit>
             <trans-unit id="constraints.blank_lastname">
                 <source>constraints.blank_lastname</source>
