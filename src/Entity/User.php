@@ -13,6 +13,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
+#[UniqueEntity(fields: ['username'], message: 'There is already an account with this username')]
 #[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
@@ -37,7 +38,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $gender = null;
 
     #[ORM\Column(length: 50)]
-    private ?string $firstname = null;
+    private ?string $username = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $birthday = null;
@@ -65,6 +66,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\OneToOne(mappedBy: 'user', cascade: ['persist', 'remove'])]
     private ?ProfilePicture $profilePicture = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $bio = null;
 
     public function __construct()
     {
@@ -156,14 +160,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getFirstname(): ?string
+    public function getUsername(): ?string
     {
-        return $this->firstname;
+        return $this->username;
     }
 
-    public function setFirstname(string $firstname): self
+    public function setUsername(string $username): self
     {
-        $this->firstname = $firstname;
+        $this->username = $username;
 
         return $this;
     }
@@ -351,6 +355,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         }
 
         $this->profilePicture = $profilePicture;
+
+        return $this;
+    }
+
+    public function getBio(): ?string
+    {
+        return $this->bio;
+    }
+
+    public function setBio(?string $bio): self
+    {
+        $this->bio = $bio;
 
         return $this;
     }
