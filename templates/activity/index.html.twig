@@ -11,7 +11,7 @@
                 <h1 class="heading">{{ 'headline.activity_index'|trans }}</h1>
                 <p class="lead">{{ 'lead.activity_index'|trans }}</p>
             </div>
-            <aside class="col-12 col-lg-4 mb-4 bg-light">
+            <aside class="col-12 col-lg-4 mb-4 t">
             {{ form(form) }}
             </aside>
 
@@ -23,12 +23,16 @@
                             <div class="d-flex align-items-center">   
                                 <!-- Avatar -->
                                 <div class="avatar me-2">
-                                    <img class="avatar-img rounded-circle" src="{{ asset('build/images/default_profile.png') }}" alt="" width="96" height="96">
+                                {% if activity.user.profilePicture.filename is not defined %}
+                                    <img class="avatar-img rounded-circle" src="{{ asset('build/images/default_profile.png') }}" alt="" width="52" height="52">
+                                    {% else %}
+                                    <img class="avatar-img rounded-circle" src="{{ asset('/uploads/pictures/' ~ activity.user.profilePicture.filename) }}" alt="" width="52" height="52">
+                                {% endif %}
                                 </div>
                                 <!-- Title -->
                                 <div>
                                     <h6 class="card-title fw-bold mb-0">
-                                        {{ activity.user.firstname }} ({{ age(activity.user.birthday|date) }})
+                                        <a class="text-decoration-none" href="{{ path('app_account_show', { 'username': activity.user.username }) }}">{{ activity.user.username }}</a> ({{ age(activity.user.birthday|date) }})
                                     </h6>
                                     <span class="card-subtitle">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
