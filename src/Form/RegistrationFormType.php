@@ -74,14 +74,14 @@ class RegistrationFormType extends AbstractType
                     ])
                 ]
             ])
-            ->add('firstname', TextType::class, [
-                'label' => 'label.firstname',
+            ->add('username', TextType::class, [
+                'label' => 'label.username',
                 'attr' => [
-                    'placeholder' => 'label.firstname'
+                    'placeholder' => 'label.username'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'constraints.blank_firstname',
+                        'message' => 'constraints.blank_username',
                     ])
                 ]
             ])
@@ -110,14 +110,8 @@ class RegistrationFormType extends AbstractType
             ->add('sponsorship', TextType::class, [
                 'label' => 'label.sponsorship',
                 'required'   => false,
-                'empty_data' => 'no sponsor',
                 'attr' => [
                     'placeholder' => 'label.sponsorship'
-                ],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => 'constraints.blank_sponsorship',
-                    ])
                 ]
             ]);
     }
