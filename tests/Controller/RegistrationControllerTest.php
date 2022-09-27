@@ -22,7 +22,7 @@ class RegistrationControllerTest extends WebTestCase
         $client->request('GET', '/registration');
         $client->submitForm('Register', [
             'registration_form[gender]' => 'f',
-            'registration_form[firstname]' => 'something',
+            'registration_form[username]' => 'something',
             'registration_form[email]' => 'foo123@gmail.com',
             'registration_form[plainPassword]' => '123456',
             'registration_form[birthday][month]' => 10,
