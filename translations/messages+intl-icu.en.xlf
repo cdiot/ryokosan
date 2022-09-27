@@ -383,6 +383,10 @@
                 <source>action.search</source>
                 <target>Search</target>
             </trans-unit>
+            <trans-unit id="action.profile_picture_delete">
+                <source>action.profile_picture_delete</source>
+                <target>Delete your profile picture</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -415,9 +419,9 @@
                 <source>label.gender</source>
                 <target>Gender</target>
             </trans-unit>
-            <trans-unit id="label.firstname">
-                <source>label.firstname</source>
-                <target>Firstname</target>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Username</target>
             </trans-unit>
             <trans-unit id="label.birthday">
                 <source>label.birthday</source>
@@ -526,6 +530,10 @@
             <trans-unit id="label.alt_text">
                 <source>label.alt_text</source>
                 <target>Alt text</target>
+            </trans-unit>
+            <trans-unit id="label.bio">
+                <source>label.bio</source>
+                <target>Bio</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -678,6 +686,14 @@
             <trans-unit id="help.messaging_member_conversation">
                 <source>help.messaging_member_conversation</source>
                 <target>This user selection system is in its first version, and will be optimized in our next update to be more user friendly.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_edit">
+                <source>help.profile_picture_edit</source>
+                <target>If a profile picture already exists, delete it before adding a new one. This system will be simplified in future updates.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_delete">
+                <source>help.profile_picture_delete</source>
+                <target>Do you want to delete this image?</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>

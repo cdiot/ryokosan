@@ -37,17 +37,18 @@ class AppFixtures extends Fixture
 
     private function loadUsers(ObjectManager $manager): void
     {
-        foreach ($this->getUserData() as [$password, $email, $roles, $gender, $firstname, $birthday, $geolocalisation, $sponsorship]) {
+        foreach ($this->getUserData() as [$password, $email, $roles, $gender, $username, $birthday, $geolocalisation, $sponsorship, $bio]) {
             $user = new User();
             $user->setPassword($this->passwordHasher->hashPassword($user, $password));
             $user->setEmail($email);
             $user->setRoles($roles);
             $user->setIsVerified(true);
             $user->setGender($gender);
-            $user->setFirstname($firstname);
+            $user->setUsername($username);
             $user->setBirthday($birthday);
             $user->setGeolocalisation($geolocalisation);
             $user->setSponsorship($sponsorship);
+            $user->setBio($bio);
             $manager->persist($user);
             $this->users[] = $user;
         }
@@ -111,7 +112,7 @@ class AppFixtures extends Fixture
                 ->setContent($content)
                 ->setFeaturedText($featuredText)
                 ->setCreatedAt(new DateTime())
-                ->isIsPublished(true);
+                ->setIsPublished(true);
             $manager->persist($article);
         }
         $manager->flush();
@@ -132,15 +133,15 @@ class AppFixtures extends Fixture
     private function getUserData(): array
     {
         return [
-            // $userData = [$password, $email, $roles, $gender, $firstname, $birthday, $geolocalisation, $sponsorship];
-            ['123456', 'foo@gmail.com', ['ROLE_USER'], 'f', 'Mandy', new DateTimeImmutable('2003-10-18'), 'GB', 'mandy'],
-            ['123456', 'foobar@gmail.com', ['ROLE_USER'], 'f', 'Riley', new DateTimeImmutable('2004-09-21'), 'FR', 'riley'],
-            ['123456', 'baz@gmail.com', ['ROLE_USER'], 'o', 'Blu', new DateTimeImmutable('1999-12-31'), 'DE', 'Blu'],
-            ['123456', 'bar@ryokosan.com', ['ROLE_ADMIN'], 'm', 'Eliot', new DateTimeImmutable('2003-05-03'), 'FR', ''],
-            ['123456', 'hoge@live.com', ['ROLE_USER'], 'f', 'Diego', new DateTimeImmutable('1999-08-14'), 'ES', ''],
-            ['123456', 'fuga@hotmail.com', ['ROLE_USER'], 'f', 'Noah', new DateTimeImmutable('1998-07-19'), 'GB', ''],
-            ['123456', 'piyo@gmail.com', ['ROLE_USER'], 'o', 'Fry', new DateTimeImmutable('1997-11-13'), 'GB', 'Blu'],
-            ['123456', 'hogera@orange.fr', ['ROLE_USER'], 'm', 'Abraham', new DateTimeImmutable('2002-04-05'), 'DE', ''],
+            // $userData = [$password, $email, $roles, $gender, $username, $birthday, $geolocalisation, $sponsorship, $bio];
+            ['123456', 'foo@gmail.com', ['ROLE_USER'], 'f', 'Mandy', new DateTimeImmutable('2003-10-18'), 'GB', 'mandy', 'I am not a chatty person but a good listener.'],
+            ['123456', 'foobar@gmail.com', ['ROLE_USER'], 'f', 'Riley', new DateTimeImmutable('2004-09-21'), 'FR', 'riley', 'coucou'],
+            ['123456', 'baz@gmail.com', ['ROLE_USER'], 'o', 'Blu', new DateTimeImmutable('1999-12-31'), 'DE', 'Blu', 'I\'m a fan of the United States, especially the West. Ask me anything about it.'],
+            ['123456', 'bar@ryokosan.com', ['ROLE_ADMIN'], 'm', 'Eliot', new DateTimeImmutable('2003-05-03'), 'FR', '', 'Contact me for any travel plans :)'],
+            ['123456', 'hoge@live.com', ['ROLE_USER'], 'f', 'Diego', new DateTimeImmutable('1999-08-14'), 'ES', '', 'El invierno es la mejor estación. Soy alérgico al sol.'],
+            ['123456', 'fuga@hotmail.com', ['ROLE_USER'], 'f', 'Noah', new DateTimeImmutable('1998-07-19'), 'GB', '', 'I love french food!'],
+            ['123456', 'piyo@gmail.com', ['ROLE_USER'], 'o', 'Fry', new DateTimeImmutable('1997-11-13'), 'GB', 'Blu', 'Nothing special to say.'],
+            ['123456', 'hogera@orange.fr', ['ROLE_USER'], 'm', 'Abraham', new DateTimeImmutable('2002-04-05'), 'DE', '', 'Ich bin in der Finanzbranche tätig und mag das Land der Sonne.'],
         ];
     }
 

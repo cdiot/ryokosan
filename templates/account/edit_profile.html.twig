@@ -18,9 +18,26 @@
 					<h1 class="heading">{{ 'headline.account_edit'|trans }}</h1>
 					<p class="paragraph">{{ 'help.complet_personal_data'|trans }}</p>
 					{{ form_start(form) }}
+						{% if user.profilePicture.filename is defined %}
+							<div class="row mb-3">
+								<div class="col-sm-9 col-form-label">
+									<img class="rounded-circle" src="{{ asset('/uploads/pictures/' ~ user.profilePicture.filename) }}" alt="{{ user.username }}" width="52" height="52"><br>
+									<a href="{{ path('app_delete_picture', {id: user.profilePicture.id}) }}" data-delete data-token="{{ csrf_token('delete' ~ user.profilePicture.id) }}">{{ 'action.profile_picture_delete'|trans }}</a>
+								</div>
+							</div>
+						{% endif %}
+						<p>{{ 'help.profile_picture_edit'|trans }}</p>
 						<div class="row mb-3">
-							<div class="col-sm-3 col-form-label">{{ form_label(form.firstname) }}</div>
-							<div class="col-sm-9">{{ form_row(form.firstname, {'label': false}) }}</div>
+							<div class="col-sm-3 col-form-label">{{ form_label(form.files) }}</div>
+							<div class="col-sm-9">{{ form_row(form.files, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.username) }}</div>
+							<div class="col-sm-9">{{ form_row(form.username, {'label': false}) }}</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-sm-3 col-form-label">{{ form_label(form.bio) }}</div>
+							<div class="col-sm-9">{{ form_row(form.bio, {'label': false}) }}</div>
 						</div>
 						<div class="row mb-3">
 							<div class="col-sm-3 col-form-label">{{ form_label(form.email) }}</div>
@@ -43,3 +60,42 @@
 				</div>
 			</section>
 		{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+window.onload = () => {
+    // Gestion des boutons "Supprimer"
+    let links = document.querySelectorAll("[data-delete]")
+
+    // On boucle sur links
+    for (link of links) {
+        // On écoute le clic
+        link.addEventListener("click", function (e) {
+            // On empêche la navigation
+            e.preventDefault()
+
+            // On demande confirmation
+            if (confirm("{{ 'help.profile_picture_delete'|trans }}")) {
+                // On envoie une requête Ajax vers le href du lien avec la méthode DELETE
+
+                fetch(this.getAttribute("href"), {
+                    method: "DELETE",
+                    headers: {
+                        "X-Requested-With": "XMLHttpRequest",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ "_token": this.dataset.token })
+                }).then(
+                    // On récupère la réponse en JSON
+                    response => response.json()
+                ).then(data => {
+                    if (data.success)
+                        this.parentElement.remove()
+                    else
+                        alert(data.error)
+                }).catch(e => alert(e))
+            }
+        })
+    }
+}
+</script>
+{% endblock %}

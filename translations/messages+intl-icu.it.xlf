@@ -383,6 +383,10 @@
                 <source>action.search</source>
                 <target>Ricerca</target>
             </trans-unit>
+            <trans-unit id="action.profile_picture_delete">
+                <source>action.profile_picture_delete</source>
+                <target>Elimina la tua immagine del profilo</target>
+            </trans-unit>
             <trans-unit id="label.email">
                 <source>label.email</source>
                 <target>E-mail</target>
@@ -407,9 +411,9 @@
                 <source>label.gender</source>
                 <target>Genere</target>
             </trans-unit>
-            <trans-unit id="label.firstname">
-                <source>label.firstname</source>
-                <target>Nome di battesimo</target>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Nome utente</target>
             </trans-unit>
             <trans-unit id="label.birthday">
                 <source>label.birthday</source>
@@ -518,6 +522,10 @@
             <trans-unit id="label.alt_text">
                 <source>label.alt_text</source>
                 <target>Testo alternativo</target>
+            </trans-unit>
+            <trans-unit id="label.bio">
+                <source>label.bio</source>
+                <target>Bio</target>
             </trans-unit>
             <trans-unit id="placeholder.select">
                 <source>placeholder.select</source>
@@ -670,6 +678,14 @@
             <trans-unit id="help.messaging_member_conversation">
                 <source>help.messaging_member_conversation</source>
                 <target>Questo sistema di selezione degli utenti è alla sua prima versione e sarà ottimizzato nel nostro prossimo aggiornamento per essere più intuitivo.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_edit">
+                <source>help.profile_picture_edit</source>
+                <target>Se esiste già un'immagine del profilo, eliminala prima di aggiungerne una nuova. Questo sistema sarà semplificato nei futuri aggiornamenti.</target>
+            </trans-unit>
+            <trans-unit id="help.profile_picture_delete">
+                <source>help.profile_picture_delete</source>
+                <target>Vuoi eliminare questa immagine?</target>
             </trans-unit>
             <trans-unit id="notification.email_send">
                 <source>notification.email_send</source>

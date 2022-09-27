@@ -7,7 +7,16 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class AccountControllerTest extends WebTestCase
 {
-    public function testShouldDisplayAccount()
+    public function testShouldDisplayShowAccount()
+    {
+        $client = static::createClient();
+        $client->request('GET', '/profile/Fry');
+
+        $this->assertResponseIsSuccessful();
+        $this->assertSelectorTextContains('h1', 'Fry');
+    }
+
+    public function testShouldDisplayEditAccount()
     {
         $client = static::createClient();
         // get or create the user somehow (e.g. creating some users only

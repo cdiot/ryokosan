@@ -16,11 +16,12 @@ class UserTest extends TestCase
             ->setPassword('123456')
             ->setRoles(['ROLE_USER'])
             ->setGender('m')
-            ->setFirstname('something')
+            ->setUsername('something')
             ->setBirthday($birthday)
             ->setGeolocalisation('FR')
             ->setSponsorship('something')
-            ->setIsVerified(true);
+            ->setIsVerified(true)
+            ->setBio('something');
 
 
 
@@ -28,11 +29,12 @@ class UserTest extends TestCase
         $this->assertTrue($user->getPassword() === '123456');
         $this->assertTrue($user->getRoles() === ['ROLE_USER']);
         $this->assertTrue($user->getGender() === 'm');
-        $this->assertTrue($user->getFirstname() === 'something');
+        $this->assertTrue($user->getUsername() === 'something');
         $this->assertTrue($user->getBirthday() === $birthday);
         $this->assertTrue($user->getGeolocalisation() === 'FR');
         $this->assertTrue($user->getSponsorship() === 'something');
         $this->assertTrue($user->isVerified() === true);
+        $this->assertTrue($user->getBio() === 'something');
     }
 
     public function testIsFalse()
@@ -44,21 +46,24 @@ class UserTest extends TestCase
             ->setPassword('azerty')
             ->setRoles(['ROLE_ADMIN'])
             ->setGender('f')
-            ->setFirstname('something new')
+            ->setUsername('something new')
             ->setBirthday($birthday2)
             ->setGeolocalisation('EN')
             ->setSponsorship('something new')
-            ->setIsVerified(false);
+            ->setIsVerified(false)
+            ->setBio('something new');
 
         $this->assertFalse($user->getEmail() === 'foo@test.com');
         $this->assertFalse($user->getPassword() === '123456');
         $this->assertFalse($user->getRoles() === ['ROLE_USER']);
         $this->assertFalse($user->getGender() === 'm');
-        $this->assertFalse($user->getFirstname() === 'something');
+        $this->assertFalse($user->getUsername() === 'something');
         $this->assertFalse($user->getBirthday() === $birthday1);
         $this->assertFalse($user->getGeolocalisation() === 'FR');
         $this->assertFalse($user->getSponsorship() === 'something');
         $this->assertFalse($user->isVerified() === true);
+        $this->assertFalse($user->getSponsorship() === 'something');
+        $this->assertFalse($user->getBio() === 'something');
     }
 
     public function testIsEmpty()
@@ -67,17 +72,19 @@ class UserTest extends TestCase
         $user->setEmail('')
             ->setPassword('')
             ->setGender('')
-            ->setFirstname('')
+            ->setUsername('')
             ->setGeolocalisation('')
             ->setSponsorship('')
-            ->setIsVerified('');
+            ->setIsVerified('')
+            ->setBio('');
 
         $this->assertEmpty($user->getEmail());
         $this->assertEmpty($user->getPassword());
         $this->assertEmpty($user->getGender());
-        $this->assertEmpty($user->getFirstname());
+        $this->assertEmpty($user->getUsername());
         $this->assertEmpty($user->getGeolocalisation());
         $this->assertEmpty($user->getSponsorship());
         $this->assertEmpty($user->isVerified());
+        $this->assertEmpty($user->getBio());
     }
 }
