@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\ProfilePicture;
+use App\Entity\User;
 use App\Form\EditProfileType;
 use App\Repository\ProfilePictureRepository;
 use App\Repository\UserRepository;
@@ -15,9 +16,27 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-#[IsGranted('IS_AUTHENTICATED_FULLY')]
 class AccountController extends AbstractController
 {
+    #[Route(path: [
+        'en' => '/profile/{username}',
+        'de' => '/profil/{username}',
+        'es' => '/perfil/{username}',
+        'fr' => '/profil/{username}',
+        'it' => '/profilo/{username}',
+    ], name: 'app_account_show')]
+    public function show(?User $user): Response
+    {
+        if (!$user) {
+            return $this->redirectToRoute('app_article_index');
+        }
+        //$user = $user->findByUsername($username);
+
+        return $this->render('account/show_profile.html.twig', [
+            'user' => $user
+        ]);
+    }
+
     #[Route(path: [
         'en' => '/account/edit',
         'de' => '/konto/bearbeiten',
@@ -27,22 +46,24 @@ class AccountController extends AbstractController
     ], name: 'app_account_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, UserRepository $userRepository, ProfilePictureRepository $profilePictureRepository, FileUploader $fileUploader, TranslatorInterface $translator): Response
     {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
         $user = $this->getUser();
-
-
 
         $form = $this->createForm(EditProfileType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $image = $form->get('files')->getData();
+            if (!empty($form->get('files')->getData())) {
+                $image = $form->get('files')->getData();
 
-            $newFilename = $fileUploader->upload($image);
-            $profilePicture = new ProfilePicture;
-            $profilePicture->setFileName($newFilename);
-            $profilePicture->setUser($user);
-            $profilePictureRepository->add($profilePicture, true);
+                $newFilename = $fileUploader->upload($image);
+                $profilePicture = new ProfilePicture;
+                $profilePicture->setFileName($newFilename);
+                $profilePicture->setUser($user);
+                $profilePictureRepository->add($profilePicture, true);
+            }
 
             $userRepository->add($user, true);
 

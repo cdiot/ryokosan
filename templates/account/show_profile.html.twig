@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ user.username }}{% endblock %}
+
+{% block body %}
+    <!-- Activity section START -->
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+            {% if user.profilePicture.filename is defined %}
+							<div class="row mb-3">
+								<div class="col-sm-9 col-form-label">
+									<img class="rounded-circle" src="{{ asset('/uploads/pictures/' ~ user.profilePicture.filename) }}" alt="{{ user.firstname }}" width="52" height="52"><br>
+								</div>
+							</div>
+						{% endif %}
+                <h1 class="heading">{{ user.username }} ({{ age(user.birthday|date) }}) - {{ country(user.geolocalisation) }}</h1>
+                <p class="lead">{{ user.bio }}</p>
+            </div>
+            <section class="col-12 mb-4">
+                    <!-- Profile START -->
+                    {% for activity in user.activities %}
+                    <!-- Activity START -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            {% if activity.startDate|length and activity.endDate|length  > 0 %}
+                                <p class="mb-0"> <strong>{{ 'activity.desired_date'|trans }} </strong><br> {{ activity.startDate ? activity.startDate|date('Y-m-d') : '' }} - {{ activity.endDate ? activity.endDate|date('Y-m-d') : '' }}</p>
+                            {% endif %}
+                            {% if activity.destinations|length > 0 %}
+                                <p class="mb-0"> <strong>{{ 'activity.destinations'|trans }} </strong><br> 
+                                    {% for destination in activity.destinations %}
+                                        {{ destination.name }},
+                                    {% endfor %}
+                                </p>
+                            {% endif %}
+                            <p class="mb-3"> <strong>{{ 'activity.description'|trans }} </strong><br> {{ activity.description }}</p>
+                            <a class="button button-action btn-sm" href="{{ path("app_group_index") }}">{{ 'action.send_him_message'|trans }}</a>
+                        </div>
+                    </div>
+                    <!-- Activity END -->
+                {% else %}
+                    <p>{{ 'notification.empty_activity'|trans }}</p>
+                {% endfor %}
+                    <!-- Profile END -->
+            </section>
+        </div>
+    </div>
+{% endblock %}
